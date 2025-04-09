@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script>
+    function toggleArtikel(id) {    
+      const el = document.getElementById(id);
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+      } else {
+        el.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Daftar Artikel</h1>
+  <ul>
+    <li><a href="javascript:void(0);" onclick="toggleArtikel('artikel1')">Tantangan-tantangan yang sering dihadapi saat belajar pemrograman</a></li>
+    <li><a href="javascript:void(0);" onclick="toggleArtikel('artikel2')">Pentingnya manajemen waktu</a></li>
+    <li><a href="javascript:void(0);" onclick="toggleArtikel('artikel3')">Panduan Sukses untuk Menjalani Internship di Perusahaan Teknologi</a></li>
+    <li><a href="javascript:void(0);" onclick="toggleArtikel('artikel4')">Magang di Dunia Startup: Peluang untuk Belajar dan Berkembang</a></li>
+  </ul>
+
+  <!-- Artikel 1 -->
+  <div id="artikel1" style="display: none;">
+    <h2>Tantangan-tantangan yang sering dihadapi saat belajar pemrograman</h2>
+    <p>"Jangan mudah menyerah saat menghadapi kesalahan."</p>
+    <img src="belajar.png" width="300">
+    <p>Sumber referensi: 
+      <a href="https://www.codepolitan.com/blog/tantangan-tantangan-yang-sering-dihadapi-saat-belajar-pemrograman/" target="_blank">
+        CodePolitan
+      </a>
+    </p>
+  </div>
+
+  <!-- Artikel 2 -->
+  <div id="artikel2" style="display: none;">
+    <h2>Pentingnya manajemen waktu</h2>
+    <p>"Manajemen waktu bukan hanya tentang mencoba menyelesaikan tugas yang banyak dan cepat, melainkan juga tentang bagaimana menciptakan ruang untuk hal-hal yang benar-benar penting dalam hidup kita."</p>
+    <img src="Manajemen Waktu.jpg" width="300">
+    <p>Sumber referensi: 
+      <a href="https://osc.medcom.id/community/pentingnya-manajemen-waktu-6360" target="_blank">
+        Medcom OSC
+      </a>
+    </p>
+  </div>
+
+  <!-- Artikel 3 -->
+  <div id="artikel3" style="display: none;">
+    <h2>Panduan Sukses untuk Menjalani Internship di Perusahaan Teknologi</h2>
+    <p>"Menjalani internship di perusahaan teknologi merupakan pengalaman yang berharga dan berpotensi membuka pintu untuk kesempatan karir yang lebih besar di masa depan."</p>
+    <img src="magang.jpg" width="300">
+    <p>Sumber referensi: 
+      <a href="https://azuralabs.id/blog-tech-career/panduan-sukses-untuk-menjalani-internship-di-perusahaan-teknologi" target="_blank">
+        Azura Labs
+      </a>
+    </p>
+  </div>
+
+  <!-- Artikel 4 -->
+  <div id="artikel4" style="display: none;">
+    <h2>Magang di Dunia Startup: Peluang untuk Belajar dan Berkembang</h2>
+    <p>"Jadilah siap untuk belajar hal-hal baru dan menghadapi tantangan yang mungkin muncul di sepanjang jalan."</p>
+    <img src="startup.jpg" width="300">
+    <p>Sumber referensi: 
+      <a href="https://azuralabs.id/blog-tech-career/magang-di-dunia-startup-peluang-untuk-belajar-dan-berkembang" target="_blank">
+        Azura Labs
+      </a>
+    </p>
+  </div>
+
+  <!-- Navigasi -->
+  <h3>Navigasi</h3>
+  <ul>
+    <li><a href="pengalaman_kuliah.html">Pengalaman Kuliah</a></li>
+    <li><a href="Beranda.html">Blog</a></li>
+  </ul>
+
+</body>
+</html>
+
