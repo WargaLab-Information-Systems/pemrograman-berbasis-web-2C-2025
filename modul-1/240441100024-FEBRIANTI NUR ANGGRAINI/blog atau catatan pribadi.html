@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Artikel</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        /* .article-list { list-style-type: none; padding: 0; } */
+        .article-list li { margin: 20px 0; }
+        .article-container { display: none; }
+    </style>
+    <script>
+        function showArticle(id) {
+            document.querySelectorAll('.article-container').forEach(el => el.style.display = 'none'); 
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Daftar Artikel</h1>
+    <ul class="article-list">
+        <li><a href="#" onclick="showArticle('artikel1')">Pengalaman Belajar Coding</a></li>
+        <li><a href="#" onclick="showArticle('artikel2')">Refleksi tentang Manajemen Waktu</a></li>
+        <li><a href="#" onclick="showArticle('artikel3')">Opini tentang Kerja Remote</a></li>
+    </ul>
+
+    <div id="artikel1" class="article-container">
+        <h2>Pengalaman Belajar Coding</h2>
+        <p>Apa keahlian utama yang harus dimiliki oleh seorang tenaga IT? Pasti jawabannya adalah coding. Banyak orang awam yang belum tahu dengan istilah coding. Coding diambil dari kata code yang berarti kode. Definisi dari coding sendiri adalah membuat kode — kode perintah tertentu kepada komputer agar dapat menyelesaikan suatu tugas tertentu. Komputer, robot, smartphone dan teknologi lain di masa sekarang tidaklah berarti tanpa dicoding. Dalam bahasa Indonesia coding disebut dengan istilah pemrograman. Orang yang melakukan perkerjaan coding disebut dengan coder atau programmer (profesi).</p>
+        <p>"Belajar tidak akan pernah selesai, karena teknologi selalu berkembang."</p>
+        <img src="pbw coding.webp" width="800">
+        <p><a href="https://medium.com/@adityopambudi8/pengalaman-belajar-coding-sebagai-pemula-8a380f44ab14" target="_blank">Sumber referensi</a></p>
+    </div>
+
+    <div id="artikel2" class="article-container">
+        <h2>Refleksi tentang Manajemen Waktu</h2>
+        <p>mengelola waktu dengan efektif adalah tantangan yang dihadapi banyak mahasiswa, terutama bagi mereka yang terlibat dalam kegiatan organisasi kampus atau bekerja part-time.
+            Keseimbangan antara akademik, aktivitas non-akademik, dan kehidupan pribadi sering kali menjadi dilema tersendiri.</p>
+        <p>"Waktu adalah aset yang paling berharga."</p>
+        <img src="manajemen waktu.jpg"  width="800">
+        <p><a href="https://fbhis.umsida.ac.id/8-strategi-manajemen-waktu-untuk-mahasiswa/" target="_blank">Sumber referensi</a></p>
+    </div>
+
+    <div id="artikel3" class="article-container">
+        <h2>Opini tentang Kerja Remote</h2>
+        <p>Tahun 2020 membawa perubahan besar dalam cara setiap orang bekerja. Generasi Z, kelompok yang lahir antara pertengahan 1990-an hingga awal 2010-an, menjadi salah satu yang paling terpengaruh oleh perubahan ini.
+            Remote work atau bekerja dari jarak jauh, yang sebelumnya menjadi opsi terbatas, kini menjadi norma baru di dunia kerja. Menurut Penelitian oleh McKinsey & Company, banyak perusahaan yang telah beralih ke model kerja remote sebagai respons terhadap pandemi. 
+            Generasi Z, yang terbiasa dengan teknologi dan konektivitas digital, terlihat lebih fleksibel dalam menyesuaikan diri dengan perubahan ini.</p>
+        <p>"Kebebasan bekerja dari mana saja adalah masa depan."</p>
+        <img src="opini.jpg" width="800">
+        <p><a href="https://kumparan.com/pengetahuan-umum/remote-work-untuk-generasi-z-menghadapi-tantangan-dan-peluang-21auiuHEYuP/3/gallery/1" target="_blank">Sumber referensi</a></p>
+    </div>
+</body>
+</body>
+<body>
+    <h3>Navigasi</h3>
+    <nav>
+        <ul>
+            <li><a href="profil pribadi.html">profil pribadi</a></li>
+            <li><a href="pengalaman kuliah.html">Pengalaman Kuliah</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
