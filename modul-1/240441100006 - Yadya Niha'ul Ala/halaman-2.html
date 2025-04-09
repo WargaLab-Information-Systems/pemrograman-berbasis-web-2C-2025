@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pengalaman Kuliah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #e1ebef; */
+            background-color: #F8F9D7;
+            min-height: 100vh; /* vh = viewpoint height - tingginya 100% dari layar */
+        }
+        .navbar {
+            background-color: #6E85B7;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #F8F9D7;
+            text-shadow: #B2C8DF;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar .nav-links li {
+            display: inline;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #F8F9D7;
+            font-size: 1em;
+        }
+        .title {
+            text-align: center;
+            font-size: 1.9em;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            color: #6E85B7;
+        }
+        .container {
+            width: 80%;
+            background: #e1ebef;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            word-wrap: break-word; /* Biar teks panjang nggak keluar */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1px;
+            border: 1.5px solid #6E85B7;
+            border-radius: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            color: #3b4e75;
+            font-size: 0.9em;
+            border: 1.5px solid #6E85B7;
+        }
+        .th, td, a {
+            text-decoration: none;
+            color: #6E85B7;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+        .story-container {
+            width: 80%;
+            max-width: 800px;
+            background: #C4D7E0;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .story-paragraph p {
+            font-size: 1.1em;
+            color: #3b4e75;
+            text-align: center;
+        }
+        .footer {
+            background-color: #F8F9D7;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            color: #6E85B7;
+            font-size: 0.6em;
+            /* em = ukuran yang bergantung pada induk. kl 0.8 means 80% dari ukuran induk. sp induk? body (default: 16px). (0.8 x 16px = 12.8px) */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">Pengalaman Kuliah</div>
+        <ul class="nav-links">
+            <li><a href="halaman-1.html">Profil Pribadi</a></li>
+            <li><a href="halaman-3.html">Blog</a></li>
+            <!-- <li><a href="#">xxx</a></li> -->
+        </ul>
+    </nav>
+
+    <div class="title">Perjalanan Kuliah</div>
+    <div class="container">
+        <section class="story-paragraph">
+            <p>Hingga saat ini, cerita yang masih seru untuk dibicarakan dengan teman-teman adalah cerita sewaktu ospek. Masa di mana masih asing dengan tempat maupun siapapun. Sebagai orang yang tidak memiliki kenalan saat baru sampai di Madura, saya menikmati waktu tenang ke manapun sendirian.</p>
+            <p>Semester satu terasa cepat, dengan segala penyesuaian dengan lingkungan baru, banyak sekali rintangan yang saya hadapi. Namun, berkat itu saya tidak memikirkan hal yang memberatkan saya sejak dari rumah.</p>
+            <p>Mata kuliah di semester satu yang menjadi favorit saya adalah <b>Statistik & Probabilitas</b>, bukan karena mudah, tapi karena merasa tertantang dan kebetulan Dosennya juga baik. Untuk pencapaian yang diraih ... tidak banyak, saya berhasil melewati semester 1 tanpa mengulang merupakan pencapaian yang besar bagi saya.</p>
+            <p>Saya belum pernah bekerja sebelumnya, tetapi saya pernah magang selama 6 bulan di Malang. Selama 6 bulan tersebut saya lebih banyak belajar dibandingkan bekerja, jadi saya tidak menganggapnya sebagai kerja. Dari sana saya belajar cara beradaptasi di kehidupan sebagai anak kost.</p>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        &copy; 2025 - 240441100006. All rights reserved.
+    </footer>
+</body>
+</html>
