@@ -1,0 +1,176 @@
+ <!-- TUGAS PRAKTIKUM HTML ARZHA HALAMAN 1  -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARZHA WIJAYA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            text-align: center; /* Menempatkan subjudul di tengah */
+            margin-top: 30px;
+            color: #2d3e50;
+            font-size: 24px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .nav {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .nav a {
+            margin-right: 30px;
+            text-decoration: none;
+            color: #2d3e50;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        .nav a:hover {
+            border-bottom: 2px solid #2d3e50;
+        }
+        footer {
+            text-align: center;
+            background-color: #2d3e50;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>  <!-- nahh ini dgunakan menyisipkann css ke html nyaa agar tampoilan lebih estetik  -->
+</head>
+<body>
+
+    <header>
+        <h1>ARZHA WIJAYA</h1>
+    </header>
+
+    <h2>Informasi Pribadi</h2>
+    <table>
+        <tr>  <!-- dengan tr yaitu pengelompokkan 1 tabel tr th td urutannyaa  -->
+            <th>Nama</th>
+            <td>Arzha Dwi Ananda Anhar Wijaya</td> 
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td>Taman, Sidoarjo</td> 
+        </tr>
+        <tr>
+            <th>Tempat, Tanggal Lahir</th>
+            <td>Bandung, 03 Agustus 2007</td> 
+        </tr>
+        <tr>
+            <th>Nomor HP</th>
+            <td>0878-4393-5052</td> 
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>arzhastudent@gmail.com</td> 
+        </tr>
+    </table>
+
+    <h2>Riwayat Pendidikan</h2>
+    <ul>
+        <li>SD: SDN KULON - 2012-2018</li>
+        <li>SMP: SMPN 2 SUKO - 2018-2021</li>
+        <li>SMA: SMAS ISLAM  - 2021-2024</li>
+        <li>PERGURUAN TINGGI : UNIVERSITAS TRUNOJOYO MADURA | SISTEM INFORMASI - 2024-NOW</li>
+    </ul>
+
+    <h2>Hobi dan Minat</h2>
+    <ul>
+        <li>1. FOTOGRAFI</li>
+        <li>2. SOCIAL MEDIA CONTENT </li>
+        <li>3. EDITING </li>
+        <li>4. MARKETING </li>
+    </ul>
+
+    <h2>Pengalaman</h2>
+    <p>Berikut pengalaman saya : 
+        <br> - > Mengikuti lomba design modul fakultas kedokteran hewan universitas brawijaya tahun 2024
+        <br> - > Menjadi delegasi AIESEC tahun 2024
+        <br> - > Menjadi member youth rangers id
+        <br> - > Menjadi coach AIESEC 2025
+    </p>
+
+    <h2>Kesan Pertama Masuk Universitas, Cita-cita, dan Harapan Masa Depan</h2>
+    <p>Pertama masuk UTM saya merasa bahwa akan ada pengalaman baru saat saya belajar di Sistem Informasi, saya merasa bahwa potensi dan skill saya bisa diasah disini. Cita saya yaitu bekerja di BUMN yang dimana akan saya buat modal usaha sampingan bidang FNB. Harapan saya yaitu bisa berjalan dengan lancar cita saya.</p>
+
+    <h2>Form Skill Keterampilan</h2>
+    <form action="#"> <!-- agar tdk ngirim ke server saya, jadi pakai # -->
+        <div class="form-group">
+            <label for="bahasaPemrograman">Bahasa Pemrograman yang Dikuasai:</label>
+            <input type="text" id="bahasaPemrograman" name="bahasaPemrograman" placeholder="Contoh: HTML ">
+        </div>
+        <div class="form-group">
+            <label for="bahasaAsing">Bahasa Asing :</label>
+            <input type="text" id="bahasaAsing" name="bahasaAsing" placeholder="Contoh: Inggris">
+        </div>
+        <div class="form-group">
+            <label>Perangkat Lunak yang Sering Digunakan:</label><br>
+            <input type="checkbox" id="software1" name="software" value="MS Word">
+            <label for="software1">MS Word</label><br>
+            <input type="checkbox" id="software2" name="software" value="Visual Studio Code">
+            <label for="software2">Visual Studio Code</label><br>
+            <input type="checkbox" id="software3" name="software" value="Canva">
+            <label for="software3">Canva</label><br>
+        </div>
+        <div class="form-group">
+            <label for="sistemOperasi">Sistem Operasi yang Sering Digunakan:</label><br>
+            <input type="radio" id="windows" name="sistemOperasi" value="Windows">
+            <label for="windows">Windows</label><br>
+            <input type="radio" id="mac" name="sistemOperasi" value="MacOS">
+            <label for="mac">MacOS</label><br>
+            <input type="radio" id="linux" name="sistemOperasi" value="iOS">
+            <label for="linux">iOS</label><br>
+            <input type="radio" id="linux" name="sistemOperasi" value="Andro">
+            <label for="linux">Andro</label><br>
+        </div>
+        <input type="submit" value="Kirimkan" style="background-color: #2d3e50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+    </form>
+
+    <div class="nav"> <!-- agar berpindah navigasi webnyaa # -->
+        <a href="PENGALAMANKULIAH.HTML">Pengalaman Kuliah</a>
+        <a href="https://github.com/Arzhacode">Blog Saya</a>
+    </div>
+
+    <footer>
+        <p>&copy; ARZHA WIJAYA , COPYRIGHT 2025 </p>
+    </footer>
+</body>
+</html>
