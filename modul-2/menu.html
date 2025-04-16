@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Enhypen Cafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fff9f3;
+    }
+
+    header, footer {
+      background: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .menu-item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhypen Cafe</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="pesan.html">Pesan</a>
+    </nav>
+  </header>
+
+  <div class="menu">
+    <div class="menu-item">
+      <img src="yogurt.jpg" alt="Blueberry Yogurt">
+      <h3>Blueberry Yogurt</h3>
+      <p>Rp75.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="vanilla.jpg" alt="Vanilla Oreo">
+      <h3>Vanilla Oreo</h3>
+      <p>Rp68.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="dimsum.jpg" alt="Dimsum Mentai">
+      <h3>Dimsum Mentai</h3>
+      <p>Rp95.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="nasgor.jpg" alt="Nasi Goreng Jawa">
+      <h3>Nasi Goreng Jawa</h3>
+      <p>Rp152.000</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Enhypen Cafe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
