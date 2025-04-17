@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran Cihuy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #202746, #37474F, #0d4884);
+    }
+
+    nav {
+      background-color: #9f9e9e45;
+      padding: 15px;
+      justify-content: center;
+      display: flex;
+      gap: 50px;
+      border-radius: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      font-size: 20px;
+      padding: 10px;
+      color: rgb(207, 205, 205);
+    }
+
+    nav a:hover {
+      background-color: #0000001f;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    nav a:active {
+      color: white;
+    }
+
+    main {
+      margin-top: 70px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .home {
+      color: #dbe9ff;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 98vh;
+      padding: 0 250px;
+      border: 1.5px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0px 20px 0 rgba(132, 135, 170, 0.3);
+    }
+
+    .home-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      font-size: larger;
+    }
+
+    .home-text h3, .home-text h2, .home-text p {
+      color: #e3eafc;
+      text-shadow: 0 2px 6px rgba(10, 30, 70, 0.7);
+    }
+
+    .home-logo {
+      width: 250px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .menu {
+      background: rgba(255,255,255,0.13);
+      color: #1e3050;
+      border-radius: 18px;
+      border: 1.5px solid rgba(30,48,80,0.18);
+      box-shadow: 0 8px 32px 0 rgba(30,48,80,0.12);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20%;
+      padding: 20px;
+    }
+
+    .menu h1, .menu h2 {
+      color: #dcdadaf8;
+      text-shadow: 1px 1px 4px rgba(26, 34, 43, 0.664);
+    }
+
+    .box {
+      border-radius: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      margin-bottom: 20px;
+      padding: 50px;
+    }
+
+    .item {
+      background: rgba(255, 255, 255, 0.85);
+      color: #000000;
+      border-radius: 12px;
+      border: 1.5px solid rgba(30,48,80,0.10);
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      line-height: 25px;
+      width: 200px;
+        transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                    box-shadow 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .item:hover {
+      transform: scale(1.08);
+      box-shadow: 0px 6px 15px rgba(1, 21, 41, 0.468);
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    .form {
+      background: rgba(30, 48, 80, 0.72);
+      color: #e3eafc;
+      border-radius: 14px;
+      border: 1.5px solid rgba(255,255,255,0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 5%;
+      padding: 20px;
+      width: 40%;
+    }
+
+    .form h1 {
+      color: #e3eafc;
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
+    .form label {
+      color: #e3eafc;
+    }
+
+    .form select, .form input {
+      box-sizing: border-box;
+      padding: 8px;
+      margin: 5px 0 20px;
+      border-radius: 5px;
+      border: 1px solid #b0c4de;
+      background: rgba(255,255,255,0.85);
+      color: #1e3050;
+    }
+
+    .form select {width: 70%;}
+    .form input {width: 25%;}
+    .form .input-keterangan {width: 100%;}
+
+    .form button {
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      width: 40%;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-top: 15px;
+      box-shadow: 0 2px 8px 0 rgba(30,144,255,0.10);
+      transition: background 0.3s;
+    }
+
+    .form button:hover {
+      background-color: #14599f;
+    }
+
+    .about {
+      background: rgba(30, 48, 80, 0.578);
+      color: #e3eafc;
+      margin-top: 15%;
+      padding: 80px;
+      text-align: center;
+      border-radius: 7px;
+      border: 1.5px solid rgba(255,255,255,0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    }
+
+    .about h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contact {
+      background: rgba(255, 255, 255, 0.218);
+      color: #212325;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 30vh;
+      margin: 50px 0 20px;
+      line-height: 23px;
+      border-radius: 7px;
+      border: 1.5px solid rgba(30,48,80,0.18);
+      box-shadow: 0 4px 16px 0 rgba(30,144,255,0.10);
+    }
+
+    footer {
+      background-color: #2d2d2d;
+      color: #e3eafc;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <div id="home" class="home" >
+      <img src="img/logo.png" class="home-logo">
+      <div class="home-text">
+        <h3>Hai! Selamat Datang...</h3>
+        <h2>Restoran Cihuy Khas Jawa</h2>
+        <p>Restoran Sederhana yang menyediakan berbagai makanan lokal khas Jawa, siap untuk mengisi perut kosong anda dengan makanan yang lejat dan bergizi.</p>
+      </div>
+    </div>
+    <div id="menu" class="menu">
+        <h1>MENU</h1>
+        <h2>MAKANAN</h2>
+        <div class="box makanan">
+          <div class="item rawon">
+            <img src="img/rawon.jpg" width="200px">
+            <h4>Rawon</h4>
+            <p>Rp. 13.000</p>
+          </div>
+          <div class="item nasipecel">
+            <img src="img/nasipecel.jpg" width="200px">
+            <h4>Nasi pecel</h4>
+            <p>Rp. 14.0000</p>
+          </div>
+          <div class="item rujakcingur">
+            <img src="img/rujakcingur.jpg" width="200px">
+            <h4>Rujak cingur</h4>
+            <p>Rp. 13.000</p>
+          </div>
+          <div class="item tahutek">
+            <img src="img/tahutek.jpg" width="200px">
+            <h4>Tahu tek</h4>
+            <p>Rp. 12.000</p>
+          </div>
+          <div class="item bakmi">
+            <img src="img/bakmi.jpg" width="200px">
+            <h4>Bakmi</h4>
+            <p>Rp. 15.000</p>
+          </div>
+          <div class=" item lontongkikil">
+            <img src="img/lontongkikil.jpg" width="200px">
+            <h4>Lontong kikil</h4>
+            <p>Rp. 14.000</p>
+          </div>
+        </div>
+        <h1>MENU</h1>
+        <h2>MINUMAN</h2>
+        <div class="box minuman">
+            <div class="item wedangjahe">
+                <img src="img/wedangjahe.jpg" width="200px">
+                <h4>Wedang jahe</h4>
+                <p>Rp. 8.000</p>
+            </div>
+            <div class="item esdoger">
+                <img src="img/esdoger.jpg" width="200px">
+                <h4>Es doger</h4>
+                <p>Rp. 8.000</p>
+            </div>
+            <div class="item eskelapa">
+                <img src="img/eskelapa.jpg" width="200px">
+                <h4>Es kelapa muda</h4>
+                <p>Rp. 10.000</p>
+            </div>
+            <div class="item tehtarik">
+                <img src="img/tehtarik.jpg" width="200px">
+                <h4>Teh tarik</h4>
+                <p>Rp. 7.000</p>
+            </div>
+            <div class="item essinom">
+                <img src="img/essinom.jpg" width="200px">
+                <h4>Es sinom</h4>
+                <p>Rp. 7.000</p>
+            </div>
+            <div class="item esdawet">
+                <img src="img/esdawet.jpg" width="200px">
+                <h4>Es dawet</h4>
+                <p>Rp. 8.000</p>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+      <h1>PESAN DISINI</h1>
+        <form action="#">
+          <label for="nama">Nama</label><br>
+          <input type="text" class="input-keterangan"><br>
+          <label for="alamat">Alamat</label><br>
+          <input type="text" class="input-keterangan"><br>
+          <label for="nomer">Nomer HP</label><br>
+          <input type="text" class="input-keterangan"><br>
+
+          <label for="food1">Makanan</label><br>
+          <select id="food1" name="food[]">
+            <option value="Rawon">Rawon</option>
+            <option value="Nasi Pecel">Nasi Pecel</option>
+            <option value="Rujak Cingur">Rujak Cingur</option>
+            <option value="Tahu Tek">Tahu Tek</option>
+            <option value="Bakmi">Bakmi</option>
+            <option value="Lontong Kikil">Lontong Kikil</option>
+          </select>
+          <input type="number" name="jumlahMakanan[]" min="1" value="1" placeholder="Jumlah"><br>
+
+          <label for="food2">Makanan tambahan</label><br>
+          <select id="food2" name="food[]">
+            <option value="Rawon">Rawon</option>
+            <option value="Nasi Pecel">Nasi Pecel</option>
+            <option value="Rujak Cingur">Rujak Cingur</option>
+            <option value="Tahu Tek">Tahu Tek</option>
+            <option value="Bakmi">Bakmi</option>
+            <option value="Lontong Kikil">Lontong Kikil</option>
+          </select>
+          <input type="number" name="jumlahMakanan[]" min="1" value="1" placeholder="Jumlah"><br>
+
+          <label for="drink1">Minuman</label><br>
+          <select id="drink1" name="drink[]">
+            <option value="Wedang Jahe">Wedang Jahe</option>
+            <option value="Es Doger">Es Doger</option>
+            <option value="Es Kelapa Muda">Es Kelapa Muda</option>
+            <option value="Es Dawet">Es Dawet</option>
+            <option value="Es Sinom">Es Sinom</option>
+            <option value="Es Cendol">Es Cendol</option>
+          </select>
+          <input type="number" name="jumlahMinuman[]" min="1" value="1" placeholder="Jumlah"><br>
+
+          <label for="drink2">Minuman tambahan</label><br>
+          <select id="drink2" name="drink[]">
+            <option value="Wedang Jahe">Wedang Jahe</option>
+            <option value="Es Doger">Es Doger</option>
+            <option value="Es Kelapa Muda">Es Kelapa Muda</option>
+            <option value="Es Dawet">Es Dawet</option>
+            <option value="Es Sinom">Es Sinom</option>
+            <option value="Es Cendol">Es Cendol</option>
+          </select>
+          <input type="number" name="jumlahMinuman[]" min="1" value="1" placeholder="Jumlah"><br>
+          <button type="submit">Kirim Pesanan</button>
+        </form>
+    </div>
+    <div id="about" class="about">
+      <h3>ABOUT</h3>
+      <p>Restoran Cihuy Khas Jawa, yang didirikan pada tahun 1920 oleh Cipung Margardi dan mulai melejit popularitasnya pada tahun 1973, telah lama dikenal bukan hanya sebagai tempat makan yang menyajikan hidangan enak dan terjangkau, melainkan juga sebagai pusat kuliner yang menghadirkan cita rasa lezat serta gizi tinggi melalui resep turun-temurun yang kental dengan nuansa tradisi Jawa, kisah yang beredar di kalangan masyarakat bahkan menyebutkan bahwa kelezatan santapan di sini diyakini mampu membuat seseorang bertahan tanpa membutuhkan makanan selama tujuh hari, sebuah legenda yang menambah pesona mistis dan keautentikan yang membuat setiap suapan di Restoran Cihuy Khas Jawa selalu terasa istimewa dan terus menggoda para penikmat kuliner dari generasi ke generasi.</p>
+    </div>
+    <div id="contact" class="contact">
+      <p><i class="fa-solid fa-location-dot"></i> Jl. Hujan rintik angin bergelombang No. A22</p>
+      <p><i class="fa-solid fa-store"></i> Buka Setiap Hari 24 Jam</p>
+      <p><i class="fa-regular fa-envelope"></i> info@cihuyresto.com / contact@cihuyresto.com</p>
+      <p><i class="fa-solid fa-phone"></i> +62 871-098-992</p>
+      <p><i class="fab fa-instagram"></i> @cihuy.resto</p>
+      <p><i class="fab fa-facebook"></i> @cihuy.resto</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Restoran Cihuy Khas Jawa. All right reserved.</p>
+  </footer>
+</body>
+</html>
