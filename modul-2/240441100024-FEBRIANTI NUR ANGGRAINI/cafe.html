@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pararaton Kafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #cad5ff;
+      color: #362525;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center; 
+    }
+
+    nav {
+      background-color: #435a72;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #1abc9c;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.03);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0;
+    }
+
+    .menu-item p {
+      padding: 0 10px 10px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    button.pesan {
+      background-color: #1abc9c;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    a.pesan {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+a.pesan:hover {
+  background-color: #16a085;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PARARATON KAFE</h1>
+    <p>Tempat nongkrong terbaik untukmu</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="pesan.html">Pesan</a>
+
+  </nav>
+
+  <div class="hero">
+    Selamat Datang di Pararaton Kafe
+  </div>
+
+  <section id="menu" class="section">
+    <h2>Menu Kami</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="burger.jpg" alt="burger">
+        <h3>Beef Burger</h3>
+        <p>Roti lembut hangat dengan isian daging asap juicy, keju leleh creamy, dan saus barbeque smoky yang menggoda.</p>
+        <p><b>Harga:</b> Rp 28.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="chicken katsu.jpg" alt="chicken">
+        <h3>Chicken katsu</h3>
+        <p>Irisan ayam fillet empuk dibalut tepung panko.Disajikan dengan nasi putih hangat,dan siraman saus katsu manis-gurih khas Jepang.</p>
+        <p><b>Harga:</b> Rp 35.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+    
+      <div class="menu-item">
+        <img src="mix platerr.jpg" alt="MIX platter">
+        <h3>MIX platter</h3>
+        <p>Piring camilan komplit untuk menemani waktu santaimu. Disajikan dalam satu porsi besar yang cocok dinikmati bersama sama</p>
+        <p><b>Harga:</b> Rp 45.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="churros.jpeg" alt="churros coklat">
+        <h3>Churros Coklat</h3>
+        <p>Camilan goreng ala Spanyol yang renyah di luar dan lembut di dalam, disajikan dengan saus coklat hangat sebagai pendamping celupan.</p>
+        <p><b>Harga:</b> Rp 15.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="coffee latte.webp" alt="latte">
+        <h3>coffe latte</h3>
+        <p>Perpaduan espresso bold dengan susu steamed yang lembut, menghasilkan rasa kopi yang halus dengan sentuhan creamy yang memanjakan lidah.</p>
+        <p><b>Harga:</b> Rp 20.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="minuman telang.jpg" alt="minuman bunga telang">
+        <h3>Minuman Bunga Telang</h3>
+        <p>Minuman menyegarkan berwarna biru alami yang berasal dari kelopak bunga telang.Disajikan dingin dengan tambahan madu dan perasan lemon.</p>
+        <p><b>Harga:</b> Rp 15.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="matcha latte.jpg" alt="matcha latte">
+        <h3>Matcha Latte</h3>
+        <p>Minuman hijau khas Jepang dengan rasa teh matcha yang kaya dan lembut, dipadukan dengan susu segar, disajikan hangat maupun dingin.</p>
+        <p><b>Harga:</b> Rp 20.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="wedang uwuh.webp" alt="wedang uwuh">
+        <h3>wedang uwuh</h3>
+        <p>Minuman tradisional khas Jawa berwarna merah alami, terbuat dari campuran berbagai rempah-rempah seperti jahe, cengkeh, kayu secang, daun pala, dan serai.</p>
+        <p><b>Harga:</b> Rp 15.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="nasi goreng.jpg" alt="nasi goreng">
+        <h3>Nasi Goreng</h3>
+        <p>Nasi yang digoreng dengan bumbu khas Pararaton, dilengkapi dengan potongan ayam, telur orak-arik, sayuran segar, dan taburan bawang goreng.Disajikan dengan acar untuk sensasi rasa yang lengkap.</p>
+        <p><b>Harga:</b> Rp 30.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="red velved.jpg" alt="red velved">
+        <h3>Red Velvet</h3>
+        <p>Minuman creamy dengan cita rasa khas red velvet yang manis dan lembut, berpadu dengan susu segar hangat dan sedikit aroma vanilla.Dihidangkan hangat maupun dingin.</p>
+        <p><b>Harga:</b> Rp 20.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+      <div class="menu-item">
+        <img src="spageti.jpg" alt="spageti">
+        <h3>Spageti</h3>
+        <p>Pasta Italia klasik yang dimasak al dente dan disiram saus daging sapi cincang dengan bumbu tomat yang kaya rasa.Dihidangkan dengan taburan keju parmesan dan peterseli segar di atasnya.</p>
+        <p><b>Harga:</b> Rp 35.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+  
+      <div class="menu-item">
+        <img src="gellato.jpg" alt="gellato">
+        <h3>Gellato</h3>
+        <p>Es krim ala Italia dengan tekstur halus dan rasa yang lebih padat. Tersedia dalam berbagai varian rasa cokelat Belgia, stroberi segar, dan vanilla Madagascar.Nikmati sensasi dingin yang memanjakan lidah.</p>
+        <p><b>Harga:</b> Rp 17.000</p>
+        <button class="pesan">Pesan</button>
+      </div>
+
+     <!-- Modal Form Pemesanan -->
+<div id="formModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:10px; width:300px; position:relative;">
+    <h3>Form Pemesanan</h3>
+    <label>Nama:</label><br>
+    <input type="text" id="nama" style="width:100%; margin-bottom:10px;"><br>
+    <label>Jumlah:</label><br>
+    <input type="number" id="jumlah" style="width:100%; margin-bottom:10px;"><br>
+    <button onclick="submitPesanan()">Kirim</button>
+    <button onclick="closeForm()" style="margin-left:10px;">Batal</button>
+  </div>
+</div>
+
+<script>  
+    // tombol "Pesan"
+    const tombolPesan = document.querySelectorAll('.pesan');
+    tombolPesan.forEach(btn => { 
+    btn.addEventListener('click', function() {
+    const namaMenu = this.parentElement.querySelector('h3').textContent;
+    document.getElementById('menu').value = namaMenu;
+    document.getElementById('formModal').style.display = 'flex'; 
+    });
+    });
+
+    function closeForm() {
+    document.getElementById('formModal').style.display = 'none';
+    }
+
+    function submitPesanan() {
+    const nama = document.getElementById('nama').value;
+    const menu = document.getElementById('menu').value;
+    const jumlah = document.getElementById('jumlah').value;
+
+    alert(`Terima kasih, ${nama}! Pesanan ${jumlah} ${menu} sedang diproses.`);
+    closeForm();
+    }
+    </script>
+    </div>
+  </section>
+</body>
+</html>
