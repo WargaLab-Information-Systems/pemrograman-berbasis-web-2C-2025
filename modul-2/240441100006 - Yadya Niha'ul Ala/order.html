@@ -1,0 +1,57 @@
+<!-- HALAMAN RESERVASI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reservation - Aether Royale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="name">Aether Royale</div>
+        <div class="menu">
+            <a href="index.html#location">Location</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+
+    <section class="reservation-section" id="reservation">
+        <div class="container">
+            <h2>Reservation</h2>
+            <div class="underline"></div>
+            <form class="reservation-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+        
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                    <option value="">Select Time</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                </select>
+        
+                <label for="guests">Guests</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="Number of guests" required>
+        
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>
+            &copy; 2025 | 240441100006 | Gracefully designed by Aether Royale
+        </p>
+    </footer>
+</body>
+</html>
