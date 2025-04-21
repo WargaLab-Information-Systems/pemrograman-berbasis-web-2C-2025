@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KONTAK</title>
+    <link rel="stylesheet" href="scsc.css">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        header {
+            background: #2a2a2a;
+        }
+
+        body {
+            background: linear-gradient(to right, #ff0000, #ffffff);
+        }
+
+        .judul {
+            text-align: center;
+            color: #181818;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 40px 0 20px;
+            text-shadow: 2px 0px 5px rgb(92, 92, 92);
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .form-kiri {
+            background-color: #e0f2f1;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form-kiri input,
+        .form-kiri textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: #89bfc1;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .form-kiri button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        .form-kiri button:hover {
+            background-color: #cc0000;
+        }
+
+        .kontak-kanan {
+            background-color: #2cb4e5;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            font-size: 16px;
+        }
+
+        .sosial-media a {
+            color: rgb(255, 19, 19);
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+
+        .sosial-media a:hover {
+            color: #705a5a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo"><a href="home.html">SM</a></div>
+    <nav>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="pesan.html">Pesan</a></li>
+        <li><a href="kontak.html" class="aktif">Kontak</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="judul">HUBUNGI KAMI</h1>
+
+  <div class="container">
+    <div class="form-kiri">
+      <input type="text" placeholder="Tulis nama mu di sini">
+      <input type="email" placeholder="Tulis email mu di sini">
+      <textarea placeholder="Tulis apapun saran dan masukan untuk kami"></textarea>
+      <button type="button">kirim</button>
+    </div>
+
+    <div class="kontak-kanan">
+      <p>Email : ayamjagi69@gmail.com <br><br>Alamat : Jl. Telang Kab. Bangkalan</p>
+      <p style="color: #2a2a2a;">Sosial Media :</p>
+      <div class="sosial-media">
+        <a href="https://wa.me/085232331780" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/moh.sholl" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@rsxhqr" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>      
+    </div>
+  </div>    
+</body>
+</html>
