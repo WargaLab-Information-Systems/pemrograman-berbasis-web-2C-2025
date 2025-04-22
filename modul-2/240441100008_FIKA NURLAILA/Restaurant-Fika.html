@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant fika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Imperial+Script&family=Niconne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" >
+    
+</head>
+<style>
+
+    #slade1{
+        background-color: #ffffff;
+        height: 500px;
+    }
+    .navbar{
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+        background-color: #478a4b;
+        height: 50px;
+        width: 1200px;
+        margin-top: 20px;
+        border-radius: 100px;
+        left: 40px;
+    }
+    .navbar h1{
+        font-family: "Tangerine", cursive;
+        font-weight: 1000;
+        font-style: normal;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: darkred;
+        font-weight: 900;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .gariskiri{
+        position: absolute;
+        background-color: #478a4b;
+        height: 450px;
+        width: 200px;
+        top: 85px;
+        left: 150px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        color: #ffffff;
+        text-align: center;
+        box-shadow: 0px 5px 5px #000000;
+    }
+    .setengah {
+        position: relative;
+        background-color: #ffffff;
+        height: 225px;
+        width: 100px;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        bottom: 100px;
+        left: 50px;
+    }
+    .foto img{
+        margin-top: 10px;
+        margin-left: 60px;
+        background-color: darkred;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #000000;
+    }
+    .kata {
+        position: absolute;
+        top: 110px;
+        left: 550px;
+        width: 530px;
+        text-align: center;
+    }
+    .kata h1{
+        font-family: "Chicle", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 90px;
+        color: #478a4b;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-shadow:-5px 0 0 #000000;
+    }
+    .kata h2 {
+        color: darkred;
+        font-size: 40px;
+    }
+    .order {
+        text-decoration: none;
+        margin-top: 30px;
+        background-color: #ffffff;
+        width: 200px;
+        height: 40px;
+        align-content: center;
+        border-radius: 50px;
+        box-shadow: 0 0 15px #478a4b;
+        margin-left: 160px;
+    }
+    .order:hover{
+        box-shadow:0 0 15px #000000;
+    }
+    .order a {
+        text-decoration: none;
+        color: darkred;
+    }
+
+    #slade2 {
+        background-color: #478a4b;
+        height: 500px;
+    }
+    .ling{
+        background-color: #ffffff;
+        width: 200px;
+        height: 500px;
+        margin-left: 800px;
+        box-shadow: 0 15px 15px #000000;
+    }
+    .karan{
+        position: relative;
+        background-color: #478a4b;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-left: 750px;
+        bottom: 390px;
+        box-shadow: 0 0 15px #ffffff;
+    }
+    .karan img{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        margin-left: 20px;
+        bottom: 390px;
+    }
+    .AR {
+        position: relative;
+        color: #000000;
+        width: 600px;
+        left: 90px;
+        bottom: 680px;
+        color: darkred;
+        text-align: right;
+    }
+    .AR p {
+        text-align: justify;
+        color: #ffffff;
+    }
+    .AR h3{
+        text-align: right;
+    } 
+
+    #slade3 {
+        height: 620px;
+        background-color: #ffffff;
+    }
+    .kotakfood,.kotakdrink {
+        position: absolute;
+        background-color: #478a4b;
+        width: 1200px;
+        height: 280px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        right: 30px;
+        top: 1025px;
+        justify-items: center;
+        box-shadow: 0 0 15px #000000;
+
+    }
+    .kotakdrink {
+        top: 1330px;
+    }
+    .food, .drink {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 200px;
+        background-color: #ffffff;
+        height: 50px;
+        align-content: center;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .foodi,.drinki {
+        margin-left: -1025px;
+        display: flex;
+        width: 100px;
+        justify-content: space-around;
+    }
+    .food1, .food2, .food3, .food4, .food5, .food6, .food7,
+    .drink1,.drink2,.drink3,.drink4,.drink5,.drink6,.drink7 {
+        position: absolute;
+        width: 150px;
+        height: 210px;
+        color:darkred;
+        background-color: #ffffff;
+        border-radius: 25px;
+        justify-items: center;
+        align-content: center;
+    }
+    .food1:hover, .food2:hover, .food3:hover, .food4:hover, .food5:hover, .food6:hover, .food7:hover, 
+    .drink1:hover,.drink2:hover,.drink3:hover,.drink4:hover,.drink5:hover,.drink6:hover,.drink7:hover {
+        box-shadow: 0 0 15px #ffffff;
+    }
+    .food1 img, .food2 img, .food3 img, .food4 img, .food5 img, .food6 img, .food7 img,
+    .drink1 img,.drink2 img,.drink3 img,.drink4 img,.drink5 img,.drink6 img,.drink7 img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 4px solid darkorange;
+    }
+    .food1 h3, .food2 h3, .food3 h3, .food4 h3, .food5 h3, .food6 h3, .food7 h3,
+    .drink1 h3,.drink2 h3,.drink3 h3,.drink4 h3,.drink5 h3,.drink6 h3,.drink7 h3  {
+        text-align: center;
+        margin-top: -3px;
+        color: darkred;
+    }
+    .food1 p, .food2 p, .food3 p, .food4 p, .food5 p, .food6 p, .food7 p,
+    .drink1 p, .drink2 p, .drink3 p, .drink4 p, .drink5 p, .drink6 p, .drink7 p{
+        text-align: center;
+        margin-top: -15px;
+    }
+    .food1{
+        margin-left: 10px;
+    }
+    .food2 {
+        margin-left: 350px;
+    }
+    .food3 {
+        margin-left: 690px;
+    }
+    .food4 {
+        margin-left: 1030px;
+    }
+    .food5 {
+        margin-left: 1370px;
+    }
+    .food6 {
+        margin-left: 1710px;
+    }
+    .food7 {
+        margin-left: 2045px;
+    }
+    .harga h4{
+        background-color: #478a4b;
+        position: absolute;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 25px;
+        left: -10px;
+        top: 0;
+        box-shadow: 0 0 10px #000000;
+        align-content: center;
+    }
+    .drink1{
+        margin-left: 10px;
+    }
+    .drink2 {
+        margin-left: 350px;
+    }
+    .drink3 {
+        margin-left: 690px;
+    }
+    .drink4 {
+        margin-left: 1030px;
+    }
+    .drink5 {
+        margin-left: 1370px;
+    }
+    .drink6 {
+        margin-left: 1710px;
+    }
+    .drink7 {
+        margin-left: 2045px;
+    }
+
+    #slade4{
+        background-color: #478a4b;
+        height: 500px;
+        align-content: center;
+    }
+    .tengah {
+        height: 90px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px  #000000;
+    }
+    .chef1, .chef3 {
+        position:absolute;
+        width: 200px;
+        height: 350px;
+        background-color: #ffffff;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        text-align: center;
+        box-shadow: 0 0 20px #ffffff;
+    }
+    .chef1 {
+        left: 250px;
+        top: 1710px;
+    }
+    .chef1 img {
+        position: relative;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 170px;
+        top: 40px;
+    }
+    .chef1 h1 {
+        margin-top: 70px;
+    }
+    .chef2 {
+        position:absolute;
+        width: 230px;
+        height: 400px;
+        background-color: #ffffff;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        text-align: center;
+        left: 510px;
+        top: 1679px;
+        box-shadow: 0 0 20px #ffffff;
+    }
+    .chef2 img {
+        position: relative;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 170px;
+        top: 28px;
+    }
+    .chef2 h1 {
+        margin-top: 40px;
+    }
+    .chef3 {
+        left: 800px;
+        top: 1710px;
+    }
+    .chef3 img {
+        position: relative;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        width: 170px;
+        top: 20px;
+    }
+    .chef3 h1 {
+        margin-top: 50px;
+    }
+
+    .fr img {
+        margin-top: 7px;
+        width: 1248.5px;
+        height: 550px;
+    }
+    .lope {
+        position: absolute;
+        background-color: #ffffff;
+        width: 1150px;
+        height: 450px;
+        top: 2180px;
+        left: 55px;
+        opacity: 0.8;
+        border-radius: 50px;
+        box-shadow: 0 0 15px #000000;
+    }
+    .ig {
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        top: 2205px;
+        left: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .ig img{
+        width: 150px;
+        height: 200px;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+    }
+    .info {
+        margin-left: 25px;
+    }
+    .info h2 {
+        color: #478a4b;
+        text-align: right;
+    }
+    .info h4 {
+        color: darkred;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .info h1 {
+        color: #478a4b;
+        font-size: 60px;
+        margin-top: -30px;
+    }
+    .info h3 {
+        text-align: center;
+    }
+    .kontak {
+        color: #478a4b;
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        top: 2205px;
+        left: 680px; 
+        align-content: center;
+        text-align: left;
+    }
+    .hp, .em, .ins, .tk {
+        color: darkred;
+        margin-left: 20px;
+        font-size: 25px;
+        border-radius: 50px;
+    }
+    .hp a, .em a, .ins a, .tk a{
+        color: darkred;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-bottom: 5px;
+    }
+    .hp i, .em i, .ins i, .tk i{
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #slade6{
+        background-color: #478a4b;
+        height: 500px;
+        margin-top: 5px;
+        width: auto;
+        color: #ffffff;
+        text-align: center;
+        align-content: center;
+    }
+    #slade6 h1{
+        margin-top: 20px;
+        font-weight: 900;
+        margin-left: 20px;
+    }
+    #slade6 input {
+        border-radius: 25px;
+        height: 40px;
+        width: 350px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    dd{
+        margin-bottom: 20px;
+    }
+    .transaksi{
+        border-radius: 25px;
+        height: 40px;
+        width: 350px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="slade1">
+        <div class="navbar">
+            <p><a href="Restaurant-Fika.html#slade1">Home</a><a href="Restaurant-Fika.html#slade2">About</a><a href="Restaurant-Fika.html#slade4">About Chef</a></p>
+            <h1>Ika Restaurant</h1>
+            <p><a href="Restaurant-Fika.html#slade3">Menu</a><a href="Restaurant-Fika.html#slade5">InfoGrafic</a><a href="Restaurant-Fika.html#slade5">Contact Us</a></p>
+        </div>
+        <div class="gariskiri">
+            <div class="foto">
+                <img src="https://i.pinimg.com/736x/b0/74/9a/b0749aa1ad3c8f8c991a816fd15e3ea7.jpg">
+            </div>
+            <div class="setengah"></div>
+        </div>
+        <div class="kata">
+            <h1>WE RESTAURANT</h1>
+            <hr style="height: 10px; background-color: #478a4b; border-radius: 50px; width: 200px;">
+            <h2>We Make A Delicious & Healty Food and Drink For You </h2>
+            <div class="order"><a href="Restaurant-Fika.html#slade6">Order Now</a></div>
+        </div>
+    </div>
+
+    <div id="slade2">
+        <div class="ling"></div>
+        <div class="karan"><img src="https://i.pinimg.com/736x/e0/73/d1/e073d1277a1e94a327f84f99e446d12f.jpg"></div>
+        <div class="AR">
+            <h1>ABOUT RESTO</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. hkihfthrh jhgfjyr nvjyt kjhuf mvchtd hgfjy hgctr hfcr fc 
+            Illum aut architecto ipsa. Ex, facilis culpa voluptatum sint dignissimos, laudantium tempora esse molestias harum, 
+            excepturi sit inventore totam. Praesentium, explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Impedit explicabo, nobis sit maxime voluptas accusamus ullam! Sed officia nemo quas!
+            </P>
+            <h3>lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nemo sunt modi fugit dolor autem iste dicta 
+            deleniti nisi quis provident laudantium iure quibusdam, animi tempora eos eveniet ea illum consequuntur! Vel eum iste </h3>
+        </div>
+    </div>
+
+    <div id="slade3">
+        <div class="kotakfood">
+            <div class="food">Food Menu</div>
+                <div class="foodi">
+                    <div class="food1">
+                        <div class="harga"><h4>15K</h4></div>
+                        <img src="https://i.pinimg.com/736x/76/3b/d4/763bd4236e205c27fa0d34524cb71bf4.jpg">
+                        <h3>bakso Kayang</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="food2">
+                        <div class="harga"><h4>15K</h4></div>
+                        <img src="https://i.pinimg.com/736x/92/82/0e/92820eb1cafc7f8bca8550b8b20d5240.jpg">
+                        <h3>Mie Cikir</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="food3">
+                        <div class="harga"><h4>25K</h4></div>
+                        <img src="https://i.pinimg.com/736x/b6/27/bd/b627bd8aba84bb03c4600d8bb52c25a0.jpg">
+                        <h3>Kebab Flat</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="food4">
+                        <div class="harga"><h4>60K</h4></div>
+                        <img src="https://i.pinimg.com/736x/aa/df/9c/aadf9c7d7be3ad2d16ce75f747e69702.jpg">
+                        <h3>Burger Kings</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="food5">
+                        <div class="harga"><h4>40K</h4></div>
+                        <img src="https://i.pinimg.com/736x/43/2d/e5/432de54ec5bc1dc2fee349bf2797e44e.jpg">
+                        <h3>Ramyoenn</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="food6">
+                        <div class="harga"><h4>99K</h4></div>
+                        <img src="https://i.pinimg.com/736x/fd/24/5e/fd245e76e3cb79a18bbc5e586cbb7d30.jpg">
+                        <h3>Steack</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="food7">
+                        <div class="harga"><h4>50K</h4></div>
+                        <img src="https://i.pinimg.com/736x/50/33/7a/50337a274b4fcc96703efeda1e3d76f6.jpg">
+                        <h3>Tro Hott</h3>
+                        <p>Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+        </div>
+        <div class="kotakdrink">
+            <div class="drink">Drink Menu</div>
+            <div class="drinki">
+                <div class="drink1">
+                    <div class="harga"><h4>15K</h4></div>
+                    <img src="https://i.pinimg.com/736x/17/b7/33/17b73354238b3ed943bf39d033f591fd.jpg">
+                    <h3>Es Redvelved</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="drink2">
+                    <div class="harga"><h4>15K</h4></div>
+                    <img src="https://i.pinimg.com/736x/39/0a/de/390ade16ee46c9d7522cc2f69961d4fc.jpg">
+                    <h3>cappucino</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="drink3">
+                    <div class="harga"><h4>11K</h4></div>
+                    <img src="https://i.pinimg.com/736x/02/1b/eb/021beba5d078ad0b09ade4e31ff5274b.jpg">
+                    <h3>Es Teh</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="drink4">
+                    <div class="harga"><h4>13K</h4></div>
+                    <img src="https://i.pinimg.com/736x/a2/e2/a1/a2e2a153a2fef3ae3ee3f7c991cf6f18.jpg">
+                    <h3>Teh susu</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="drink5">
+                    <div class="harga"><h4>12K</h4></div>
+                    <img src="https://i.pinimg.com/736x/3c/be/f0/3cbef028196641e3a3974397574b6262.jpg">
+                    <h3>jekoo</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="drink6">
+                    <div class="harga"><h4>15K</h4></div>
+                    <img src="https://i.pinimg.com/736x/42/08/0e/42080e347cd31658638b0e27abf04406.jpg">
+                    <h3>matchaes</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="drink7">
+                    <div class="harga"><h4>14K</h4></div>
+                    <img src="https://i.pinimg.com/736x/16/bd/cc/16bdccde31853a65f47cbe8f22dc6215.jpg">
+                    <h3>Chewing Gum</h3>
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slade4">
+        <div class="chef1">
+            <img src="https://i.pinimg.com/736x/a0/86/ac/a086acaf9de95e52938c657ec26ab724.jpg">
+            <h1>Chef Arloji</h1>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Modi, neque.</p>
+        </div>
+        <div class="chef2">
+            <img src="https://i.pinimg.com/736x/d2/2d/1a/d22d1acca6eb7e0ba68929e0f4055542.jpg">
+            <h1> Chef Monica</h1>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Modi, neque.</p>
+        </div>
+        <div class="chef3">
+            <img src="https://i.pinimg.com/736x/55/0e/e4/550ee4db40568517f58b9783d6f5c5c9.jpg">
+            <h1>Chef renjun</h1>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Modi, neque.</p>
+        </div>
+        <div class="tengah"></div>
+    </div>
+
+    <div id="slade5">
+        <div class="fr">
+            <img src="https://i.pinimg.com/1200x/b2/74/95/b27495ff0f47489fe26cb41a54821467.jpg">
+        </div>
+        <div class="lope"></div>
+        <div class="ig">
+            <img src="https://i.pinimg.com/1200x/48/95/82/489582edef269e50e5df2008386ae917.jpg">
+            <div class="info">
+                <h2>InfoGrafic</h2>
+                <h4>Best Resto In</h4>
+                <h1>Siak City</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius consequuntur 
+                    fugiat veniam unde qui aut voluptate iure nam, assumenda numquam?</p>
+                <h3>1000+
+                    <br>Pengunjung
+                </h3>
+            </div>
+        </div>
+        <hr style="position: absolute; background-color: #478a4b;  width: 10px; height: 400px; top: 2198px; left: 625px; opacity: 0.8; border-radius: 50px;">
+        <div class="kontak">
+            <h2>Contact Us</h2>
+            <div class="hp"><i class='bx bxl-whatsapp'></i><a href="Restaurant-Fika.html">+62 057 4001 9497</a></div>
+            <div class="em"><i class='bx bxl-gmail'></i><a href="Restaurant-Fika.html">IkaRestaurantinfo@gmail.com</a></div>
+            <div class="ins"><i class='bx bxl-instagram-alt'></i><a href="Restaurant-Fika.html">IkaRes_media</a></div>
+            <div class="tk"><i class='bx bxl-tiktok'></i><a href="Restaurant-Fika.html">Restauran Ika</a></div>
+            <h1>Lokasi</h1>
+            <h3>jl.hinduk salak gg.Pandan, ds.bungaraya kec.bungaraya kab.siak </h3>
+        </div>
+    </div>
+    <div id="slade6">
+        <h1>Order Online</h1>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email address">
+            <input type="tel" placeholder="Phone No">
+            <select class="transaksi">
+                <option value="deal1">COD</option placeholder="transaksi">
+                <option value="deal2">Dana</option>
+                <option value="deal3">Bri</option>
+            </select>
+            <input type="text" placeholder="Order Detail">
+                <input type="submit" style="width: 100px; background-color: darkred; color: #ffffff;">
+        </form>
+    </div>
+</body>
+</html>
