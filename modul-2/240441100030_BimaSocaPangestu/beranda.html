@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beranda - Bebek Sinjay</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff4e6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a0522d;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      background-color: #d2691e;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fffaf0;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 8s linear infinite;
+    }
+
+    img {
+      width: 160px;
+      border-radius: 12px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      background-color: #a0522d;
+      padding: 20px;
+      color: white;
+      font-size: 16px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bebek Sinjay</h1>
+    <p>Bebek Goreng Legendaris dari Madura</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="menu.html">Menu</a>
+    <a href="tentang kami.html">Tentang Kami</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <!-- Konten -->
+  <main>
+    <h2 style="color: #cc5500; font-size: 28px; margin-bottom: 20px;">Selamat Datang di Bebek Sinjay!</h2>
+    <img src="logo.png" alt="Bebek Sinjay" class="animate-spin-slow">
+    <p style="margin-top: 20px; color: #555;">
+      Rasakan kelezatan bebek goreng khas Madura yang melegenda. Disajikan dengan sambal pencit segar dan nasi hangat, hanya di Bebek Sinjay!
+    </p>
+  </main>
+  <div style="display: flex; justify-content: space-between;"></div>
+  <a href="menu.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="Tentang Kami.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="kontak.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="beranda.html" style="text-decoration: none; color: white;">menu</a>
+</div>
+
+</body>
+</html>
