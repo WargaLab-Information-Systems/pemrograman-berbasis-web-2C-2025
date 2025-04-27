@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #e1ebef; */
+            background-color: #F8F9D7;
+            min-height: 100vh; /* vh = viewpoint height - tingginya 100% dari layar */
+        }
+        .navbar {
+            background-color: #6E85B7;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #F8F9D7;
+            text-shadow: #B2C8DF;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar .nav-links li {
+            display: inline;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #F8F9D7;
+            font-size: 1em;
+        }
+        .title {
+            text-align: center;
+            font-size: 1.9em;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            color: #6E85B7;
+        }
+        .container {
+            width: 80%;
+            background: #e1ebef;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            word-wrap: break-word; /* Biar teks panjang nggak keluar */
+        }
+        h2 {
+            color: #6E85B7;
+        }
+        .article-list {
+            background: #B2C8DF;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .article-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .article-list li {
+            margin: 8px 0;
+        }
+        .article-list a {
+            text-decoration: none;
+            color: #3b4e75;
+            font-weight: bold;
+        }
+        .article {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        blockquote {
+            font-style: italic;
+            background: #B2C8DF;
+            padding: 10px;
+            border-left: 5px solid #6E85B7;
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .references {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .references a {
+            color: #6E85B7;
+        }
+        .footer {
+            background-color: #F8F9D7;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            color: #6E85B7;
+            font-size: 0.6em;
+            /* em = ukuran yang bergantung pada induk. kl 0.8 means 80% dari ukuran induk. sp induk? body (default: 16px). (0.8 x 16px = 12.8px) */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">Blog</div>
+        <ul class="nav-links">
+            <li><a href="halaman-1.html">Profil Pribadi</a></li>
+            <li><a href="halaman-2.html">Pengalaman Kuliah</a></li>
+        </ul>
+    </nav>
+
+    <div class="title">Catatan Pribadi</div>
+    
+    <div class="container">
+        <div class="article-list">
+            <h2>Daftar Artikel:</h2>
+            <ul>
+                <li><a href="#belajar">Cara Belajar yang Efektif</a></li>
+                <li><a href="#dunia-kerja">Dunia Kerja</a></li>
+                <li><a href="#kebiasaan-buruk">Kebiasaan Buruk yang Harus Dihilangkan</a></li>
+            </ul>
+        </div>
+
+        <div class="article" id="belajar">
+            <h2>Cara Belajar yang Efektif</h2>
+            <blockquote>"Live as if you were to die tomorrow. Learn as if you were to live forever." – Mahatma Gandhi</blockquote>
+            <p>Di era digital, terdapat godaan untuk selalu update mengenai berita terkini sekecil apapun. Hal tersebut tentunya akan mempengaruhi waktu belajar kita, entah itu untuk cek WhatsApp dari doi, login game, buka media sosial, atau bahkan sekedar scroll galeri. </p>
+            <img src="img/study.jpeg" alt="Belajar Efektif">
+            <p><strong>Strategi Belajar Efektif:</strong></p>
+            <ul>
+                <li>Menggunakan Teknik Pomodoro untuk fokus belajar.</li>
+                <li>Ketahui jam efektif untuk diri sendiri, karena jam setiap orang berbeda-beda.</li>
+                <li>Menjauhkan HP dari jangkauan kita, atau bisa mengaktifkan mode "jangan ganggu".</li>
+            </ul>
+            <p class="references">🔗 Referensi: <a href="https://www.verywellmind.com/how-to-become-a-more-effective-learner-2795162" target="_blank">verywellmind Blog</a></p>
+        </div>
+
+        <div class="article" id="dunia-kerja">
+            <h2>Dunia Kerja</h2>
+            <blockquote>"The only way to do great work is to love what you do." - Steve Jobs</blockquote>
+            <p>Dunia kerja pada kenyataannya tidak semanis dengan apa yang telah kita bayangkan. Hal paling umumnya adalah kenyataan bahwa mencari kerja tidak semudah itu. Bahkan terkadang, meski kita sudah mendapat pekerjaan, jika kita menjalaninya dengan berat hati, hal tersebut dapat memicu hal yang tidak kita inginkan.</p>
+            <img src="img/work.jpeg" alt="Dunia Kerja">
+            <p><strong>Realita Dunia Kerja:</strong></p>
+            <ul>
+                <li>Tidak selalu adil.</li>
+                <li>Tekanan dan keseimbangan hidup dipertaruhkan.</li>
+                <li>Soft skills lebih dihargai daripada ijazah semata.</li>
+                <li>Gaji pertama yang tidak sesuai harapan.</li>
+                <li>Dituntut untuk bisa beradaptasi dengan cepat.</li>
+            </ul>
+        </div>
+
+        <div class="article" id="kebiasaan-buruk">
+            <h2>Kebiasaan Buruk yang Harus Dihilangkan</h2>
+            <blockquote>"We are what we repeatedly do. Excellence, then, is not an act, but a habit." – Aristotle</blockquote>
+            <p>Saat memasuki dunia kerja, banyak kebiasaan buruk dari masa kuliah yang bisa jadi bumerang. Hal ini tentunya perlu untuk dihilangkan.</p>
+            <img src="img/habit.jpeg" alt="Kebiasaan Buruk">
+            <p><strong>3 Kebiasaan Buruk yang Harus Dihindari:</strong></p>
+            <ul>
+                <li>Prokrastinasi; Menunda pekerjaan hingga deadline tiba.</li>
+                <li>Kurang inisiatif; Tidak mencari solusi sendiri.</li>
+                <li>Komunikasi buruk; Tidak bisa menyampaikan ide dengan jelas.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        &copy; 2025 - 240441100006. All rights reserved.
+    </footer>
+</body>
+</html>
