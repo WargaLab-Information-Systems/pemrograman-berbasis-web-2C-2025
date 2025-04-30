@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Bebek Sinjay</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff4e6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a0522d;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #d2691e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+      transform: scale(1.1); 
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+    }
+
+    .section {
+      flex: 1 1 48%;
+    }
+
+    .section h1 {
+      text-align: center;
+      color: #a0522d;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .menu-box {
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+    }
+
+    .menu-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .menu-box img:hover {
+      transform: scale(1.1);
+    }
+
+    .menu-box h3 {
+      color: #a0522d;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    .menu-box p {
+      color: #555;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .menu-box .price {
+      font-weight: bold;
+      color: #000;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Menu</h1>
+    <p>Pilihan Terbaik Kami</p>
+  </header>
+
+  <nav>
+    <a href="beranda.html">Beranda</a>
+    <a href="menu.html">Menu</a>
+    <a href="Tentang Kami.html">Tentang Kami</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <main>
+    <div class="grid-container">
+
+      <!-- Makanan -->
+      <div class="section">
+        <h1>MAKANAN</h1>
+
+        <div class="menu-box">
+          <img src="makanan1.jpg" alt="Bebek Goreng">
+          <h3>Bebek Goreng</h3>
+          <p>Sambal pencit, nasi hangat, lalapan.</p>
+          <p class="price">Rp 25.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="makanan2.jpg" alt="Bebek Bakar">
+          <h3>Bebek Bakar</h3>
+          <p>Dibakar dengan bumbu khas Madura.</p>
+          <p class="price">Rp 27.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="makanan3.jpg" alt="Ayam Bakar">
+          <h3>Ayam Bakar Lokal</h3>
+          <p>Alternatif nikmat selain bebek.</p>
+          <p class="price">Rp 22.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="makanan4.jpg" alt="Ayam Goreng">
+          <h3>Ayam Goreng</h3>
+          <p>Alternatif nikmat selain bebek.</p>
+          <p class="price">Rp 22.000</p>
+        </div>
+      </div>
+
+      <!-- Minuman -->
+      <div class="section">
+        <h1>MINUMAN</h1>
+
+        <div class="menu-box">
+          <img src="minuman1.jpg" alt="Es Campur">
+          <h3>Es Campur</h3>
+          <p>Segar alami dari sari tebu murni.</p>
+          <p class="price">Rp 7.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="minuman2.jpg" alt="Es Cincau">
+          <h3>Es Cincau</h3>
+          <p>Cincau segar yang menyegarkan.</p>
+          <p class="price">Rp 6.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="minuman3.jpg" alt="Jeruk Manis">
+          <h3>Jeruk Manis</h3>
+          <p>Disajikan panas atau dingin.</p>
+          <p class="price">Rp 5.000</p>
+        </div>
+
+        <div class="menu-box">
+          <img src="minuman4.jpg" alt="Teh Manis">
+          <h3>Teh Manis</h3>
+          <p>Disajikan panas atau dingin.</p>
+          <p class="price">Rp 5.000</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <div style="display: flex; justify-content: space-between;"></div>
+  <a href="menu.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="Tentang Kami.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="kontak.html" style="text-decoration: none; color: white;">menu</a>
+  <a href="beranda.html" style="text-decoration: none; color: white;">menu</a>
+</div>
+</body>
+</html>

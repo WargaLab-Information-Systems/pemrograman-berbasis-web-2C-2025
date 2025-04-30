@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* background-color: #e1ebef; */
+            background-color: #F8F9D7;
+            min-height: 100vh; /* vh = viewpoint height - tingginya 100% dari layar */
+        }
+        .navbar {
+            background-color: #6E85B7;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 6px 9px rgba(40, 71, 174, 0.397);
+        }
+        .navbar .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #F8F9D7;
+            text-shadow: #B2C8DF;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar .nav-links li {
+            display: inline;
+            position: relative;
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #F8F9D7;
+            font-size: 1em;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #B2C8DF;
+            min-width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            top: 100%;
+            left: 0;
+        }
+        .dropdown-menu a {
+            color: #3b4e75;
+            padding: 10px;
+            display: block;
+        }
+        .dropdown-menu a:hover {
+            background-color: #C4D7E0;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Menampilkan dropdown saat di-hover */
+        }
+        .title {
+            text-align: center;
+            font-size: 1.9em;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 0px;
+            color: #6E85B7;
+        }
+        .container {
+            width: 80%;
+            background: #e1ebef;
+            border-radius: 10px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            word-wrap: break-word; /* Biar teks panjang nggak keluar */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1px;
+            border: 1.5px solid #6E85B7;
+            border-radius: 10px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            color: #3b4e75;
+            font-size: 0.9em;
+            border: 1.5px solid #6E85B7;
+        }
+        .th, td, a {
+            text-decoration: none;
+            color: #3b4e75;
+        }
+        th {
+            text-align: center;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+        .hobbies-can {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .hobby-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #C4D7E0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 220px;
+            font-weight: bold;
+            color: #3b4e75;
+        }
+        .hobby-box img {
+            width: 215px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10%;
+            margin-bottom: 10px;
+        }
+        .academic-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .academic-card {
+            background: #C4D7E0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+            color: #3b4e75;
+            font-weight: bold;
+        }
+        .story-container {
+            width: 80%;
+            max-width: 800px;
+            background: #C4D7E0;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .story-paragraph p {
+            font-size: 1.1em;
+            color: #3b4e75;
+            text-align: center;
+        }
+
+        .story-quote {
+            font-style: italic;
+            color: #6E85B7;
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .story-list h4 {
+            margin-bottom: 5px;
+            color: #6E85B7;
+            text-align: center;
+        }
+
+        .story-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .story-list li {
+            background: #B2C8DF;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            color: #3b4e75;
+        }
+        label {
+            font-weight: bold;
+            color: #3b4e75;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #6E85B7;
+            border-radius: 5px;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #6E85B7;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #F8F9D7;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+            color: #6E85B7;
+            font-size: 0.6em;
+            /* em = ukuran yang bergantung pada induk. kl 0.8 means 80% dari ukuran induk. sp induk? body (default: 16px). (0.8 x 16px = 12.8px) */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand">Profil Pribadi</div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">Menu</a>
+                <div class="dropdown-menu">
+                    <a href="#profil">Profil</a>
+                    <a href="#pendidikan">Riwayat Pendidikan</a>
+                    <a href="#hobi">Hobi & Minat</a>
+                    <a href="#akademik">Pengalaman Akademik</a>
+                    <a href="#kesan">Kesan & Harapan</a>
+                    <a href="#form">Form Kompetensi</a>
+                </div>
+            </li>
+            <li><a href="halaman-2.html">Pengalaman Kuliah</a></li>
+            <li><a href="halaman-3.html">Blog</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="title" id="profil">Profil Pribadi</div>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>Yadya Niha'ul Ala</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Jl. Mbah Guna Sakti, Bakung, Kanor, Bojonegoro</td>
+            </tr>
+            <tr>
+                <td>Tempat, Tanggal Lahir</td>
+                <td>Bojonegoro, 2 Mei 2006</td>
+            </tr>
+            <tr>
+                <td>Nomor HP</td>
+                <td>085730709423</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><a href="mailto:yadyanihaulala@gmail.com"><u>yadyanihaulala@gmail.com</u></a></td>
+            </tr>
+        </table>   
+    </div>
+
+    <div class="title" id="pendidikan">Riwayat Pendidikan</div>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Jenjang</th>
+                <th>Nama Sekolah, Tahun</th>
+                <th>Jurusan</th>
+            </tr>
+            <tr>
+                <td>SD</td>
+                <td>MIM 04 Al-Azhar Mejasem, 2012 - 2018</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>SMP</td>
+                <td>MTs Negeri 1 Bojonegoro, 2018 - 2021</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>SMA</td>
+                <td>SMK Negeri 4 Bojonegoro, 2021 - 2024</td>
+                <td>Rekayasa Perangkat Lunak</td>
+            </tr>
+            <tr>
+                <td>Perguruan Tinggi</td>
+                <td>Universitas Trunojoyo Madura, 2024 - Saat Ini</td>
+                <td>Sistem Informasi</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="title" id="hobi">Hobi & Minat</div>
+    <div class="hobbies-can">
+        <div class="hobby-box">
+            <img src="img/meow-read.jpeg" alt="Hobi 1">
+            <span>Membaca Novel</span> <!-- membungkus elemen kecil tanpa mengganggu tata letak -->
+        </div>
+        <div class="hobby-box">
+            <img src="img/meow-sad.jpeg" alt="Hobi 2">
+            <span>Mendengarkan Music</span>
+        </div>
+        <div class="hobby-box">
+            <img src="img/meow-work.jpeg" alt="Hobi 3">
+            <span>Desain UI/UX</span> 
+        </div>
+    </div>
+
+    <div class="title" id="akademik">Pengalaman Akademik/Non-Akademik</div>
+    <div class="academic-container">
+        <div class="academic-card">Mengikuti seminar AI 2024</div>
+        <div class="academic-card">Memiliki banyak proyek berbasis Java dengan Database</div>
+        <div class="academic-card">Admin Instagram IPM Bakung, sebagai designer banner</div>
+        <div class="academic-card">Anggota Team IT SMKN 4 Bojonegoro</div>
+    </div>
+
+    <div class="title" id="kesan">Kesan & Harapan</div>
+    <div class="container">
+        <section class="story-paragraph">
+            <p>Kesan pertama masuk universitas itu tentunya senang, senang karena diterima, meskipun tidak di pilihan pertama. Saya sedikit kesusahan semasa ospek, khususnya ospek fakultas dan merasa takut waktu pertama kali masuk kuliah, karena lingkungannya yang sangat hidup untuk saya yang suka lingkungan tenang. </p>
+        </section>
+        <section class="story-quote">
+            <blockquote><i>"Cita-cita saya yaitu ingin sukses dan menjalani hari tanpa adanya penyesalan. 'Cause life goes on, honey."</i></blockquote>
+        </section>
+        <section class="story-list">
+            <h4>Harapan Masa Depan:</h4>
+            <ul>
+                <li>Lulus tepat waktu</li>
+                <li>Menjadi UI/UX Designer</li>
+                <li>Berkarier di bidang teknologi</li>
+                <li>Fluent in English and other languages</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="title" id="form">Form Kompetensi</div>
+        <div class="container">
+            <form action="">
+                <label for="program">Bahasa Pemrograman yang dikuasai:</label>
+                <input type="text" id="program" name="program" placeholder="Python, Java, HTML">
+
+                <label for="bahasa">Bahasa Asing yang bisa digunakan:</label>
+                <input type="text" id="bahasa" name="bahasa" placeholder="Bahasa Inggris">
+
+                <label for="software">Perangkat Lunak yang sering digunakan:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="ps" name="software" value="Photoshop">
+                    <label for="ps">Adobe Photoshop</label><br>
+                    <input type="checkbox" id="figma" name="software" value="Figma">
+                    <label for="java">Java</label><br>
+                    <input type="checkbox" id="vscode" name="software" value="VS Code">
+                    <label for="vscode">Visual Studio Code</label>
+                </div>
+                <label>Sistem Operasi yang biasa digunakan:</label>
+                <div class="radio-group">
+                    <input type="radio" id="windows" name="os" value="Windows">
+                    <label for="windows">Windows</label><br>
+                    <input type="radio" id="mac" name="os" value="MacOS">
+                    <label for="mac">MacOS</label><br>
+                    <input type="radio" id="linux" name="os" value="Linux">
+                    <label for="linux">Linux</label>
+                </div>
+                
+            <!-- <button type="submit">Kirim</button> -->
+            </form>
+        </div>
+    
+    <footer class="footer">
+        &copy; 2025 - 240441100006. All rights reserved.
+    </footer>
+</body>
+</html>
