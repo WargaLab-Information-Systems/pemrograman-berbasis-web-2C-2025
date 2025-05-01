@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservasi - Aola Cafe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      background-image: url(https://hotelier.id/wp-content/uploads/2021/11/sarapan-Croffle-scaled.jpg);
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      margin-top: 15px;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      text-align: center;
+      color: white;
+      padding: 15px;
+      margin-top: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reservasi Aola Cafe</h1>
+    <p>Silakan isi formulir di bawah untuk memesan tempat</p>
+  </header>
+
+  <nav>
+    <a href="menu.html">Home</a>
+  </nav>
+
+  <section class="section">
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+
+      <label for="tanggal">Tanggal Reservasi:</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+
+      <label for="waktu">Waktu:</label>
+      <input type="time" id="waktu" name="waktu" required>
+
+      <label for="jumlah">Jumlah Orang:</label>
+      <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+      <button type="submit">Kirim Reservasi</button>
+    </form>
+  </section>
+
+  <footer>
+    2025 Aola Cafe. All rights reserved.
+  </footer>
+
+</body>
+</html>
