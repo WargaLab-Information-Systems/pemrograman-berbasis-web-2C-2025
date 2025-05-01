@@ -1,0 +1,140 @@
+<!-- about -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="img/flo-2.png" type="">
+  <title>Yadya's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+    scroll-behavior: smooth; /*biar profesional kata dia*/
+    }
+    .slide-down {
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .slide-down.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-5deg)' },
+              '50%': { transform: 'rotate(5deg)' },
+            }
+          },
+          animation: {
+            wiggle: 'wiggle 3s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+
+    <header class="sticky top-0 bg-[#171710] z-50 shadow flex flex-wrap items-center px-8 py-4">
+        <div class="font-semibold text-white mr-auto">
+            <a href="index.html">YADYA NIHA</a>
+        </div>
+    
+        <nav class="hidden w-full flex-col items-center mt-4 space-y-2 md:flex md:flex-row md:justify-center md:space-y-0 md:space-x-6 md:w-auto md:mt-0 text-white text-sm" id="menu">
+            <a href="project.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="resume/UTS.html">RÉSUMÉ</a>
+        </nav>
+        
+        <div class="text-sm text-white ml-auto">
+            <a href="#contact">CONTACT</a>
+        </div>
+    
+        <!-- Button toggle menu -->
+        <button id="menu-button" class="ml-4 text-white md:hidden">
+        𖧷
+        </button>
+    </header>
+
+    <!-- Content -->
+    <section class="w-full flex flex-col md:flex-row items-center justify-center px-6 md:px-16 py-20 bg-white">
+      <!-- Image Part -->
+      <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
+        <img src="img/about-2.png" alt="Profile"
+          class="w-[300px] md:w-[400px] lg:w-[500px] object-cover filter grayscale brightness-90 contrast-125">
+      </div>
+    
+      <!-- Text Part -->
+      <div class="w-full md:w-1/2 flex flex-col justify-center">
+        <h2 class="text-sm text-[#595E60] font-semibold tracking-widest uppercase mb-4">About Me</h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-[#171710] leading-tight mb-6">
+          Building quiet joy through every design.
+        </h3>
+        <p class="text-[#595E60] text-base leading-relaxed">
+          Somewhere between deep thoughts and colorful ideas—that's where you'll find me. <br>
+          I create not to impress, but to express — to make myself smile, and maybe, hopefully, spark a tiny light in someone else's day. <br>
+          I love building clean, thoughtful designs that are well-organized and spark a little joy. <br>
+          Quick to adapt, careful with details, and always exploring new ways to make things feel just right.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-2">
+          <a href="resume/UTS.html" class="inline-flex justify-center border border-[#171710] text-[#171710] mt-4 px-6 py-2 rounded-full hover:bg-[#171710] hover:text-white transition-all duration-400 tracking-wide">
+            SEE MY RESUME
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <div class="flex-1 bg-[#171710] flex flex-col justify-center items-center relative overflow-hidden p-4 md:p-8">
+    </div>
+
+    <!-- Contact -->
+    <section class="bg-[#171710] flex flex-col items-center justify-center text-center py-16 px-6">
+      <p id="contact" class="text-white text-sm tracking-widest uppercase mb-6">
+        Have a project in mind?
+      </p>
+    
+      <h1 class="text-white text-5xl md:text-7xl font-bold font-bold leading-tight mb-5">
+        LET’S MAKE <br class="hidden md:block" />
+        THAT HAPPEN <span class="italic font-light">with me.</span>
+      </h1>
+    
+      <a href="mailto:hello@yadyanihaulala.com" 
+        class="inline-block border border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-300 tracking-wide">
+        HI@YADYANIHA.COM
+      </a>
+    </section>  
+
+    <footer class="sticky bottom-0 bg-white z-50 shadow p-4">
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+        <div class="text-sm text-[#171710]">᯽ Indonesia</div>
+        <div class="flex justify-center space-x-4 text-sm text-[#171710]">
+            <a href="https://www.linkedin.com/in/yadya-niha-ul-ala-350743327/">linkedin</a>
+            <a href="#">Instagram</a>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+      
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+          menu.classList.toggle('slide-down');
+          setTimeout(() => {
+            menu.classList.toggle('show');
+          }, 10);
+        });
+      </script>
+</body>
+</html>
