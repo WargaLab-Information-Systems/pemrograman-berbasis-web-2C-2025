@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(bgpesan.jpg);
+    text-align: center; 
+}
+
+h1 {
+    color: #fffdd0;
+    text-shadow: 0 0 10px #ffb400, 0 0 20px #ffaa00, 0 0 30px #ff9900;
+    margin-top: 90px;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+}
+
+form {
+    background-color: rgb(231, 216, 181);
+    padding: 35px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 12px;
+    margin-top: 10px;
+}
+    
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Soto Ayam</div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="pesan.html" class="active">Pesan</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <h1>Pesan Makanan</h1>
+
+    <form>
+        <label>Nama:</label><br>
+        <input type="text" name="nama"><br><br>
+
+        <label>Pilih Menu Makanan:</label><br>
+        <select name="menu">
+            <option value="soto-ayam">Soto Ayam</option>
+            <option value="soto-babat">Soto Babat</option>
+            <option value="soto-lamongan">Soto lamongan</option>
+            <option value="soto-betawir">Soto Betawi</option>
+        </select><br><br>
+
+        <label>Pilih Menu Minuman:</label><br>
+        <select name="menu">
+            <option value="es-tehmanis">Es Teh Manis</option>
+            <option value="es-jeruk">Es Jeruk</option>
+            <option value="kopi-hitam">Kopi Hitam</option>
+            <option value="teh-hangat">Teh Hangat</option>
+        </select><br><br>
+
+        <label>Jumlah Makanan:</label><br>
+        <input type="number" name="jumlah"><br><br>
+
+        <label>Jumlah Minuman:</label><br>
+        <input type="number" name="jumlah"><br><br>
+        
+        <label>Catatan:</label><br>
+        <textarea name="catatan"></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form><br><br>
+</body>
+</html>
