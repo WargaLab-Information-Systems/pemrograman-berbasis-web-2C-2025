@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kopi SangMalam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .navbar {
+      background-color: #1f1f1f;
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .hero {
+      background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+      padding: 140px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cccccc;
+    }
+    .btn-cta {
+      background-color: #ff9933;
+      color: #121212;
+      border: none;
+    }
+    .btn-cta:hover {
+      background-color: #ffcc66;
+      color: #000;
+    }
+    .produk-card {
+      background-color: #1e1e1e;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .produk-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(255, 153, 51, 0.2);
+    }
+    .produk-img {
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .produk-card:hover .produk-img {
+      transform: scale(1.1);
+    }
+    .produk-title {
+      color: #ff9933;
+    }
+    .footer {
+      background-color: #1f1f1f;
+      color: #cccccc;
+    }
+    [data-aos] {
+      opacity: 0;
+      transition: all 0.6s ease;
+    }
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .aos-fade-up {
+      transform: translateY(40px);
+    }
+    .aos-zoom-in {
+      transform: scale(0.8);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Kopi SangMalam</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero position-relative text-white d-flex align-items-center" style="min-height: 100vh; background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;">
+    <div class="container text-center" data-aos="fade-up" style="background-color: rgba(0,0,0,0.5); padding: 60px 30px; border-radius: 12px;">
+      <h1 class="display-4 fw-bold mb-3">Temukan Ketenangan di Setiap Tegukan</h1>
+      <p class="lead text-light mb-4">Kopi SangMalam menghadirkan rasa otentik kopi Indonesia yang cocok dinikmati saat dunia mulai hening.</p>
+      <a href="#produk" class="btn btn-cta btn-lg px-4">Lihat Produk Kami</a>
+    </div>
+  </section>
+  
+<!-- Tentang -->
+<section id="tentang" class="py-5">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="text-warning mb-3">Tentang Kami</h2>
+    <p class="text-light">Kopi SangMalam adalah penyedia kopi pilihan yang mengusung cita rasa autentik dari berbagai daerah di Indonesia, seperti Gayo, Toraja, dan Kintamani. Kami percaya bahwa kopi bukan hanya sekadar minuman, tetapi sebuah pengalaman yang dapat dinikmati kapan saja, terutama di malam hari. Dengan memanfaatkan biji kopi terbaik yang dipilih secara hati-hati dan bekerja sama dengan petani lokal, kami berkomitmen untuk menghadirkan rasa yang kaya dan berkualitas tinggi. Di Kopi SangMalam, setiap tegukan kopi tidak hanya memberikan kenikmatan, tetapi juga sebuah kenangan yang memikat di setiap malam yang tenang.</p>
+  </div>
+</section>
+
+<!-- Produk -->
+<section id="produk" class="py-5">
+  <div class="container text-center">
+    <h2 class="text-warning mb-5" data-aos="fade-up">Produk Terbaik Kami</h2>
+    <div class="row g-4">
+      <!-- Produk 1 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="gayo.jpg" class="produk-img" alt="Kopi Gayo">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Gayo</h5>
+            <p class="text-light">Rasa bold dan aroma earthy dari pegunungan Aceh. Cocok untuk pecinta kopi pekat.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produk 2 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="toraja.jpg" class="produk-img" alt="Kopi Toraja">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Toraja</h5>
+            <p class="text-light">Kaya rasa dengan sentuhan fruity. Toraja hadir untuk penikmat kopi klasik.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produk 3 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="kintamani.jpg" class="produk-img" alt="Kopi Kintamani">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Kintamani</h5>
+            <p class="text-light">Cita rasa citrus khas Bali dengan aroma yang menyegarkan dan ringan.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produk 4 (Tambahan) -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="robusta'.jpg" class="produk-img" alt="Kopi Bromo">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Bromo</h5>
+            <p class="text-light">Kopi dengan cita rasa robusta khas Jawa Timur, menawarkan kehangatan di malam yang dingin.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produk 5 (Tambahan) -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="papua.jpg" class="produk-img" alt="Kopi Papua">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Papua</h5>
+            <p class="text-light">Dengan rasa lembut dan kekayaan aroma, Kopi Papua menjadi pilihan tepat bagi penikmat kopi ringan.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produk 6 (Tambahan) -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card produk-card">
+          <img src="florest.jpg" class="produk-img" alt="Kopi Flores">
+          <div class="card-body">
+            <h5 class="produk-title">Kopi Flores</h5>
+            <p class="text-light">Rasa manis alami dan aroma floral yang khas, kopi Flores menawarkan pengalaman baru yang eksotis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimoni -->
+<section id="testimoni" class="py-5" style="background-color: #181818;">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="text-warning mb-5">Apa Kata Mereka?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card produk-card h-100 p-3">
+          <div class="card-body">
+            <p class="text-light fst-italic">"Kopi SangMalam jadi teman setia lemburku! Rasanya kuat tapi lembut di akhir, pas banget buat malam hari."</p>
+            <h6 class="text-warning mt-3">— Dimas Argara</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card produk-card h-100 p-3">
+          <div class="card-body">
+            <p class="text-light fst-italic">"Pertama kali coba Kintamani dari Kopi SangMalam, langsung jatuh cinta. Segar dan unik!"</p>
+            <h6 class="text-warning mt-3">— Sari, Barista & Pecinta Kopi</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card produk-card h-100 p-3">
+          <div class="card-body">
+            <p class="text-light fst-italic">"Kemasannya elegan, rasa kopinya premium banget. Cocok untuk hadiah juga!"</p>
+            <h6 class="text-warning mt-3">— Andra Sutomo, Sang Pecinta Kopi</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="py-5 text-center">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-warning mb-3">Hubungi Kami</h2>
+    <p class="text-light">Untuk pemesanan dan kerjasama, hubungi kami di <strong>KopiSangMalam@email.com</strong></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-3 text-center">
+  © 2025 Kopi SangMalam. Dibuat dengan Bootstrap dan penuh semangat kopi.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // AOS Animation Manual (tanpa library)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('aos-animate');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('[data-aos]').forEach(el => {
+    const animation = el.getAttribute('data-aos');
+    el.classList.add(`aos-${animation}`);
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
