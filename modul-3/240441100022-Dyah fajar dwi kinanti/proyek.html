@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Dyah Fajar Dwi Kinanti</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="mb-10 md:mb-0 md:w-1/2">
+        <h1 class="text-4xl font-bold mb-4">Halo, Saya <span class="text-yellow-300">Dyah Fajar Dwi Kinanti</span></h1>
+        <p class="text-lg mb-6">Frontend Developer | UI/UX Designer | Pembuat Web Modern</p>
+        <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-full shadow-md hover:bg-yellow-200 transition">Lihat Proyek Saya</a>
+      </div>
+      <div class="md:w-1/3">
+        <img src="foto baju abu.jpg" alt="Foto Profil"
+     class="rounded-full w-40 h-40 object-cover mx-auto shadow-lg" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+      <p class="text-gray-700 text-lg">
+        Saya adalah pengembang antarmuka web yang fokus pada pengalaman pengguna, desain bersih, dan performa optimal. Jauh dari itu saya suka prakrya yang dimana saya suka membuat kerajianan dari bahan apapun, jadi bisa dibilang saya memiliki dua kepribadian atau dua bakat
+      </p>
+    </div>
+  </section>
+
+  <!-- Kegiatan -->
+  <section id="projects" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Proyek Unggulan</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-1 hover:shadow-2xl transition">
+          <img src="online-shopping.png" alt="E-Commerce" class="rounded mb-4">
+          <h3 class="font-semibold text-xl">Website E-Commerce</h3>
+          <p class="text-gray-600">Toko online responsif dengan React & TailwindCSS.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-1 hover:shadow-2xl transition">
+          <img src="ss bt.png" alt="DIY" class="rounded mb-4">
+          <h3 class="font-semibold text-xl">DIY Barang Bekas</h3>
+          <p class="text-gray-600">Membuat rumah dari stick es</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-1 hover:shadow-2xl transition">
+          <img src="Kain.png" alt="DIY" class="rounded mb-4">
+          <h3 class="font-semibold text-xl">DIY Kain Perca</h3>
+          <p class="text-gray-600">Membuat baju dari kain perca</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="py-16 px-6 bg-white">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Kontak</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nama" class="w-full px-4 py-3 border rounded shadow-sm">
+        <input type="email" placeholder="Email" class="w-full px-4 py-3 border rounded shadow-sm">
+        <textarea rows="4" placeholder="Pesan" class="w-full px-4 py-3 border rounded shadow-sm"></textarea>
+        <button class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2025 Kinanti. Dibuat dengan sungguh-sungguh.
+  </footer>
+
+</body>
+</html>
