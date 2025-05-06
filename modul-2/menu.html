@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Utmarzz Caffelatte</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf5;
+      color: #4b3a2d;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .menu-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #3b2e25;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #d6b98c;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #7a5c3e;
+    }
+
+    .menu-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .menu-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+      color: #4b3a2d;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      color: #a86b2d;
+    }
+
+    .menu-item p {
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+      color: #6b4c3b;
+    }
+
+    .best-seller {
+      background-color: #fff3da;
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      border-radius: 8px;
+      margin-left: 6px;
+      color: #b87010;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .menu-container {
+        padding: 1rem;
+      }
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-image: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #3e2c2c;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(245, 233, 220, 0.85); 
+      z-index: -1;
+    }
+
+    header {
+      background-color: #a47551;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #fff5e9;
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #fff5e9;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #a47551;
+      text-align: center;
+      color: #fff5e9;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+   
+    </style>
+
+    <header>
+        <h1>Utmarzz Caffelatte</h1>
+        <nav>
+          <a href="menu.html">Menu</a>
+          <a href="filosofi.html">Filosofi</a>
+          <a href="soal1.html">About</a>
+          <a href="pesan.html">Pesan</a>
+          <a href="pengiriman.html">Pengiriman</a>
+          <a href="maps.html">Maps</a>
+        </nav>
+      </header>
+
+  <div class="menu-container">
+    <h1>📋 Utmarzz Caffelatte Menu</h1>
+
+    <div class="menu-section">
+      <h2 class="section-title">☕ Minuman</h2>
+
+        <div class="menu-item">
+        <h3>Americano</h3>
+        <div class="price">Rp17.000</div>
+        <p>Kopi klasik dengan rasa yang kuat dan kaya. Cocok untuk pencinta kopi hitam.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Coffee Latte <span class="best-seller">Best Seller</span></h3>
+        <div class="price">Rp20.000</div>
+        <p>Perpaduan espresso dan susu panas yang lembut, memberikan rasa manis dan creamy.</p>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2 class="section-title">🍽️ Makanan</h2>
+
+      <div class="menu-item">
+        <h3>Rujak Cireng</h3>
+        <div class="price">Rp20.000</div>
+        <p>Perpaduan cireng goreng renyah dan bumbu rujak khas yang pedas manis.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Salote</h3>
+        <div class="price">Rp20.000</div>
+        <p>Hidangan segar dengan campuran bahan pilihan dan saus yang menggugah selera.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Mix Platter</h3>
+        <div class="price">Rp20.000</div>
+        <p>Paduan aneka makanan ringan seperti sosis, kentang, dan camilan favorit.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Sosis</h3>
+        <div class="price">Rp20.000</div>
+        <p>Sosis gurih dengan bumbu khas, cocok sebagai camilan atau teman minum kopi.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Kentang Goreng</h3>
+        <div class="price">Rp20.000</div>
+        <p>Kentang goreng renyah dengan taburan bumbu spesial.</p>
+      </div>
+
+      <div class="menu-item">
+        <h3>Jagung Mozza</h3>
+        <div class="price">Rp20.000</div>
+        <p>Jagung panggang dengan topping keju mozzarella yang meleleh, gurih dan nikmat.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
