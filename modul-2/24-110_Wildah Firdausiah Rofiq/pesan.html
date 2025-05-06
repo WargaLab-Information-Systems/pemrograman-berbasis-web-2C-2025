@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesan - Enhypen Cafe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #fffaf5;
+      color: #333;
+    }
+
+    header, footer {
+      background: #2f2f2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { 
+      text-decoration: underline; 
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    button {
+      background: #2f2f2f;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover { background: #444; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Enhypen Cafe</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="pesan.html">Pesan</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Form Pemesanan</h2>
+    <form action="#" method="post">
+      <input type="text" name="nama" placeholder="Nama" required />
+      <textarea name="pesanan" rows="5" placeholder="Tulis pesanan anda..." required></textarea>
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Enhypen Cafe. All rights reserved.</p>
+  </footer>
+</body>
+</html>

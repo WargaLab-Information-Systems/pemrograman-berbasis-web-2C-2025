@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CIRENG ISI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bg-light py-3">
+  <div class="container ">
+    <div>
+      <a class="nav-link d-inline" href="#home">Home</a>
+      <a class="nav-link d-inline" href="#menu">Menu</a>
+      <a class="nav-link d-inline" href="#order">Order</a>
+      <a class="nav-link d-inline" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="bg-warning text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h1 class="display-3">CIRENG ATEEZ</h1>
+        <p class="lead">Cireng gurih renyah, isiannya melimpah, bikin ketagihan sejak gigitan pertama!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="cirengg.jpeg" alt="Cireng Isi" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-5">Varian Cireng ATEEZ</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="isi keju.jpeg" class="card-img-top" alt="Cireng Isi Keju">
+          <div class="card-body">
+            <h5 class="card-title">Cireng Isi Keju</h5>
+            <p class="card-text">Lelehan keju yang gurih dalam balutan cireng renyah. Rp15.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="isi ayam.jpeg" class="card-img-top" alt="Cireng Isi Ayam Suwir">
+          <div class="card-body">
+            <h5 class="card-title">Cireng Isi Ayam Suwir</h5>
+            <p class="card-text">Ayam suwir pedas manis berpadu dengan adonan cireng. Rp13.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="isi bakso.jpeg" class="card-img-top" alt="Cireng Isi Bakso Pedas">
+          <div class="card-body">
+            <h5 class="card-title">Cireng Isi Bakso Pedas</h5>
+            <p class="card-text">Bakso cincang pedas, lezat dan menggoda! Rp12.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="isi sosis.jpeg" class="card-img-top" alt="Cireng Isi Sosis">
+          <div class="card-body">
+            <h5 class="card-title">Cireng Isi Sosis</h5>
+            <p class="card-text">Sensasi sosis gurih dalam cireng lembut. Rp12.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Apa Kata Pelanggan?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli (1).jpeg" alt="sunghoon" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">“uenakk poll cirengnya, kejunya meleleh banget di mulut”</p>
+            <h6 class="mb-0">- park sunghoon</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli1 (2).jpeg" alt="jay" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">“yang isi ayam suwir, pedasnya pas banget. NAGIH BANGET!!”</p>
+            <h6 class="mb-0">- park jongseong</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli1 (3).jpeg" alt="mingyu" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">“kulit cirengnya renyah dan gurih, isiannya full banget”</p>
+            <h6 class="mb-0">- kim mingyu</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Pesan Sekarang!</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Alamat Pengiriman:</label>
+        <input type="text" class="form-control" id="address" required>
+      </div>
+      <div class="mb-3">
+        <label for="menuItem" class="form-label">Pilih Cireng:</label>
+        <select class="form-select" id="menuItem" required>
+          <option selected disabled>Pilih...</option>
+          <option>Cireng Isi Keju</option>
+          <option>Cireng Isi Ayam Suwir</option>
+          <option>Cireng Isi Bakso Pedas</option>
+          <option>Cireng Isi Sosis Pedas</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-warning">Order Sekarang</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
