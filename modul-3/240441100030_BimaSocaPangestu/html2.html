@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <!-- Tambahkan meta tag berikut untuk tampilan mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CILOK MANIA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden; /* Mencegah scroll horizontal */
+    }
+    #home {
+      background: linear-gradient(to right, #28a745, #218838);
+      color: white;
+      padding: 50px 0; /* Diperkecil untuk mobile */
+    }
+    .img-rounded-shadow {
+      border-radius: 1rem;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      max-width: 100%; /* Pastikan gambar tidak melebihi layar */
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+    h1.display-3 {
+      font-weight: 700;
+      font-size: 2.5rem; /* Ukuran lebih kecil untuk mobile */
+    }
+    .btn-success {
+      font-weight: bold;
+    }
+    .form-control, .form-select {
+      border-radius: 0.5rem;
+    }
+    
+    /* Tambahan khusus untuk mobile */
+    @media (max-width: 768px) {
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      
+      nav .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      nav .d-flex a {
+        display: block;
+        margin: 5px 0;
+      }
+      
+      #home .row {
+        flex-direction: column-reverse;
+      }
+      
+      #home .col-md-6 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      #menu .col-md-3 {
+        width: 50%;
+        margin-bottom: 15px;
+      }
+      
+      .testimonial-card {
+        margin-bottom: 15px;
+      }
+      
+      .card {
+        margin-bottom: 15px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      #menu .col-md-3 {
+        width: 100%;
+      }
+      
+      h1.display-3 {
+        font-size: 2rem;
+      }
+      
+      #home {
+        padding: 30px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Kode HTML asli Anda tetap sama di bawah ini -->
+<nav class="bg-light py-3 shadow-sm">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <strong class="text-success">CILOK MANIA</strong>
+      <div>
+        <a class="nav-link d-inline me-3" href="#home">Home</a>
+        <a class="nav-link d-inline me-3" href="#menu">Menu</a>
+        <a class="nav-link d-inline me-3" href="#order">Order</a>
+        <a class="nav-link d-inline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="home" class="text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start">
+        <h1 class="display-3 mb-3">CILOK MANIA</h1>
+        <p class="lead">Cilok kenyal dengan isian menggoda, dijamin bikin ketagihan!</p>
+      </div>
+      <div class="col-md-6">
+        <img src="cilok.jpg" alt="Cilok Isi" class="img-fluid img-rounded-shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold text-success">Varian Cilok Mania</h2>
+    <div class="row g-4">
+      <!-- 4 kartu menu -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="keju.jpg" class="card-img-top" alt="Cilok Isi Keju">
+          <div class="card-body">
+            <h5 class="card-title">Cilok Isi Keju</h5>
+            <p class="card-text">Keju leleh dalam cilok kenyal, rasa gurih mantap. Rp15.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="ayam.jpg" class="card-img-top" alt="Cilok Isi Ayam Pedas">
+          <div class="card-body">
+            <h5 class="card-title">Cilok Isi Ayam Pedas</h5>
+            <p class="card-text">Ayam pedas suwir, cocok buat pecinta rasa nendang. Rp13.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="bakso.jpg" class="card-img-top" alt="Cilok Isi Bakso">
+          <div class="card-body">
+            <h5 class="card-title">Cilok Isi Bakso</h5>
+            <p class="card-text">Cilok kenyal dengan bakso gurih di dalamnya. Rp12.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="sosis.jpg" class="card-img-top" alt="Cilok Isi Sosis">
+          <div class="card-body">
+            <h5 class="card-title">Cilok Isi Sosis</h5>
+            <p class="card-text">Sosis gurih berpadu cilok kenyal, enaknya bikin nagih. Rp12.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-success fw-bold">Testimoni Pelanggan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli 1.jpg" alt="pembeli1" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">"Cilok kejunya melted banget! Anak-anak juga suka."</p>
+            <h6 class="mb-0">- firda baik</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli 2.jpg" alt="dimas" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">"Cilok ayam pedasnya juara! Rasa pedasnya pas di lidah."</p>
+            <h6 class="mb-0">- Dimas Prasetyo</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow flex-row align-items-center p-3">
+          <img src="pembeli 3.jpg" alt="nanda" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <p class="mb-2">"Isiannya banyak, rasanya nagih. Pesen lagi, pasti!"</p>
+            <h6 class="mb-0">- Rokim</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-success">Pesan Cilokmu Sekarang!</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Alamat Pengiriman:</label>
+        <input type="text" class="form-control" id="address" required>
+      </div>
+      <div class="mb-3">
+        <label for="menuItem" class="form-label">Pilih Cilok:</label>
+        <select class="form-select" id="menuItem" required>
+          <option selected disabled>Pilih...</option>
+          <option>Cilok Isi Keju</option>
+          <option>Cilok Isi Ayam Pedas</option>
+          <option>Cilok Isi Bakso</option>
+          <option>Cilok Isi Sosis</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success w-100 py-2">Order Sekarang</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
