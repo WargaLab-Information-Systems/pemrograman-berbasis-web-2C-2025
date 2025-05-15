@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id" class="transition duration-300">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hubungi Karina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition duration-300">
+
+<div class="fixed top-4 right-4 z-50">
+    <button onclick="toggleDarkMode()" class="bg-yellow-300 hover:bg-yellow-400 text-black dark:bg-gray-700 dark:text-white px-4 py-2 rounded-full shadow">
+        Dark/Light
+    </button>
+</div>
+
+<!-- Section Formulir dan Gambar -->
+<section class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 lg:px-16 py-12 gap-12">
+
+    <!-- Kolom Kiri -->
+    <div class="lg:w-1/2 text-center lg:text-left">
+        <div class="inline-block p-6">
+            <img src="ASSET SESI 2/Gambar 1 (1).png" alt="Karina Form" class="w-[640px] h-[580px] object-cover"/>
+        </div>
+        <h2 class="text-2xl font-bold mt-6">Karina siap membantu mewujudkan ide dan impian anda</h2>
+        <p class="text-gray-500 dark:text-gray-300 mt-2">Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna</p>
+    </div>
+
+    <!-- Kolom Kanan -->
+    <form onsubmit="return validateForm()" class="lg:w-1/2 w-full max-w-lg space-y-6">
+
+        <div>
+            <label for="nama" class="block font-medium mb-1">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <div>
+            <label for="email" class="block font-medium mb-1">Alamat Email</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda" class="w-full px-4 py-3 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <div>
+            <label for="deskripsi" class="block font-medium mb-1">Deskripsi Proyek</label>
+            <textarea id="deskripsi" rows="4" placeholder="Ceritakan sedikit tentang proyek Anda" class="w-full px-4 py-3 rounded-2xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+        </div>
+        <div>
+            <label for="anggaran" class="block font-medium mb-1">Kisaran Anggaran</label>
+            <input type="text" id="anggaran" placeholder="Berapa anggaran Anda?" class="w-full px-4 py-3 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        </div>
+        <button type="submit" class="w-full py-3 bg-yellow-300 hover:bg-yellow-400 text-black font-semibold rounded-full transition">Kirim Pesan</button>
+
+    </form>
+</section>
+
+<!-- Validasi JavaScript -->
+<script>
+function validateForm() {
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const deskripsi = document.getElementById("deskripsi").value.trim();
+    const anggaran = document.getElementById("anggaran").value.trim();
+    const emailRegex = /^[^@]+@[^@]+\.[a-z]{2,}$/i;
+    const namaRegex = /^[A-Za-z\s]+$/;
+
+    if (nama === "") {
+        alert("Nama lengkap harus diisi.");
+        return false;
+    }
+    if (!namaRegex.test(nama)) {
+        alert("Nama hanya boleh berisi huruf.");
+        return false;
+    }
+    if (email === "" || !emailRegex.test(email)) {
+        alert("Masukkan email yang valid.");
+        return false;
+    }
+    if (deskripsi === "") {
+        alert("Deskripsi proyek tidak boleh kosong.");
+        return false;
+    }
+    if (anggaran === "" || isNaN(anggaran)) {
+        alert("Masukkan anggaran dalam format angka.");
+        return false;
+    }
+
+    alert("Form berhasil dikirim!");
+    return true;
+}
+</script>
+
+
+<!-- Toggle Dark Mode -->
+<script>
+function toggleDarkMode() {
+    const html = document.documentElement;
+    html.classList.toggle('dark');
+    localStorage.setItem('darkMode', html.classList.contains('dark') ? 'true' : 'false');
+}
+
+// Aktifkan dark mode jika disimpan sebelumnya
+window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.documentElement.classList.add('dark');
+    }
+});
+</script>
+
+</body>
+</html>
