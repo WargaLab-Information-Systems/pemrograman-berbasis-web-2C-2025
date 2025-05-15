@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/logo.png" type="">
+    <title>Sony Headphone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+        .hero {
+            height: 92vh;
+            display: flex;
+            background-color: #000000;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            background-image: url('your-product-image.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content img {
+            max-width: 15%;
+            height: auto;
+        }
+        .btn-sony {
+            background-color: #C2B280;
+            color: #000;
+            border: none;
+        }
+        .btn-sony:hover {
+            background-color: #b2a066;
+            color: #000;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        .closer-look {
+            background-color: #000000;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="img/logo-sony.png" alt="" height="28">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#price">Price</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <img src="img/produk-6.png" alt="...">
+            <h1 class="display-4 fw-bold text-center">WH-CH520</h1>
+            <p class="lead">Stunning Sound and Longer Battery Life.</p>
+        </div>
+    </section>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/catalog-4.png" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block" style="color: black !important;">
+                <h5>Choose a color that suits your style</h5>
+                <p>With a choice of black, blue, white, cream, pink or yellow –​you can choose the color that suits you best and enjoy the comfortable texture and quality.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/catalog-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="color: black !important;">
+                <h5>Soft pink for your mood</h5>
+                <p>A softer take on true expression. This soft pastel palette can be paired with any style, bringing a fresh pink color that brings a soft, euphoric atmosphere.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/catalog-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="color: black !important;">
+                <h5>More pastel colors for every mood</h5>
+                <p>Updated color palette. Soft pinks and cheerful warm yellows join the pastel collection, bringing a new balance between elegance and playfulness.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- desc -->
+    <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title"><b>A Listening Experience Just For You</b></h5>
+          <p class="card-text">Digital Sound Enhancement Engine (DSEE) restores the harmony and richness lost during traditional music compression, for a more authentic performance. You can even tailor your music to your own taste using the EQ settings in the Sony | Sound Connect app, for a more personalized listening experience.</p>
+          <a href="#features" class="btn btn-dark">Learn more about these features</a>
+        </div>
+    </div>
+
+    <!-- features -->
+    <section id="features" class="py-5" style="background-color: black;">
+        <div class="container">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <h2 class="fw-bold text-white">Features</h2>
+              <p class="fw-semibold text-white">Experience studio-quality sound anywhere</p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4 text-white fw-semibold">
+              <h5>Your voice, your way</h5>
+              <p class="text-light">Customize the sound to your personal preference.</p>
+            </div>
+            <div class="col-md-4 text-white fw-semibold">
+              <h5>50-Hour Battery</h5>
+              <p class="text-light">Listen all day with super fast charging.</p>
+            </div>
+            <div class="col-md-4 text-white fw-semibold">
+              <h5>360 Reality Audio</h5>
+              <p class="text-light">Certified headphones for a personalized experience.</p>
+            </div>
+            <div class="col-md-4 text-white fw-semibold">
+              <h5>Lightweight Design</h5>
+              <p class="text-light">Comfortable for hours, designed for everywhere.</p>
+            </div>
+            <div class="col-md-4 text-white fw-semibold">
+              <h5>Dolby Atmos Experience</h5>
+              <p class="text-light">Create an ideal phantom speaker array around you.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- battery -->
+    <div class="card border-0 mb-3 w-100">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/battery.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Keeps burning for days</h5>
+              <p class="card-text fw-semibold">
+                With up to 50 hours of battery life, you can listen to your favorite music without worrying about running out of power. If your headphones are running low on battery, a quick 3-minute charge can give you 1.5 hours of listening time.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <section class="closer-look">
+      <div class="container">
+        <h2 class="section-title mb-0">Find Your Color.</h2>
+      </div>
+    </section>
+
+    <!-- Color -->
+    <div class="container-fluid px-3 py-0" style="background-color: #000;">
+      <div id="price" class="row row-cols-1 row-cols-md-3 g-4 pb-5" style="background-color: black;">
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm mx-auto" style="max-width: 300px; margin: 0 auto; object-fit: contain;">
+            <img src="img/produk-2.png" class="card-img-top mx-auto d-block mt-3" style="height: 200px; width: auto;" alt="...">
+            <div class="card-body">
+              <h6 class="card-title fw-semibold">Rp. 829,000</h6>
+              <h5 class="card-title fw-bold">WH-CH520 Black</h5>
+              <p class="card-text">Timeless and bold. The black finish exudes sophistication and blends seamlessly into any lifestyle.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm mx-auto" style="max-width: 300px; margin: 0 auto;">
+            <img src="img/produk-3.png" class="card-img-top mx-auto d-block mt-3" style="height: 200px; width: auto; object-fit: contain;" alt="...">
+            <div class="card-body">
+              <h6 class="card-title fw-semibold">Rp. 829,000</h6>
+              <h5 class="card-title fw-bold">WH-CH520 Blue</h5>
+              <p class="card-text">Cool and modern. Midnight blue adds a touch of calm and uniqueness to your everyday look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0 shadow-sm mx-auto" style="max-width: 300px; margin: 0 auto;">
+            <img src="img/produk-5.png" class="card-img-top mx-auto d-block mt-3" style="height: 200px; width: auto; object-fit: contain;" alt="...">
+            <div class="card-body">
+              <h6 class="card-title fw-semibold">Rp. 829,000</h6>
+              <h5 class="card-title fw-bold">WH-CH520 White</h5>
+              <p class="card-text">Clean and elegant. The platinum silver option offers a sleek, premium aesthetic that stands out subtly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="card text-center" style="background-color: #000;">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-white">SONY WH-CH520 HEADPHONES</h5>
+        <p class="card-text text-white">Made with Love</p>
+        <a href="#" class="btn btn-light fw-bold">Buy Now</a>
+      </div>
+      <div class="card-footer text-muted">
+        Yadya Niha'ul Ala - 240441100006
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
