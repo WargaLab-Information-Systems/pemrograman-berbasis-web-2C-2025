@@ -1,0 +1,178 @@
+body {
+    background-color: rgb(197, 195, 195);
+}
+.bungkus {
+    border: 1px solid;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 640px;
+    margin: auto;
+    background-color: bisque;
+}
+.tabel {
+    background-color: bisque;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.judul {
+    background-color: blue;
+}
+.paragraf {
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 640px;
+    margin: auto;
+    background-color: bisque;
+}
+.paragraf p {
+    text-align: justify;
+    text-indent: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+form {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: bisque;
+}
+
+.navbar {
+    background-color: orange;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+  
+.navbar-menu li a {
+    text-decoration: none;
+    color: #010f13;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+.navbar-menu li a:hover {
+    color: rgb(101, 96, 114);
+}
+  
+/* css untuk hal2 */
+body.pengalaman {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+  
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+  
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+}
+  
+p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #333333;
+}
+/* Halaman 3 */
+body.art {
+    background-color: rgb(46, 13, 46);
+}
+.artikel {
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: bisque;
+
+}
+
+
+.judulartikel {
+    width: 480px;
+    background-color: blue;
+    padding: 1px;
+    border-radius: 30px;
+    margin: auto;
+}
+.paragrafart {
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: orange;
+
+}
+.gambar1 {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gambar2 {
+    width: 200px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.navart {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-list li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+.nav-list li a:hover {
+    color: #bc7e1a;
+}
+  
