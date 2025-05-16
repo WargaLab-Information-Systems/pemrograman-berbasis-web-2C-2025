@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="fixed top-0 left-0 w-full bg-indigo-100 shadow-md z-50 ">
+        <div class="container mx-auto flex items-center justify-around px-4 py-4">
+          
+          <div class="text-lg font-bold text-cyan-700">FL.Portofolio</div>
+      
+          <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-700">
+            <a href="portofolio-tailwindcss.html#home" class="hover:text-cyan-700 hover:underline underline-offset-8">Home</a>
+            <a href="portofolio-tailwindcss.html#about" class="hover:text-cyan-700 hover:underline underline-offset-8 ">About</a>
+            <a href="portofolio-tailwindcss.html#education" class="hover:text-cyan-700 hover:underline underline-offset-8 ">Education</a>
+            <a href="portofolio-tailwindcss.html#experience" class="hover:text-cyan-700 hover:underline underline-offset-8 ">Experience</a>
+            <a href="portofolio-tailwindcss.html#contact" class="hover:text-cyan-700 hover:underline underline-offset-8">Contact</a>
+          </nav>
+      
+          <div class="md:hidden">
+            <button id="menu-button" class="text-cyan-700 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      
+        <div id="menu-dropdown" class="hidden md:hidden bg-indigo-100 shadow-md px-4 ">
+          <a href="portofolio-tailwindcss.html#home" class="block py-2 text-slate-700 hover:text-cyan-700 hover:underline underline-offset-8">Home</a>
+          <a href="portofolio-tailwindcss.html#about" class="block py-2 text-slate-700 hover:text-cyan-700 hover:underline underline-offset-8">About</a>
+          <a href="portofolio-tailwindcss.html#education" class="block py-2 text-slate-700 hover:text-cyan-700 hover:underline underline-offset-8">Education</a>
+          <a href="portofolio-tailwindcss.html#experience" class="block py-2 text-slate-700 hover:text-cyan-700 hover:underline underline-offset-8">Experience</a>
+          <a href="portofolio-tailwindcss.html#contact" class="block py-2 text-slate-700 hover:text-cyan-700 hover:underline underline-offset-8">Contact</a>
+        </div>
+      </header>
+    <!-- navbar end -->
+
+    <!-- home start-->
+    <section id="home" class="pt-20 lg:pt-20 ">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            
+            <!-- text -->
+            <div class="w-full max-w-xl self-center px-4 mt-5 mx-auto ">
+              <div class="text-center lg:text-left ">
+                <h1 class="text-base font-semibold text-cyan-400">
+                  Hallo My friends, Saya 
+                  <span class="block font-bold text-cyan-950 text-4xl sm:text-5xl mt-1">Fika Nurlaila</span>
+                </h1>
+                <h2 class="font-medium text-slate-600 text-lg sm:text-xl mb-5">Mahasiswa Prodi Sistem Informasi</h2>
+                <p class="font-medium text-slate-400 mb-5 leading-relaxed">
+                  Belajar programmer adalah salah satu hal yang menyenangkan untuk melakukan 
+                  <span class="font-bold text-slate-600">senam otak.</span>
+                </p>
+                <div class="flex gap-4 justify-center lg:justify-start text-cyan-600 text-xl -mt-3 mb-7">
+                  <a href="#" class="hover:text-cyan-400"><i class='bx bxl-youtube'></i></a>
+                  <a href="https://lynk.id/fika.id" class="hover:text-cyan-400"><i class='bx bxl-linkedin-square'></i></a>
+                  <a href="https://www.instagram.com/fikalailaa_?igsh=YWprNDVldGhkcDFj" class="hover:text-cyan-400"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://github.com/Fika-cute" class="hover:text-cyan-400"><i class='bx bxl-github'></i></i></a>
+                  <a href="tel:+6285749519947" class="hover:text-cyan-400"><i class='bx bxl-whatsapp'></i></i></a>
+                </div>
+      
+                <div class="flex justify-center lg:justify-start gap-4 mb-6">
+                  <a href="#" class="bg-cyan-900 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-cyan-100 hover:text-cyan-900 hover:shadow-lg">Email</a>
+                  <a href="landing-page-boostrap.html" class="bg-gray-100 text-gray-800 px-4 py-2 rounded-md text-sm font-semibold hover:bg-gray-600  hover:text-white hover:shadow-lg">Landing Page</a>
+                </div>
+              </div>
+            </div>
+            <!-- my foto -->
+            <div class="w-full self-end px-4 bor lg:w-1/2 pt-5">
+              <div class="relative mx-auto">
+                <img src="fika-cameron.png" alt="fika nurlaila" class="max-w-full mx-auto rounded-full rounded-t-[1px] relative z-10" width="400" height="400">
+                <div class="absolute w-64 h-64 bg-indigo-200 rounded-full -top-5 -left-5 z-0"></div>
+                <div class="absolute w-24 h-24 bg-cyan-400 rounded-full top-0 right-0 z-0"></div>
+                <div class="absolute w-16 h-16 bg-cyan-700 rounded-full bottom-0 left-20 z-0 opacity-70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- about -->
+    <div class="pt-5">
+    <section id="about" class="bg-gray-50 max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center rounded-tr-[100px] rounded-bl-[100px] inset-shadow-sm inset-shadow-gray-300 shadow-xl mt-7">
+      <!-- foto -->
+      <div class=" lg:w-1/2 justify-center hidden lg:flex pt-20 pb-20 pl-15 pr-15">
+        <div class="w-full max-w-3xl overflow-hidden px-4">
+          <div class="flex bg-indigo-50 overflow-x-auto snap-x rounded-t-[50px] rounded-b-[50px] w-100 h-100">
+            
+            <!-- Slide 1 -->
+            <div class="flex-shrink-0 w-full snap-center scroll-pl-6 relative overflow-hidden flex items-center justify-center">
+              <img src="fika2.2 (1).jpeg" alt="slide 1" class="object-cover w-full h-full opacity-80" />
+            </div>
+      
+            <!-- Slide 2 -->
+            <div class="flex-shrink-0 w-full snap-center scroll-pl-6 relative overflow-hidden flex items-center justify-center">
+              <img src="fika2.2 (2).jpeg" alt="slide 1" class="object-cover w-full h-full opacity-80" />
+            </div>
+      
+            <!-- Slide 3 -->
+            <div class="flex-shrink-0 snap-center scroll-pl-6 relative w-full overflow-hidden flex items-center justify-center">
+              <img src="fika2.2.jpeg" alt="slide 1" class="object-cover w-full h-full opacity-80" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left pt-2">
+        <h3 class="text-cyan-400 text-lg font-semibold mb-2 px-4">ABOUT ME.</h3>
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-cyan-800 mx-auto px-4">
+        Saya adalah seorang mahasiswa jurusan Sistem Informasi di Universitas Trunojoyo Madura
+      </h1>
+      <p class="text-gray-300 mb-6 mx-auto px-3">
+        Dibekali dengan ilmu yang pernah di tempuh selama 3 tahun terakhir ini dengan berbagai kegiatan yang berguna untuk kedepannya.
+      </p>
+      <div class="flex flex-wrap justify-center lg:justify-start gap-6 mb-8">
+        <div class="text-center">
+          <p class="text-2xl font-bold text-blue-400">6 Month</p>
+          <p class="text-sm text-gray-400">of Experience Desain</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-bold text-cyan-800">15 Projek +</p>
+          <p class="text-sm text-gray-400">Still In Progress</p>
+        </div>
+        <div class="text-center">
+          <p class="text-2xl font-bold text-cyan-400">12 People +</p>
+          <p class="text-sm text-gray-400">Satisfied Clients</p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4 pb-5">
+        <a href="#" class="bg-gradient-to-r from-cyan-100 to-blue-500 px-6 py-2 rounded-full font-semibold hover:opacity-70 hover:shadow-xl">Contact me</a>
+        <a href="#" class="border border-gray-400 px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-black hover:bg-gradient-to-r  from-blue-500 to-cyan-100 hover:shadow-xl">My Portfolio</a>
+      </div>
+    </section>  
+    <!-- about end -->
+
+    <!-- education -->
+    <section id="education" class="py-15">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-2 text-cyan-600">
+          EDUCATION <span class="text-cyan-900">2012-New</span>
+        </h2>
+        <p class="text-gray-500 max-w-2xl mx-auto">
+          Pendidikan sangatlah penting bagi sesorang yang ingin entah itu pendidikan dunia maupun pendidikan akhirat, karena menuntut ilmu itu hukumnya wajib
+        </p>
+    
+        <!-- sd -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+          <div class="bg-gradient-to-b from-white to-indigo-200 rounded-xl shadow-md p-6 relative hover:scale-105 duration-500 ease-in-out">
+            <div class="flex items-center mb-5">
+              <div class="text-left">
+                <h1 class="font-bold text-cyan-700 text-[20px] ">SD 004 Bungaraya</h1>
+                <h3 class="text-gray-400 ">2012 - 2018</h3>
+              </div>
+            </div>
+            <p class="text-gray-600 text-left">
+              Address : <br>Ds.Bungaraya Kec.Bungaraya Kab.Siak Prov.Riau
+              <br><a href="#" class="text-cyan-900 font-bold hover:underline ">Location »</a>
+            </p>
+          </div>
+    
+          <!-- smp -->
+          <div class="bg-gradient-to-b from-white to-indigo-200 rounded-xl shadow-md p-6 relative hover:scale-105 duration-500 ease-in-out">
+            <div class="flex items-center">
+              <div class="text-left mb-5">
+                <h4 class="font-bold text-cyan-700 text-[20px]">SMP Islam Terpadu Al-Qomar</h4>
+                <h3 class="text-gray-400 ">2018 - 2021</h3>
+              </div>
+            </div>
+            <p class="text-gray-600 text-left">
+              Addres : <br>Ds.Pakuncen Kec.Pakuncen Kab.Nganjuk Prov.Jawa Timur
+              <br><a href="#" class="text-cyan-900 font-bold hover:underline ">Location »</a>
+            </p>
+          </div>
+    
+          <!-- smk -->
+          <div class="bg-gradient-to-b from-white to-indigo-200 rounded-xl shadow-md p-6 relative hover:scale-105 duration-500 ease-in-out">
+            <div class="flex items-center mb-5">
+              <div class="text-left">
+                <h4 class="font-bold text-cyan-700 text-[20px]">SMK Islam Al-Qomar</h4>
+                <h3 class="text-gray-400">2021 - 2024</h3>
+              </div>
+            </div>
+            <p class="text-gray-600 text-left">
+              Addres: <br>Ds.Rowomarto Kec.Patianrowo Kab.Nganjuk Prov.Jawa Timur
+              <br><a href="#" class="text-cyan-900 font-bold hover:underline ">Location »</a>
+            </p>
+          </div>
+    
+          <!-- kampus -->
+          <div class="bg-gradient-to-b from-white to-indigo-200 rounded-xl shadow-md p-6 relative hover:scale-105 duration-500 ease-in-out">
+            <div class="flex items-center gap-4">
+              <div class="text-left mb-5">
+                <h4 class="font-bold text-cyan-700 text-[20px]">Universitas Trunojoyo Madura</h4>
+                <h3 class="text-gray-400">2024 - Sekarang</h3>
+              </div>
+            </div>
+            <p class="text-gray-600 text-left">
+              Addres: <br>Ds.Telang Kec.Kamal Kab.Bakalan Prov.Jawa Timur
+              <br><a href="#" id="experience" class="text-cyan-900 font-bold hover:underline ">Location »</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education end -->
+
+    <!-- experience -->
+    <div class="bg-indigo-50 mx-auto shadow-lg">
+      <h2  class="text-3xl sm:text-4xl font-bold text-cyan-600 text-center pb-5 pt-5">
+        <span class="text-cyan-900">Last 3 Years </span>EXPERIENCE 
+      </h2>
+      <p class="px-4 lg:px-2 text-gray-500 max-w-2xl mx-auto text-center pb-7">
+        pengalaman yang tak seberapa, tapi emngandung makna, walupun hanya singkat tapi ilmu yang didapat bukanlah hanya sekedar 1 kalimat tapi beribu-ribu kalimat, walupun yang nyantol cuman 20% saja , tapi gitu-gitu yang penting dapat ilmu.
+      </p>
+    </div>
+    <!-- foto-fotonya -->
+    <section class="max-w-7xl px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10 lg:px-40 pt-7">
+      <!-- Kiri: Gambar besar -->
+      <div class="relative group overflow-hidden rounded-lg shadow-lg">
+        <img src="blk.jpeg" alt="Foto blk" class="h-[692px] w-full object-cover transition duration-300 group-hover:scale-105">
+        <div class="absolute bottom-0 left-0 w-full bg-white/20 backdrop-blur-sm p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300 ease-in-out">
+          <h3 class="font-bold text-xl mb-3 text-cyan-100">Pelatihan Menjahit <br>BLKK Desain Mode dan Tekstil, 2024</h3>
+          <p class="font-semibold text-justify text-cyan-900 text-shadow-lg text-shadow-white">
+            Kegiatan ini memberikan pengalaman menjahit baju wanita dan pria dewasa selama 30 hari penuh, dan sudah berhasil menjahit 3 buah baju
+            , 1 baju pria dewasa, dan 2 baju wanita dewasa, denga pola yang berbeda-beda.
+          </p>
+        </div>
+      </div>
+    
+      <!-- gambar kanan-->
+      <div class="flex flex-col justify-between gap-8">
+        <!-- Gambar 1 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="blk mm.jpeg" alt="blk multimedia" class="h-[330px] w-full object-cover transition duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 w-full bg-white/30 backdrop-blur-sm p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300 ease-in-out">
+            <h3 class="font-bold text-xl mb-3 text-cyan-100">Fotografi & Videografi <br>BLKK Multimedia Al-Qomar Wahid, 2023</h3>
+            <p class="font-semibold text-justify text-cyan-900 text-shadow-lg text-shadow-white">
+              Pengalaman 30 hari mengikuti pelatihan gratis, dengan mempelajari konsep fotografi, videografi, teknik tekniknya, dan juga mempelajari typografinya.
+            </p>
+          </div>
+        </div>
+    
+        <!-- Gambar 2 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="pkl.jpeg" alt="Kegiatan 2" class="h-[330px] w-full object-cover transition duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 w-full bg-white/20 backdrop-blur-sm bg-opacity-90 text-white p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300 ease-in-out">
+            <h3 class="font-bold text-xl mb-3 text-cyan-100">Desain Grafis <br>BEE Digital Printing, 2022 - 2023</h3>
+            <p class="font-semibold text-justify text-cyan-900 text-shadow-lg text-shadow-white">
+              Pengalaman PKL selama 4 bulan di toko percetakan BEE digital printing di bidang desain, melayani pelangggan baik secara virtual maupun secara langsung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- eksperience end -->
+
+    <!-- contact -->
+    <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-cyan-900 px-4 py-10">
+      <div class="bg-white rounded-3xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full">
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-2xl font-bold text-cyan-900">CONTACT US</h2>
+          <img src="fika-cameron.png" alt="Contact Illustration" class="w-72 mb-4 rounded-b-[50%]">
+        </div>
+    
+        <!-- Form Kontak -->
+        <form class="space-y-5">
+          <input type="text" placeholder="User name"
+            class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-900"/>
+    
+          <input type="email" placeholder="Email"
+            class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-900"/>
+    
+          <textarea placeholder="Message..." 
+            class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-900"></textarea>
+    
+          <button type="submit" 
+            class="w-full bg-cyan-600 hover:bg-cyan-900 text-white font-semibold py-3 rounded-lg transition duration-300 flex items-center justify-center gap-2"><a href="tel:6285749519947">
+            Submit</a>
+            <span>→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- Footer -->
+      <div class="mb-4 md:mb-0 text-center">
+        <h1 class="text-xl font-bold">Fika Nurlaila</h1>
+        <p class="text-sm text-gray-500">© Izin istirahat dulu yawwww.</p>
+      </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuDropdown = document.getElementById('menu-dropdown');
+    
+        menuButton.addEventListener('click', () => {
+          menuDropdown.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
