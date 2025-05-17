@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white dark:bg-gray-900 dark:text-white fixed top-0 w-full z-20 flex justify-evenly items-center p-5 drop-shadow-xs">
+        <div class="flex gap-3">
+            <img src="ASSET SESI 2/Logo 1.png" alt="logo" class="w-5 h-5 self-center dark:invert">
+            <p class="font-semibold">Karina Porto</p>
+        </div>
+        <div class="flex gap-8">
+            <a href="#home">Beranda</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#studycase">StudyCase</a>
+            <a href="#client">Client</a>
+            <a href="#tentang">Tentang Kami</a>
+        </div>
+        <div class="flex">
+            <input type="checkbox" class="hidden" id="darkToggle">
+            <label for="darkToggle">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-500 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full flex items-center justify-center transition duration-200 ease-in-out">
+                        <i class="fas fa-sun text-yellow-300 dark:hidden"></i>
+                        <i class="fas fa-moon text-gray-300 hidden dark:block"></i>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </nav>
+    <main class="bg-neutral-100 dark:bg-gray-800 dark:text-white grid grid-cols-1 px-20 gap-20 transition duration-100 ease-in-out">
+        <div id="home" class="grid grid-cols-2 p-10 gap-20 mt-10">
+            <div class="flex flex-col gap-3">
+                <img src="ASSET SESI 2/Gambar 1 (1).png" alt="gambar1" class="w-full block dark:hidden">
+                <img src="ASSET SESI 2/agab.png" alt="gambar1" class="w-full hidden dark:block">
+                <p class="text-2xl font-bold ">Karina siap  membantu mewujudkan ide dan impian anda</p>
+                <p class="text-base text-gray-600 dark:text-gray-300">Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna</p>
+            </div>
+            <div class="p-8">
+                <form action="" id="formulir" class="grid grid-cols-1">
+                    <label for="" class="text-base">Nama Lengkap</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda" class="bg-transparent p-3 border border-1 rounded-full">
+                    <p id="error-nama" class="text-red-500 text-sm min-h-5 mb-1"></p>
+                    
+                    <label for="" class="text-base">Alamat Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email Anda" class="bg-transparent p-3 border border-1 rounded-full">
+                    <p id="error-email" class="text-red-500 text-sm min-h-5 mb-1"></p>
+                    
+                    <label for="" class="text-base">Deskripsi Proyek</label>
+                    <textarea name="" id="deskripsi" rows="5" placeholder="Ceritakan sedikit tentang proyek Anda" class="bg-transparent resize-none p-3 border border-1 rounded-2xl"></textarea>
+                    <p id="error-deskripsi" class="text-red-500 text-sm min-h-5 mb-1"></p>
+
+                    <label for="" class="text-base">Kisaran Anggaran</label>
+                    <input type="text" id="anggaran" placeholder="Berapa anggaran Anda?" class="bg-transparent p-3 border border-1 rounded-full">
+                    <p id="error-anggaran" class="text-red-500 text-sm min-h-5 mb-1"></p>
+
+                    
+                    <button class="bg-amber-200 dark:bg-blue-400 rounded-3xl p-3 mt-4 font-semibold" type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+        };
+
+        const darkToggle = document.getElementById("darkToggle");
+        const toggleCircle = document.querySelector(".toggle-circle");
+        const html = document.querySelector('html');
+
+        darkToggle.addEventListener('change', function() {
+            if (darkToggle.checked) {
+                html.classList.add('dark');
+                toggleCircle.classList.add('translate-x-3');
+            } else {
+                html.classList.remove('dark');
+                toggleCircle.classList.remove('translate-x-3');
+            }
+        }); 
+
+        let namaInput = document.getElementById("nama");
+        let namaError = document.getElementById("error-nama");
+        let emailInput = document.getElementById("email");
+        let emailError = document.getElementById("error-email");
+        let deskripsiInput = document.getElementById("deskripsi");
+        let deskripsiError = document.getElementById("error-deskripsi");
+        let anggaranInput = document.getElementById("anggaran");
+        let anggaranError = document.getElementById("error-anggaran");
+
+        namaInput.addEventListener("blur", function() {
+            let namaRegex = /^[A-Za-z\s]+$/;
+            if (!namaRegex.test(namaInput.value.trim())) {
+                namaError.textContent = "Nama Tidak Valid!";
+            } else {
+                namaError.textContent = "";
+            }
+        })
+
+        emailInput.addEventListener("blur", function() {
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                emailError.textContent = "Email tidak valid!";
+            } else {
+                emailError.textContent = "";
+            }
+        })
+
+        deskripsiInput.addEventListener("blur", function() {
+            if (deskripsiInput.value.trim() == "") {
+                deskripsiError.textContent = "Masukkan deskripsi yang sesuai!";
+            } else {
+                deskripsiError.textContent = "";
+            }
+        })
+
+        anggaranInput.addEventListener("blur", function() {
+            if (anggaranInput.value.trim() === "") {
+                anggaranError.textContent = "Masukkan Anggaran yang valid!";
+            } else {
+                anggaranError.textContent = "";
+            }
+        })
+        
+        document.getElementById("formulir").addEventListener("submit", function(event) {
+            let nama = document.getElementById("nama").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let deskripsi = document.getElementById("deskripsi").value.trim();
+            let anggaran = document.getElementById("anggaran").value.trim();
+
+            if (nama === "" || email === "" || deskripsi === "" || anggaran === "") {
+                alert("Harap isi semua bidang sebelum mengirimkan formulir!");
+                event.preventDefault(); 
+            }
+        });
+    </script> 
+</body>
+</html>
