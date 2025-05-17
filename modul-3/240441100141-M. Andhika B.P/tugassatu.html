@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="font-medium bg-white-950 flex justify-center gap-9 text-black font-bold p-5 fixed w-full shadow-lg backdrop-blur-md z-2">
+        <a href="#home" class="hover:underline transition-all duration-200">HOME</a>
+        <a href="#about" class="hover:underline transition-all duration-200">ABOUT</a>
+        <a href="#skill" class="hover:underline transition-all duration-200">SKILL</a>
+        <a href="#contact" class="hover:underline transition-all duration-200">CONTACT</a>
+    </nav>
+    <div id="home" class="bg-slate-400 flex flex-col-reverse md:flex-row items-center justify-center px-20 max-h-200 md:max-h-80 pt-20 md:pt-77 mb-40 md:mb-75 transition-all duration-100">
+        <section>
+            <p class="text-2xl md:text-4xl">Hi, There</p>
+            <p class="text-4xl md:text-6xl">I'm <span class="font-bold">Andhika</span><br> As Web Developer.</p>
+            <p class="text-2xl md:text-4xl">Technology enthusias</p>
+        </section>
+        <img src="img/foto.jpg" alt="photo.jpg" class="size-60 rounded-full border-8 border-slate-400 ">
+    </div>
+    <div id="about" class="shadow-xl flex flex-col justify-center text-center min-h-100 px:10 md:px-30 mb-30 w-full transition-all duration-300">
+        <p class="text-3xl md:text-5xl font-bold mb-2">About Me</p>
+        <p class="text-lg md:text-xl font-sans mx-auto max-w-screen-sm px-5">Hello everyone, My name is Muhammad Andhika Bagus Pratama, a web developer from Pamekasan, Madura, holding a degree in Information System from University of Trunojoyo Madura, just normies person who love to learn new things and always open to new opportunities, and also to continuous learning and staying updated on latest web development trends</p>
+    </div>
+    <div id="skill" class="bg-slate-300 flex flex-col items-center justify-center p-7 mb-30">
+        <p class="text-4xl font-bold mb-4">Skill Set</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-20">
+            <img src="https://pnghq.com/wp-content/uploads/pnghq.com-python-logo-crystal-clear-6-768x767.png" alt="pyhton" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://pnghq.com/wp-content/uploads/javascript-logo-png-smooth-edges.png" alt="javascript" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://icon-library.com/images/html5-icon/html5-icon-13.jpg" alt="html" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://pnghq.com/wp-content/uploads/css-html-logo-png-transparent-overlay-1536x1536.png" alt="css" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://th.bing.com/th/id/R.9ef80d4508ff725b49e89d10a1c32011?rik=EF%2bkBCBMfcAECg&riu=http%3a%2f%2fsusnya.hu%2fwp-content%2fuploads%2f2010%2f08%2fPHP-Logo-160x84.png&ehk=voF2kOFkTAoNX%2fFKEuXKEcprmDapFh0lhhS5abDSbbY%3d&risl=&pid=ImgRaw&r=0" alt="php" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="mysql" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-1024.png" alt="git" class="w-20 grayscale hover:grayscale-0">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/09/node_js_logo-freelogovectors.net_.png" alt="nodejs" class="w-20 grayscale hover:grayscale-0">
+        </div>
+    </div>
+    <div id="project" class="flex flex-col items-center justify-center mb-30">
+        <p class="text-4xl font-bold my-5">Recent Project</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-center gap-10 md:gap-15 p-10">
+            <div class="flex flex-col bg-slate-700/20 p-8 w-90 gap-1 h-full transition-transform duration-300 hover:-translate-y-3 rounded-lg">
+                <p class="text-3xl ">List Artikel</p>
+                <p class="text-sm leading-5 flex-grow">That's website a simple blog platform that lists several articles in a clean and organized layout. Users can easily browse, choose, and read articles that interest them. There’s also a “Read More” button that lets them access the full content, making reading smooth, convenient, and enjoyable.</p>
+                <img src="img/img1.png" alt="web image" class="w-auto h-auto">
+            </div>
+            <div class="flex flex-col bg-slate-700/20 p-8 w-90 gap-1 h-full transition-transform duration-300 hover:-translate-y-3 rounded-lg">
+                <p class="text-3xl">Web Restoran</p>
+                <p class="text-sm leading-5 flex-grow">This website was created for "Restoran Cihuy Khas Jawa," a place that serves authentic Javanese food and drinks. It provides a complete menu with prices and features an ordering system, making it easy for customers to browse and order their favorite dishes directly</p>
+                <img src="img/img2.png" alt="web image" class="w-auto h-auto">
+            </div>
+            <div class="flex flex-col bg-slate-700/20 p-8 w-90 gap-1 h-full transition-transform duration-300 hover:-translate-y-3 rounded-lg">
+                <p class="text-3xl">Form Login</p>
+                <p class="text-sm leading-5 flex-grow">A simple website form, that allows users to log in by entering their Username and Password, with an optional 'Remember me' feature to save login details. If they forget their password, they can use the 'Forgot the password?' link for recovery. After entering their username and password, users just need to click the LOGIN button to access their account"</p>
+                <img src="img/img3.png" alt="web image" class="w-auto h-auto">
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="flex flex-col items-center justify-center gap-2 mb-5">
+        <p class="text-2xl md:text-3xl font-bold">Let's Get In Touch</p>
+        <section class="flex flex-col items-center justify-center">
+            <p class="text-base md:text-lg">Pamekasan, Madura</p>
+            <p class="text-base md:text-lg">andhika06@gmail.com</p>
+            <p class="text-base md:text-lg">(62) 81945825455</p>
+        </section>
+        <section class="flex gap-2">
+            <a href="https://wa.me/081945825455" class="bg-slate-400 rounded-full w-8 h-8 flex items-center justify-center"><i class="fa-solid fa-phone text-white"></i></a>
+            <a href="https://github.com/andhikkadd" class="bg-slate-400 rounded-full w-8 h-8 flex items-center justify-center"><i class="fa-brands fa-github text-white"></i></a>
+            <a href="https://wwww.facebook.com/andhikka" class="bg-slate-400 rounded-full w-8 h-8 flex items-center justify-center"><i class="fa-brands fa-facebook-f text-white"></i> </a>
+            <a href="https://linkedin.com/in/andhika.06" class="bg-slate-400 rounded-full w-8 h-8 flex items-center justify-center"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+        </section>
+    </div>
+</body>
+</html>

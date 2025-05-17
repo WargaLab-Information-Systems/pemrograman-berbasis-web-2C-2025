@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white dark:bg-gray-900 dark:text-white fixed top-0 w-full z-20 flex justify-evenly items-center p-5 drop-shadow-xs">
+        <div class="flex gap-3">
+            <img src="ASSET SESI 2/Logo 1.png" alt="logo" class="w-5 h-5 self-center dark:invert">
+            <p class="font-semibold">Karina Porto</p>
+        </div>
+        <div class="flex gap-8">
+            <a href="#home">Beranda</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#studycase">StudyCase</a>
+            <a href="#client">Client</a>
+            <a href="#tentang">Tentang Kami</a>
+        </div>
+        <div class="flex">
+            <input type="checkbox" class="hidden" id="darkToggle">
+            <label for="darkToggle">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-slate-500 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full flex items-center justify-center transition duration-200 ease-in-out">
+                        <i class="fas fa-sun text-yellow-300 dark:hidden"></i>
+                        <i class="fas fa-moon text-gray-300 hidden dark:block"></i>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </nav>
+    <main class="bg-neutral-100 dark:bg-gray-800 text dark:text-white grid grid-cols-1 px-20 gap-20 pb-20 transition duration-100 ease-in-out">
+        <div id="home" class="grid grid-cols-2 p-10 gap-20 mt-10"> 
+            <img src="ASSET SESI 2/Gambar 1 (1).png" alt="gambar1" class="w-full block dark:hidden">
+            <img src="ASSET SESI 2/agab.png" alt="gambar1" class="w-full hidden dark:block">
+            <div class="flex flex-col self-center space-y-3">
+                <p class="text-lg">I'm Karina</p>
+                <p class="text-5xl font-bold">Front-End Developer & UI/UX</p>
+                <p class="text-lg text-gray-600 dark:text-gray-300">Membantu perusahaan dalam mengembangkan<br>website atau mobile app untuk lebih besar</p>
+                <div class="flex flex-row mt-7 gap-2 items-center">
+                    <a href="halalman2.html" class="bg-amber-200 dark:bg-blue-400 flex rounded-full px-10 p-3">
+                        <p class="font-medium">Hire Me</p>
+                    </a>
+                    <div class="flex px-10 p-3">
+                        <p class="font-medium">My Portofolio</p>
+                        <a href=""><img src="ASSET SESI 2/Icon 1 (1).png" alt="img" class="w-7 dark:invert"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skill" class="grid grid-cols-1 justify-items-center mb-10">
+            <p class="text-lg">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+            <p class="text-3xl font-bold mb-10">Skill Saya</p>
+            <div class="grid grid-cols-4 gap-10 place-items-center mb-8">
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-Figma.png" alt="figma.png" class="bg-indigo-500 rounded-full w-12 p-2">
+                    <p class="font-semibold">Figma</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-Html 5.png" alt="html.png" class="bg-amber-300 rounded-full w-12 p-2">
+                    <p class="font-semibold">HTML 5</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-css.png" alt="css.png" class="bg-black rounded-full w-12 p-2">
+                    <p class="font-semibold">CSS</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-SQL.png" alt="mysql.png" class="bg-fuchsia-500 rounded-full w-12 p-2">
+                    <p class="font-semibold">MYSQL</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-10 place-items-center">
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-JavaScript.png" alt="javascript.png" class="bg-black rounded-full w-12 p-2">
+                    <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-React.png" alt="react.png" class="bg-green-400 rounded-full w-12 p-2">
+                    <p class="font-semibold">React</p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 dark:text-white flex flex-row w-[180px] rounded-xl p-3 gap-2 items-center">
+                    <img src="ASSET SESI 2/icon-React.png" alt="vscode.png" class="bg-indigo-500 rounded-full w-12 p-2">
+                    <p class="font-semibold">Visual Studio Code</p>
+                </div>
+            </div>
+        </div>
+        <div id="project" class="">
+            <header class="flex justify-between items-center mb-15">
+                <div>
+                    <p class="text-3xl font-bold mb-2">Proyek Terbaik Saya</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="font-medium">Lihat Semua</p>
+                    <a href=""><img src="ASSET SESI 2/Icon 1 (1).png" alt="icon.png" class="w-8 dark:invert"></a>
+                </div>
+            </header>
+            <div class="grid grid-cols-2 gap-[100px] mt-10">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-3xl font-bold">E-Commerce Website Design</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300">Website Development</p>
+                    <p class="font-medium text-justify">Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.</p>
+                    <a href="" class="bg-amber-200 dark:bg-blue-400 font-medium p-2 px-6 rounded-3xl w-fit">Lihat Project</a>
+                </div>
+                <div>
+                    <img src="ASSET SESI 2/Gambar 2 (1).png" alt="gambar.png" class="rounded-4xl w-[120vh]">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-20 mt-10">
+                <div>
+                    <img src="ASSET SESI 2/Gambar 3.png" alt="gambar.png" class="rounded-4xl w-[120vh]">
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <p class="text-3xl font-bold">Online Course Landing Page</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300">Website Development</p>
+                    <p class="mb-[20px] font-medium my-6 text-justify ">Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQl, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side, website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.</p>
+                    <a href="" class="bg-amber-200 dark:bg-blue-400 font-medium p-2 px-6 rounded-3xl w-fit">Lihat Project</a>
+                </div> 
+            </div>
+            <div class="grid grid-cols-2 gap-20 mt-10">
+                <div class="flex flex-col space-y-2">
+                    <p class="text-3xl font-bold">Waffle Pay</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300">UI/UI Design • App Development</p>
+                    <p class="font-medium my-6 text-justify">Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna. Proses desain dimulai denga riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi. Wirefame dan user flow dikembangkan menggunakan Figma, diikuti dengan design high-fidelity yang mengedepankan konsistensi visual dan aksebilitas. Prototipe interaktif dibuat untuk pegujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. Desain responsif disiapkan agar optimal diberbagai ukuran layar, terutama perangkat mobile. </p>
+                    <a href="" class="bg-amber-200 dark:bg-blue-400 font-medium p-2 px-5 rounded-3xl w-fit">Lihat Project</a>
+                </div>
+                <div>
+                    <img src="ASSET SESI 2/Gambar 4.png" alt="gambar.png" class="rounded-4xl w-[120vh]">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-20 mt-10">
+                <div>
+                    <img src="ASSET SESI 2/Gambar 5.png" alt="gambar.png" class="rounded-4xl w-[120vh]">
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <p class="text-3xl font-bold">Chatbot Mobile App</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300">UI/UI Design • App Development</p>
+                    <p class="font-medium my-6 text-justify">Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara. Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe> Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intuitif dan ramah pengguna. Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile</p>
+                    <a href="" class="bg-amber-200 dark:bg-blue-400 font-medium p-2 px-5 rounded-3xl w-fit">Lihat Project</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="prefooter" class="bg-blue-950 dark:bg-gray-900 text-white">
+        <div class="grid grid-cols-5 gap-20 h-[40vh] items-center px-20">
+            <div class="col-span-2">
+                <div class="flex align-center gap-2 mb-4">
+                    <img src="ASSET SESI 2/Logo 1.png" alt="logo.png" class="w-9 dark:invert">
+                    <p class="text-2xl">Karina Porto</p>
+                </div>
+                <p class="text-base">Bangun Ide Hebat Anda Bersama Saya - Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil</p>
+            </div>
+            <div class="text-sm leading-6">
+                <p class="mb-2 font-semibold">Tentang Saya</p>
+                <p>Profil Singkat</p>
+                <p>Layanan</p>
+                <p>Proyek Terbaru</p>
+                <p>Kontak</p>
+            </div>
+            <div class="text-sm leading-6">
+                <p class="mb-2 font-semibold">Navigasi</p>
+                <p>Blog/Artikel</p>
+                <p>Testimoni</p>
+                <p>Resume/CV</p>
+                <p>Tools yang Dipakai</p>
+            </div>
+            <div class="text-sm leading-6">
+                <p class="mb-2 font-semibold">Info Tambahan</p>
+                <p>Privasi & Ketentuan</p>
+                <p>Hak Cipta</p>
+                <p>Sitemap</p>
+                <p>Aksebilitas</p>
+            </div>
+        </div>
+        <div class="col-span-5 bg-white/10 dark:bg-gray-700/10 text-center py-3">
+            <p>&copy; Karina Porto. All right reserved. Design by Erlangga Satrya Husada</p>
+        </div>
+    </div>
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+        };
+
+        const darkToggle = document.getElementById("darkToggle");
+        const toggleCircle = document.querySelector(".toggle-circle");
+        const html = document.querySelector('html');
+
+        darkToggle.addEventListener('change', function() {
+            if (darkToggle.checked) {
+                html.classList.add('dark');
+                toggleCircle.classList.add('translate-x-3');
+            } else {
+                html.classList.remove('dark');
+                toggleCircle.classList.remove('translate-x-3');
+            }
+        });
+    </script>  
+</body>
+</html>
