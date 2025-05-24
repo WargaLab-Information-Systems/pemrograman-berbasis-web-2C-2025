@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Karina</title>
+
+  <script>
+    if (
+      localStorage.getItem("theme") === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+
+</head>
+<body class="bg-white dark:bg-black text-gray-800 dark:text-white">
+
+  <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-10 py-6 bg-white shadow-sm dark:bg-white">
+  <div class="flex items-center space-x-2">
+    <img src="logooo.png" alt="Logo Karina" class="h-10 w-auto" />
+  </div>
+  <ul class="flex space-x-6 text-sm font-medium text-gray-600">
+    <li><a href="#hero" class="hover:text-yellow-500">Beranda</a></li>
+    <li><a href="#skills" class="hover:text-yellow-500">Showcase</a></li>
+    <li><a href="#projects" class="hover:text-yellow-500">Study Case</a></li>
+    <li><a href="nomer2.html" class="hover:text-yellow-500">Client</a></li>
+    <li><a href="#about" class="hover:text-yellow-500">Tentang Kami</a></li>
+  </ul>
+  </nav>
+
+  <section id="hero" class="grid grid-cols-1 md:grid-cols-2 items-center px-10 pt-24 pb-16 gap-10">
+    <div class="flex justify-center md:justify-end">
+    <img src="Gambar 1 (1).png" alt="Karina" class="h-80 object-cover" />
+    </div>
+    <div class="text-left">
+      <p class="text-sm text-gray-600 dark:text-gray-400">I'm Karina</p>
+      <h1 class="text-4xl font-extrabold text-black dark:text-white mb-2">Front-End Developer<br />& UI/UX</h1>
+      <p class="text-sm text-purple-600 dark:text-purple-400 mb-6">Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar</p>
+      <div class="flex items-center gap-4">
+        <button class="bg-yellow-400 px-6 py-2 rounded-full font-semibold text-black">Hire Me</button>
+        <button class="bg-white px-6 py-2 rounded-full font-semibold text-gray-800 dark:text-black flex items-center">
+          <span>My Portfolio</span>
+          <img src="Icon 1 (1).png" alt="Arrow Icon" class="w-4 h-4" />
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="px-10 py-16 bg-white dark:bg-[#1a1a1a] text-center">
+  <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+  <h2 class="text-2xl font-bold mb-10 text-black dark:text-white">Skill Saya</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-[#A084E8] rounded-full p-3">
+        <img src="icon-Figma.png" alt="Figma" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">Figma</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-yellow-300 rounded-full p-3">
+        <img src="icon-Html 5.png" alt="HTML5" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">HTML 5</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-black rounded-full p-3">
+        <img src="icon-css.png" alt="CSS" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">CSS</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-pink-300 rounded-full p-3">
+        <img src="icon-SQL.png" alt="MySQL" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">MYSQL</span>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mt-6">
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-black rounded-full p-3">
+        <img src="icon-JavaScript.png" alt="JavaScript" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">Javascript</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-green-300 rounded-full p-3">
+        <img src="icon-React.png" alt="React" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">React</span>
+    </div>
+    <div class="bg-white rounded-2xl shadow-md px-6 py-4 flex items-center space-x-4 justify-center">
+      <div class="bg-[#A084E8] rounded-full p-3">
+        <img src="icon-VS CODE.png" alt="VS Code" class="h-6 w-6" />
+      </div>
+      <span class="text-black font-medium">Visual Studio Code</span>
+    </div>
+  </div>
+  </section>
+
+  <section id="projects" class="px-10 py-16 bg-gray-50 dark:bg-gray-900">
+  <div class="flex justify-between items-center mb-2">
+    <h2 class="text-2xl font-bold text-black dark:text-white">Proyek Terbaik Saya</h2>
+    <button class="bg-white px-6 py-2 rounded-full font-semibold text-gray-800 dark:text-black flex items-center space-x-1 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+      <span>Lihat Semua</span>
+      <img src="Icon 1 (1).png" alt="Arrow Icon" class="w-4 h-4" />
+    </button>
+  </div>
+  <p class="text-sm text-gray-600 dark:text-gray-300 mb-6">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+    <!-- Project 1 -->
+    <div class="space-y-4">
+      <h3 class="text-xl font-bold text-black dark:text-white">E-Commerce Website Design</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 -mt-2">Website Development</p>
+      <p class="text-sm text-gray-700 dark:text-gray-300">Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.</p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-full font-semibold text-black">Lihat Projek</button>
+    </div>
+    <div class="flex justify-center">
+      <img src="Gambar 2 (1).png" alt="E-Commerce Project Preview" class="rounded-xl shadow-lg w-full max-w-md">
+    </div>
+
+    <!-- Project 2 -->
+    <div class="flex justify-center order-2 md:order-1">
+      <img src="Gambar 3.png" alt="Online Course Project Preview" class="rounded-xl shadow-lg w-full max-w-md">
+    </div>
+    <div class="space-y-4 order-1 md:order-2">
+      <h3 class="text-xl font-bold text-black dark:text-white">Online Course Landing Page</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400">Website Development</p>
+      <p class="text-sm text-gray-700 dark:text-gray-300">Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.</p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-full font-semibold text-black">Lihat Projek</button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+    <!-- Project 3 -->
+    <div class="space-y-4">
+      <h3 class="text-xl font-bold text-black dark:text-white">Waffle Pay</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400 -mt-2">UI/UX Design • App Development</p>
+      <p class="text-sm text-gray-700 dark:text-gray-300">Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna. Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi. Wireframe dan user flow dikembangkan menggunakan Figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dan aksesibilitas. Prototipe interaktif dibuat untuk pengujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile.</p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-full font-semibold text-black">Lihat Projek</button>
+    </div>
+    <div class="flex justify-center">
+      <img src="Gambar 4.png" alt="Waffle Pay Preview" class="rounded-xl shadow-lg w-full max-w-md">
+    </div>
+
+    <!-- Project 4 -->
+    <div class="flex justify-center order-2 md:order-1">
+      <img src="Gambar 5.png" alt="Chatbot App Preview" class="rounded-xl shadow-lg w-full max-w-md">
+    </div>
+    <div class="space-y-4 order-1 md:order-2">
+      <h3 class="text-xl font-bold text-black dark:text-white">Chatbot Mobile App</h3>
+      <p class="text-sm text-gray-500 dark:text-gray-400">UI/UX Design • App Development</p>
+      <p class="text-sm text-gray-700 dark:text-gray-300">Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara. Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe. Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intuitif dan ramah pengguna. Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile.</p>
+      <button class="bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-full font-semibold text-black">Lihat Projek</button>
+    </div>
+  </div>
+  </section>
+
+  <footer id="about" class="bg-[#0F0D2B] text-white px-10 py-16 mt-20">
+  <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-6 text-sm">
+    
+    <div>
+      <div class="flex items-center space-x-2 mb-4">
+        <img src="Logo 1.png" alt="Logo Karina" class="h-6 w-6" />
+        <span class="text-base font-semibold">Karina Porto</span>
+      </div>
+      <p class="text-gray-300 leading-relaxed">
+        Bangun Ide Hebat Anda Bersama Saya — Siap<br />
+        Berkolaborasi dengan Keahlian yang Terbukti dan Fokus<br />
+        pada Hasil
+      </p>
+    </div>
+    
+    <div>
+      <h4 class="font-semibold mb-3">Tentang Saya</h4>
+      <ul class="space-y-2 text-gray-400 dark:text-gray-300">
+        <li>Profil Singkat</li>
+        <li>Layanan</li>
+        <li>Proyek Terbaru</li>
+        <li>Kontak</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">Navigasi</h4>
+      <ul class="space-y-2 text-gray-400 dark:text-gray-300">
+        <li>Blog / Artikel</li>
+        <li>Testimoni</li>
+        <li>Resume / CV</li>
+        <li>Tools yang Dipakai</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">Info Tambahan</h4>
+      <ul class="space-y-2 text-gray-400 dark:text-gray-300">
+        <li>Privasi & Ketentuan</li>
+        <li>Hak Cipta</li>
+        <li>Sitemap</li>
+        <li>Aksesibilitas</li>
+      </ul>
+    </div>
+  </div>
+  <div class="w-full bg-[#1C1B3A] text-gray-300 text-center text-sm py-4 mt-10">
+    © 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.
+  </div>
+  </footer>
+
+<button onclick="toggleMode()" id="toggleBtn" class="fixed bottom-5 right-5 bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-full shadow-lg z-50">
+  🌙/☀
+</button>
+
+<script>
+  function toggleMode() {
+    const html = document.documentElement;
+    html.classList.toggle("dark");
+
+    const isDark = html.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }
+
+  window.onload = () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  };
+</script>
+
+</body>
+</html>
