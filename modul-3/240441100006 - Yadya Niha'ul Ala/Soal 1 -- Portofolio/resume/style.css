@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: Arial, sans-serif;
+    max-width: 800px; 
+    margin: auto; 
+    padding: 20px; 
+    background-color: #595e60; 
+}
+
+.container { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px;  
+}
+
+header { 
+    display: flex; 
+    flex-direction: column;
+    align-items: left; 
+    text-align: left; 
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    header {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+    }
+
+    header div {
+      margin-left: 1rem;
+    }   
+}
+
+header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #171710;
+}
+
+header p {
+    margin: 0.25rem 0;
+    color: #595e60;
+    font-size: 0.95rem;
+}
+
+header a {
+    color: #171710;
+    text-decoration: underline;
+}
+
+header img { 
+    width: 120px; 
+    height: 150px; 
+    border-radius: 8px; 
+    margin-right: 20px; 
+    object-fit: cover;
+}
+
+h1 { 
+    color: #333; 
+    margin-bottom: 5px; 
+}
+
+h2 { 
+    border-bottom: 2px solid #333; 
+    padding-bottom: 5px; 
+}
+
+ul, ol { 
+    padding-left: 20px; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+}
+
+table, th, td { 
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+form { 
+    background: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+input, textarea { 
+    width: 100%; 
+    padding: 8px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #171710;
+    border-radius: 4px;
+    color: #171710;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    letter-spacing: 0.05em;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #171710;
+    color: white;
+}

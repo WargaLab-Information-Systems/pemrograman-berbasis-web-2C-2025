@@ -1,0 +1,339 @@
+<!-- INDEX -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../ASSET SESI 2/Logo 1.png" type="">
+    <title>Karina Porto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(245, 245, 245);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero-img-wrapper {
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .hero-img {
+            max-height: 600px;
+            width: auto;
+        }
+
+        .btn-yellow {
+            background-color: #fedd58;
+            color: #000;
+            font-weight: 600;
+            border-radius: 12px;
+            padding: 10px 24px;
+        }
+
+        .portfolio-link {
+            font-weight: 500;
+            margin-left: 1rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .portfolio-link span {
+            font-size: 1.2rem;
+            margin-left: 4px;
+        }
+
+        .img-rounded {
+            border-radius: 15%;
+            border: 1px solid #ccc;
+            
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .btn-lihat {
+          background-color: #fedd58;
+          transition: all 0.3s ease;
+        }
+
+        .btn-lihat:hover {
+          background-color: #ffea94;
+        }
+
+        .custom-mockup-img {
+            border-radius: 15%; 
+            max-width: 525px; 
+            max-height: auto; 
+            object-fit: cover; 
+            border: 1px solid #ccc;
+            display: block; 
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer a:hover {
+          color: #fedd58;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: white; padding: 25px; font-family: 'Sora', sans-serif; position: relative;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#beranda" style="padding-left: 2.5rem;">
+        <img src="../ASSET SESI 2/logooo.png" alt="Logo" height="30" class="d-inline-block align-text-top logo-navbar">
+      </a>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item">
+            <a class="nav-link active text-warning stay-still" href="#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyek">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#studycase">Study Case</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+        </ul>
+      
+        <div class=""> 
+          <label class="switch">
+            <input type="checkbox" onclick="myFunction()">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+  </script>
+
+    <div id="beranda" class="container py-5 px-0">
+      <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="hero-img-wrapper">
+              <img src="../ASSET SESI 2/Gambar 1 (1).png" alt="Karina" class="img-fluid hero-img">
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <p class="mb-1">I’m Karina</p>
+            <h1 class="display-4 fw-bold lh-1 mb-4">Front–End Developer & UI/UX</h1>
+            <p class="dark-text-muted mb-4">
+              Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar
+            </p>
+      
+            <!-- <button class="btn btn-yellow">Hire Me</button> -->
+            <a href="form.html" class="btn btn-yellow">Hire Me</a>
+            <a href="#" class="portfolio-link">My Portfolio <span><img src="../ASSET SESI 2/Icon 1 (1).png" alt="" width="40"></span></a>
+          </div>
+      </div>
+    </div>
+
+    <section id="studycase" class="text-center py-3">
+      <div class="container">
+        <p class="fw-semibold">Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+        <h2 class="fw-bold">Skill Saya</h2>
+    
+        <div class="row justify-content-center mt-4 g-3">
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-Figma.png" class="rounded-circle" style="background-color: mediumpurple; padding: 10px;" width="50" height="50" alt="Figma">
+              <span class="fw-semibold">Figma</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-Html 5.png" class="rounded-circle" style="background-color: #ffdb58; padding: 10px;" width="50" height="50" alt="HTML5">
+              <span class="fw-semibold">HTML 5</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-css.png" class="rounded-circle" style="background-color: black; padding: 10px;" width="50" height="50" alt="CSS">
+              <span class="fw-semibold">CSS</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-SQL.png" class="rounded-circle" style="background-color: hotpink; padding: 10px;" width="50" height="50" alt="MySQL">
+              <span class="fw-semibold">MYSQL</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-JavaScript.png" class="rounded-circle" style="background-color: black; padding: 10px;" width="50" height="50" alt="JavaScript">
+              <span class="fw-semibold">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-React.png" class="rounded-circle" style="background-color: #90ee90; padding: 10px;" width="50" height="50" alt="React">
+              <span class="fw-semibold">React</span>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 col-6">
+            <div class="bg-white rounded-4 py-3 px-3 h-100 d-flex align-items-center justify-content-start gap-3">
+              <img src="../ASSET SESI 2/icon-VS Code.png" class="rounded-circle" style="background-color: mediumpurple; padding: 10px;" width="50" height="50" alt="Visual Studio Code">
+              <span class="fw-semibold">Visual Studio Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <h2 class="fw-bold">Proyek Terbaik Saya</h2>
+            <p class="text-secondary">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+          </div>
+          <a href="#proyek" class="fw-semibold" style="text-decoration: none; color:rgb(33, 33, 33)">Lihat Semua <span><img src="../ASSET SESI 2/Icon 1 (1).png" alt="" width="35"></span></a>
+        </div>
+
+        <!-- FIX -->
+        <!-- Section 1 -->
+        <div id="proyek" class="row align-items-start py-5">
+          <div class="col-md-6 mt-3 order-md-1">
+            <h1 id="sec1" class="fw-bold">E–Commerce Website Design</h1>
+            <p class="text-secondary">Website Development</p>
+            <p class="text-justify">
+              Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.
+            </p>
+            <a href="#sec1" class="btn text-dark fw-semibold rounded-4 px-4 py-2 btn-lihat">Lihat Projek</a>
+          </div>
+          <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+            <img src="../ASSET SESI 2/proyek-1.png"
+                 alt="Online Course Landing Page" class="img-fluid ms-auto d-block custom-mockup-img">
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div id="sec2" class="row align-items-start py-5">
+          <div class="col-md-6 mb-4 mb-md-0 order-1">
+            <img src="../ASSET SESI 2/proyek-2.png"
+                 alt="Online Course Landing Page" class="img-fluid custom-mockup-img">
+          </div>
+          <div class="col-md-6 mt-3 order-2 px-4">
+            <h1 class="fw-bold">Online Course Landing Page</h1>
+            <p class="text-secondary">Website Development</p>
+            <p class="text-justify">
+              Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.
+            </p>
+            <a href="#sec2" class="btn text-dark fw-semibold rounded-4 px-4 py-2 btn-lihat">Lihat Projek</a>
+          </div>
+        </div>
+        
+        <!-- Section 3 -->
+        <div id="sec3" class="row align-items-start py-5">
+          <div class="col-md-6 mt-3 order-md-1">
+            <h1 class="fw-bold">Waffle Pay</h1>
+            <p class="text-secondary">UI/UX Design • App Development</p>
+            <p class="text-justify">
+              Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna. Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi. Wireframe dan user flow dikembangkan menggunakan Figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dan aksesibilitas. Prototipe interaktif dibuat untuk pengujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile.
+            </p>
+            <a href="#sec3" class="btn text-dark fw-semibold rounded-4 px-4 py-2 btn-lihat">Lihat Projek</a>
+          </div>
+          <div class="col-md-6 mb-4 mb-md-0 order-md-2">
+            <img src="../ASSET SESI 2/proyek-3.png"
+                 alt="Online Course Landing Page" class="img-fluid ms-auto d-block custom-mockup-img">
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div id="sec4" class="row align-items-start py-5">
+          <div class="col-md-6 mb-4 mb-md-0 order-1">
+            <img src="../ASSET SESI 2/proyek-4.png"
+                 alt="Online Course Landing Page" class="img-fluid custom-mockup-img">
+          </div>
+          <div class="col-md-6 mt-3 order-2 px-4">
+            <h1 class="fw-bold">Chatbot Mobile App</h1>
+            <p class="text-secondary">UI/UX Design • App Development</p>
+            <p class="text-justify">
+              Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara. Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe. Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intuitif dan ramah pengguna. Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. Desain akhir dibuat responsif, dengan perhatian pada tipografı, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile.
+            </p>
+            <a href="#sec4" class="btn text-dark fw-semibold rounded-4 px-4 py-2 btn-lihat">Lihat Projek</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>  
+
+    <footer id="tentang" class="text-white" style="background: linear-gradient(45deg, #0c0b20 70%, white 170%);">
+      <div class="container" style="padding-top: 10%; padding-bottom: 10%;">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img src="../ASSET SESI 2/Logo 1.png" alt="Logo" width="30" class="me-2">
+              <h5 class="mb-0 fw-semibold">Karina Porto</h5>
+            </div>
+            <p class="text-white-50" style="max-width: 350px;">
+              Bangun Ide Hebat Anda Bersama Saya — Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil
+            </p>
+          </div>
+    
+          <div class="col-lg-2 col-md-4 offset-lg-1 mb-4 mb-md-0">
+            <h6 class="fw-semibold mb-3">Tentang Saya</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-decoration-none">Profil Singkat</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Layanan</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Proyek Terbaru</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Kontak</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-semibold mb-3">Navigasi</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-decoration-none">Blog / Artikel</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Testimoni</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Resume / CV</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Tools yang Dipakai</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-3 col-md-4">
+            <h6 class="fw-semibold mb-3">Info Tambahan</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white-50 text-decoration-none">Privasi & Ketentuan</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Hak Cipta</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Sitemap</a></li>
+              <li><a href="#" class="text-white-50 text-decoration-none">Aksesibilitas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="text-center py-3" style="background-color: #0b0a1d;">
+        <small class="text-white-50">&copy; 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada. Slicing by Yadya Niha'ul Ala.</small>
+      </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

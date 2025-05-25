@@ -1,0 +1,87 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="img/cherry.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@400;600;700&family=Quicksand:wght@400;500;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+    <title>PIM</title>
+  </head>
+  <body style="background-color: #355F2E;">
+    <div id="home" class="hero-container">
+      <div class="hero-title">
+        <h1>
+          <span>Profil</span>
+          <span>Interaktif</span>
+          <span>Mahasiswa</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="capsule-navbar hidden" id="navbar">
+      <a href="#home">Home</a>
+      <a href="timeline.php">Timeline</a>
+      <a href="blog.php">Blog</a>
+    </div>
+
+    <div class="main-container">
+      <div class="highlight">Not just a student, but a whole work-in-progress character arc.</div>
+      <h2>We Need The Tea</h2>
+      <form action="hasil-tea.php" method="POST">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required pattern="^[A-Za-z\s]+$" title="Nama tidak boleh mengandung angka">
+
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" placeholder="e.g. 240441100000" required pattern="^[0-9]+$" title="NIM hanya mengandung angka.">
+
+        <label for="address">Alamat</label>
+        <textarea id="address" name="address" rows="3" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota/Kab, Provinsi" required></textarea>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+
+        <label for="phone">Nomor Telepon</label>
+        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon"  required pattern="^[0-9]+$" title="Nomor telepon hanya boleh mengandung angka">
+
+        <label for="language">Bahasa Pemrograman yang Dikuasai</label>
+        <input type="text" id="language" name="language" placeholder="e.g. Java, Python" required>
+
+        <label for="project">Proyek Pribadi Anda</label>
+        <textarea name="project" id="project" rows="4" placeholder="Ceritakan tentang proyek pribadi anda" required></textarea>
+
+        <label>Software yang Anda Gunakan</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="software[]" value="VS Code">Visual Studio Code</label>
+
+          <label><input type="checkbox" name="software[]" value="XAMPP">XAMPP</label>
+
+          <label><input type="checkbox" name="software[]" value="Java">Java</label>
+        </div>
+
+        <label>Sistem Operasi</label>
+        <div class="radio-group">
+          <label><input type="radio" name="os" value="Windows" required>Windows</label>
+          <label><input type="radio" name="os" value="Linux">Linux</label>
+          <label><input type="radio" name="os" value="macOS">macOS</label>
+        </div>
+
+        <label for="skill">Tingkat Pengetahuan dalam Bahasa Pemrograman</label>
+        <select id="skill" name="skill" required>
+          <option>Pemula</option>
+          <option>Menengah</option>
+          <option>Mahir</option>
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <footer class="footer">
+        <p>
+            &copy; 2025 | 240441100006 | Lovingly designed by Yadya Niha
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
