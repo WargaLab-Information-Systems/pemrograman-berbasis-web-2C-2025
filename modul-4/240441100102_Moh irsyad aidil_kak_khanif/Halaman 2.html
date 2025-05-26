@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Kontak Karina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .yellow-bg {
+      background-color: #FFE377;
+      border-radius: 50% 50% 0 0;
+      padding: 40px;
+      text-align: center;
+    }
+    .form-control::placeholder {
+      color: #b0b0b0;
+    }
+    .btn-yellow {
+      background-color: #FFE377;
+      border: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+
+      <div class="col-md-6 text-center">
+        <div class="yellow-bg mb-3">
+          <img src="ASSET/women.png" alt="Karina" class="img-fluid" style="max-height: 300px;">
+        </div>
+        <h5 class="fw-bold">Karina siap membantu mewujudkan ide dan impian anda</h5>
+        <p class="text-muted">Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna</p>
+      </div>
+
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Alamat Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+          </div>
+          <div class="mb-3">
+            <label for="deskripsi" class="form-label">Deskripsi Proyek</label>
+            <textarea class="form-control" id="deskripsi" rows="4" placeholder="Ceritakan sedikit tentang proyek Anda"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="anggaran" class="form-label">Kisaran Anggaran</label>
+            <input type="text" class="form-control" id="anggaran" placeholder="Berapa anggaran Anda?">
+          </div>
+          <button type="submit" class="btn btn-yellow w-100 py-2">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault(); // Hindari form terkirim duluan
+  
+      const nama = document.getElementById('nama');
+      const email = document.getElementById('email');
+      const deskripsi = document.getElementById('deskripsi');
+      const anggaran = document.getElementById('anggaran');
+  
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+
+      if (nama.value.trim() === '') {
+        alert('Nama lengkap harus diisi.');
+        nama.focus();
+        return;
+      }
+  
+      if (email.value.trim() === '') {
+        alert('Alamat email harus diisi.');
+        email.focus();
+        return;
+      }
+  
+      if (!emailRegex.test(email.value.trim())) {
+        alert('Alamat email tidak valid.');
+        email.focus();
+        return;
+      }
+  
+      if (deskripsi.value.trim() === '') {
+        alert('Deskripsi proyek harus diisi.');
+        deskripsi.focus();
+        return;
+      }
+  
+      if (anggaran.value.trim() === '') {
+        alert('Kisaran anggaran harus diisi.');
+        anggaran.focus();
+        return;
+      }
+  
+      
+      alert('Form berhasil dikirim!');
+      this.submit(); 
+    });
+  </script>
+  
+  
+</body>
+</html>
