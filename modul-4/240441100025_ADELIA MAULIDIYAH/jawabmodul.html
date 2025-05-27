@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Karina</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+    .dark-mode .btn-warning {
+      background-color: #ffc107;
+      border: none;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+
+    body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  .dark-mode .skills-section {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+  .dark-mode .skills-section .skill-item {
+    background-color: #2a2a2a;
+  }
+  .dark-mode .skills-section .skill-item span {
+    color: #f0f0f0;
+  }
+    .skills-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .skill-item {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .skill-item {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .footer-logo {
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-left: 10px;
+    }
+
+    .footer-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #facc15;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      background-color: #1a1a2e;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    .dark-mode .navbar {
+  background-color: #1c1c1c !important;
+}
+
+.dark-mode .nav-link {
+  color: white !important;
+}
+
+.dark-mode .nav-link.active {
+  color: #ffc107 !important;
+}
+
+.dark-mode .btn-outline-dark {
+  color: white;
+  border-color: white;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Default light mode navbar */
+#mainNavbar {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar dalam mode gelap */
+.dark-mode #mainNavbar {
+  background-color: #1c1c1c !important;
+}
+
+.dark-mode .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.dark-mode .navbar-nav .nav-link.active {
+  color: #ffc107 !important;
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg px-4" id="mainNavbar">
+  <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+    <img src="logooo.png" alt="Logo" style="height: 30px;"> <!-- Ganti path dengan path logo sebenarnya -->
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span> 
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+      <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+      <li class="nav-item"><a class="nav-link" href="#study">Study Case</a></li>
+      <li class="nav-item"><a class="nav-link" href="#client">Client</a></li>
+      <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" id="themeToggle">🌙</button></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Tombol Dark/Light Mode -->
+<button class="btn btn-secondary theme-toggle" onclick="toggleTheme()">Ubah Tema</button>
+
+<!-- Hero Section -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img src="Gambar 1 (1).png" alt="Foto Karina" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <p>I'm Karina</p>
+      <h1 class="fw-bold">Front-End Developer & UI/UX</h1>
+      <p>Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar</p>
+      <a href="halaman2.html" class="btn btn-warning">Hire Me</a>
+      <a href="#" class="ms-3">My Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="skills-section text-center">
+  <div class="container">
+    <p>Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks</p>
+    <h3 class="fw-bold mb-4">Skill Saya</h3>
+    <div class="row row-cols-2 row-cols-md-4 g-3 justify-content-center">
+      <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-4">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #a259ff;">
+            <img src="icon-Figma.png" alt="Figma" width="24">
+          </div>
+        <span class="fw-bold">Figma</span>
+      </div>
+    </div>
+    <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #f7df5e;">
+            <img src="icon-Html 5.png" alt="HTML5" width="24">
+          </div>
+        <span class="fw-bold">HTML 5</span>
+      </div>
+    </div>
+     <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #000000;">
+            <img src="icon-css.png" alt="CSS" width="24">
+          </div>
+        <span class="fw-bold">CSS</span>
+      </div>
+    </div>
+     <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #f291d2;">
+            <img src="icon-SQL.png" alt="MySQL" width="24">
+          </div>
+        <span class="fw-bold">MySQL</span>
+      </div>
+    </div>
+     <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #000000;">
+            <img src="icon-JavaScript.png" alt="JavaScript" width="24">
+          </div>
+        <span class="fw-bold">JavaScript</span>
+      </div>
+    </div>
+     <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #8ff7b3;">
+            <img src="icon-React.png" alt="React" width="24">
+          </div>
+        <span class="fw-bold">React</span>
+      </div>
+    </div>
+     <div class="col">
+        <div class="skill-item d-flex align-items-center justify-content-center gap-3">
+          <div class="rounded-circle d-flex align-items-center justify-content-center"
+            style="width: 50px; height: 50px; background-color: #5f5fff;">
+            <img src="icon-VS CODE.png" alt="Visual Studio Code" width="24">
+          </div>
+        <span class="fw-bold">Visual Studio Code</span>
+      </div>
+    </div>
+</section>
+
+<!--Proyek Saya-->
+<section class="container my-5" id="showcase">
+    <h4 class="fw-bold">Proyek Terbaik Saya</h4>
+    <p>Beberapa hasil karya kami yang paling kami banggakan.</p>
+  <div class="row">
+    <div class="col-md-6">
+      <h4 class="fw-bold">E-Commerce Website Design</h4>
+      <p class="text-muted">Website Development</p>
+      <p style="text-align: justify;">Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state. Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untu menampilkan produk secara dinamis dan real-time.</p>
+      <a href="#" class="btn btn-warning">Lihat Proyek</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="Gambar 2 (1).png" alt="E-Commerce" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <div class="row mb-5 align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <h4 class="fw-bold">Online Course Landing Page</h4>
+      <p class="text-muted">Website Development</p>
+      <p style="text-align: justify;">Website ini dikembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend. Dengan integrasi Filament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-friendly. Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.</p>
+      <a href="#" class="btn btn-warning">Lihat Proyek</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="Gambar 3.png" alt="Course" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <h4 class="fw-bold">Waffle Pay</h4>
+      <p class="text-muted">UI/UX Design • App Development</p>
+      <p style="text-align: justify;">Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna. Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user persona untuk memahami tujuan aplikasi. Wireframe dan user flow dikembangkan menggunakan Figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dan aksesibilitas. Prototipe interaktif dibuat untuk pengujian usability, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile</p>
+      <a href="#" class="btn btn-warning">Lihat Proyek</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="Gambar 4.png" alt="Waffle Pay" class="img-fluid rounded shadow">
+    </div>
+  </div>
+
+  <div class="row mb-5 align-items-center flex-md-row-reverse">
+    <div class="col-md-6">
+      <h4 class="fw-bold">Chatbot Mobile App</h4>
+      <p class="text-muted">UI/UX Design • App Development</p>
+      <p style="text-align: justify;">Chatbot Mobile App ini dirancang dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melalui observasi dan wawancara. Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe. Desain antarmuka dikembangkan menggunakan Figma, dengan fokus pada interaksi percakapan yang intuitif dan ramah pengguna. Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga mendukung pengalaman pengguna yang optimal di perangkat mobile.</p>
+      <a href="#" class="btn btn-warning">Lihat Proyek</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="Gambar 5.png" alt="Chatbot App" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<script>
+  // Validasi Form Bootstrap
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+
+    // Ubah tema tombol (opsional)
+    const toggleBtn = document.getElementById("themeToggle");
+    if (document.body.classList.contains("dark-mode")) {
+      toggleBtn.textContent = "☀️";
+    } else {
+      toggleBtn.textContent = "🌙";
+    }
+  }
+</script>
+
+</script>
+
+<!-- Footer -->
+<footer class="pt-5">
+  <div class="container">
+    <div class="row text-white">
+      <!-- Logo dan Deskripsi -->
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-center mb-3">
+          <div class="footer-icon">
+            <!-- Ikon senyum heksagonal -->
+          <div class="footer-icon"></div>
+            <img src="Logo 1.png" alt="Logo Karina" style="height: 40px;">
+          </div>
+          <div class="footer-logo text-white">Karina Porto</div>
+        </div>
+        <p class="text-white">Bangun Ide Hebat Anda Bersama Saya — Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil</p>
+      </div>
+
+      <!-- Kolom Link 1 -->
+      <div class="col-md-2 mb-4 footer-links">
+        <h6 class="fw-semibold mb-3">Tentang Saya</h6>
+        <a href="#">Profil Singkat</a>
+        <a href="#">Layanan</a>
+        <a href="#">Proyek Terbaru</a>
+        <a href="#">Kontak</a>
+      </div>
+
+      <!-- Kolom Link 2 -->
+      <div class="col-md-3 mb-4 footer-links">
+        <h6 class="fw-semibold mb-3">Navigasi</h6>
+        <a href="#">Blog / Artikel</a>
+        <a href="#">Testimoni</a>
+        <a href="#">Resume / CV</a>
+        <a href="#">Tools yang Dipakai</a>
+      </div>
+
+      <!-- Kolom Link 3 -->
+      <div class="col-md-3 mb-4 footer-links">
+        <h6 class="fw-semibold mb-3">Info Tambahan</h6>
+        <a href="#">Privasi & Ketentuan</a>
+        <a href="#">Hak Cipta</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Aksesibilitas</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bawah -->
+<div class="footer-bottom text-white">
+    © 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.
+  </div>
+</footer> 
+</body>
+</html>
+
