@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightslategray;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgb(173, 173, 216);
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    border-left: 4px solid purple;
+    padding-left: 3px;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: purple;
+    border-radius: 50%;
+    border: 3px solid purple;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: purple;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 9px;
+    margin-top: 10px;
+    background: #67737b;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: orange;
+}

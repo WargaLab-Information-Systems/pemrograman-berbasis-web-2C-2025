@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+    .is-invalid {
+        border: 2px solid red;
+        background-color: #ffe5e5;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid" style="margin-left: 60px;">
+          <div>
+            <img src="Logo 1.png" alt="" style="height: 30px; width: 30px; padding-bottom: 3px;">
+            <a class="navbar-brand" href="#" style="font-weight: 600;"> Karina Porto</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex flex-row-reverse" style="margin-right: 60px;">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item" style="padding: 10px;">
+                        <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+                  </li>
+                  <li class="nav-item" style="padding: 10px;">
+                    <a class="nav-link" href="#">Showcase</a>
+                  </li> 
+                  <li class="nav-item" style="padding: 10px;">
+                    <a class="nav-link" href="#">StudyCase</a>
+                  </li>
+                  <li class="nav-item" style="padding: 10px;">
+                    <a class="nav-link" href="#">Client</a>
+                  </li>
+                  <li class="nav-item" style="padding: 10px;">
+                    <a class="nav-link" href="#">TentangKami</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container mb-5">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col">
+                <img src="Gambar 1 (1).png" alt="" style="height: 420px; width:470px; margin-bottom: 10px;">
+                <p style="font-size: 23px; font-weight: 500; margin-bottom: 0px;">Karina siap membantu mewujudkan ide dan <br> impian anda</p>
+                <p style="font-size: 18px; font-weight: lighter;">Dimulai dari riset hingga pengerjaan projek nyata yang <br>berdampak dan bermakna</p>
+            </div>
+            <div class="col">
+                <form onsubmit="return Validasi()">
+                    <div style="margin-left: 90px; margin-top: 20px;">
+                        <div class="mb-4" style="margin-right: 80px;">
+                            <label for="formGroupExampleInput" class="form-label" style="font-weight: 600;">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda" style="padding: 10px; border-radius: 30px;">
+                        </div>
+                        <div class="mb-4" style="margin-right: 80px;">
+                            <label for="formGroupExampleInput2" class="form-label" style="font-weight: 600;">Alamat Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Masukkan email Anda" style="padding: 10px; border-radius: 30px;">
+                        </div>
+                        <div class="mb-4" style="margin-right: 80px;">
+                            <label for="formGroupExampleInput2" class="form-label" style="font-weight: 600;">Deskripsi Proyek</label>
+                            <textarea class="form-control" id="deskripsi" rows="4" placeholder="Ceritakan sedikit tentang proyek Anda" style="border-radius: 12px;"></textarea>
+                        </div>
+                        <div class="mb-4" style="margin-right: 80px;">
+                            <label for="formGroupExampleInput2" class="form-label" style="font-weight: 600;">Kisaran Anggaran</label>
+                            <input type="text" class="form-control" id="anggaran" placeholder="Berapa anggaran Anda?" style="padding: 10px; border-radius: 30px;">
+                        </div>
+                        <button type="submit" class="btn btn-warning" style="padding: 10px; padding-left: 140px; padding-right: 140px; border-radius: 20px; font-size: large; font-weight: 600;">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    function Validasi() {
+        const nama = document.getElementById("nama");
+        const email = document.getElementById("email");
+        const deskripsi = document.getElementById("deskripsi");
+        const anggaran = document.getElementById("anggaran");
+
+        [nama, email, deskripsi, anggaran].forEach(input => input.classList.remove("is-invalid"));
+
+        let valid = true;
+
+        if (nama.value.trim() === "") {
+            nama.classList.add("is-invalid");
+            valid = false;
+        } else if (!/^[a-zA-Z\s]+$/.test(nama.value.trim())) {
+            nama.classList.add("is-invalid");
+            valid = false;
+        }
+        if (email.value.trim() === "") {
+            email.classList.add("is-invalid");
+            valid = false;
+        } else if (!email.value.includes("@") || !email.value.includes(".")) {
+            email.classList.add("is-invalid");
+            alert("Format email tidak valid!");
+            valid = false;
+        }
+        if (deskripsi.value.trim() === "") {
+            deskripsi.classList.add("is-invalid");
+            valid = false;
+        }
+        if (anggaran.value.trim() === "") {
+            anggaran.classList.add("is-invalid");
+            valid = false;
+        } else if (isNaN(anggaran.value.trim())) {
+            anggaran.classList.add("is-invalid");
+            alert("Anggaran harus berupa angka!");
+            valid = false;
+        }
+        if (!valid) {
+            alert("Silakan isi semua kolom yang benar!");
+        }
+        return valid;
+        }
+    </script>
+</body>
+</html>
