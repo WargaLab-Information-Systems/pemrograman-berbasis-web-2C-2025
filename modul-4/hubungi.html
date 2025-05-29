@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Saya</title>
+  <style>
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    .image-section, .form-section {
+      flex: 1;
+      max-width: 500px;
+      padding: 20px;
+    }
+    .image-section img {
+      width: 100%;
+      border-radius: 50% 50% 0 0;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      color: #6b6b6b;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #fede65;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f5d94c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="ASSET SESI 2/Gambar 1 (1).png" alt="Karina Porto">
+      <h2>Karina siap membantu mewujudkan ide dan impian anda</h2>
+      <p>Dimulai dari riset hingga pengerjaan projek nyata yang berdampak dan bermakna</p>
+    </div>
+    <div class="form-section">
+      <form id="contactForm">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="project">Deskripsi Proyek</label>
+        <textarea id="project" name="project" placeholder="Ceritakan sedikit tentang proyek Anda" required></textarea>
+
+        <label for="budget">Kisaran Anggaran</label>
+        <input type="text" id="budget" name="budget" placeholder="Berapa anggaran Anda?" required>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const project = document.getElementById("project").value.trim();
+      const budget = document.getElementById("budget").value.trim();
+
+      if (!name || !email || !project || !budget) {
+        alert("Semua kolom harus diisi!");
+        event.preventDefault();
+        return;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Alamat email tidak valid!");
+        event.preventDefault();
+        return;
+      }
+
+      alert("Formulir berhasil dikirim!");
+    });
+  </script>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+</script>
+
+</body>
+</html>
