@@ -9,11 +9,19 @@
   <h1>Profil Interaktif Mahasiswa</h1>
 
   <table>
+<<<<<<< HEAD
     <tr><td>Nama</td><td>Ayyu Meta Paramitha</td></tr>
     <tr><td>NIM</td><td>240441100034</td></tr>
     <tr><td>Tempat, Tanggal Lahir</td><td>Bojonegoro, 29 Maret 2006</td></tr>
     <tr><td>Email</td><td>metamitha@gmail.com</td></tr>
     <tr><td>Nomor HP</td><td>085829296849</td></tr>
+=======
+    <tr><td>Nama</td><td>Karina Porto</td></tr>
+    <tr><td>NIM</td><td>1234567890</td></tr>
+    <tr><td>Tempat, Tanggal Lahir</td><td>Jakarta, 1 Januari 2000</td></tr>
+    <tr><td>Email</td><td>karina@email.com</td></tr>
+    <tr><td>Nomor HP</td><td>08123456789</td></tr>
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
   </table>
 
   <form method="post">
@@ -78,7 +86,10 @@
 
   <div class="nav">
     <a class="button" href="timeline.php">Timeline Pengalaman</a>
+<<<<<<< HEAD
     <a class="button" href="blog.php">Blog</a>
+=======
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
   </div>
 </body>
 </html>
