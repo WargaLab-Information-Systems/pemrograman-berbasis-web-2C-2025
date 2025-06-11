@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+<<<<<<< HEAD
+  background-color: #ecc6c6;
+=======
+  background-color: #f4f6f8;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+<<<<<<< HEAD
+  background-color: #d6a49b;
+=======
+  background-color: #fff;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+table td, table th {
+  padding: 10px;
+<<<<<<< HEAD
+  border: 1px solid #cdc6c3;
+}
+
+form {
+  background-color: #d6a49b;
+=======
+  border: 1px solid #ddd;
+}
+
+form {
+  background-color: #fff;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+<<<<<<< HEAD
+  border: 1px solid #cdc6c3;
+=======
+  border: 1px solid #ccc;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  border-radius: 5px;
+}
+
+input[type="submit"], a.button {
+<<<<<<< HEAD
+  background-color: #cdc6c3;
+  color: d9d9d9;
+=======
+  background-color: #3498db;
+  color: white;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover, a.button:hover {
+<<<<<<< HEAD
+  background-color: #a55166;
+}
+
+.timeline {
+  border-left: 3px solid #a55166;
+=======
+  background-color: #2980b9;
+}
+
+.timeline {
+  border-left: 3px solid #2980b9;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.timeline .event {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  background: #ecf0f1;
+  padding: 10px;
+<<<<<<< HEAD
+  border-left: 5px solid #fcf7ec;
+=======
+  border-left: 5px solid #3498db;
+>>>>>>> 8c9d936ad2161bcdab20491126d16b792b75ab16
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+.nav a {
+  margin-right: 10px;
+}
