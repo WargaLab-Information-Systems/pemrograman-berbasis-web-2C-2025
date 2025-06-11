@@ -1,0 +1,58 @@
+body {
+    margin-bottom: 4rem;
+}
+
+h3, h4 {
+    color: #fe552a;
+    font-weight: bold;
+}
+
+form label {
+    font-weight: 500;
+    color: #3C3C3C;
+}
+
+.form-control:focus {
+    border-color: #fe552a;
+    box-shadow: 0 0 0 0.2rem rgba(254, 85, 42, 0.25);
+}
+
+.table {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #fe552a;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-bordered td, .table-bordered th {
+    border-color: #fbf3f0;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
