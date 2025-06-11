@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karina Portofolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        darkMode: 'class',
+    }
+  </script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors">
+    <!-- navbar -->
+    <header class="fixed top-0 left-0 w-full shadow-md bg-white dark:bg-gray-800 z-50">
+        <div class="container mx-auto flex items-center justify-around px-4 py-4">
+            <button id="mode-dark" class="text-xl">🌗</button>
+            <div><img src="ASSET SESI 2/logooo.png" style="width: 150px;"></div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="tugasmodul4.html#beranda" class="hover:text-amber-300">Beranda</a>
+                <a href="tugasmodul4.html#showcase" class="hover:text-amber-300">ShowCase</a>
+                <a href="tugasmodul4.html#studycase" class="hover:text-amber-300">Study Case</a>
+                <a href="tugasmodul4.html#client" class="hover:text-amber-300">Client</a>
+                <a href="tugasmodul4.html#tentangkami" class="hover:text-amber-300">Tentang Kami</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="menu-dropdown" class="hidden md:hidden shadow-md px-4 bg-white dark:bg-gray-800">
+            <a href="tugasmodul4.html#beranda" class="block py-2 hover:text-amber-300">Beranda</a>
+            <a href="tugasmodul4.html#showcase" class="block py-2 hover:text-amber-300">ShowCase</a>
+            <a href="tugasmodul4.html#studycase" class="block py-2 hover:text-amber-300">Study Case</a>
+            <a href="tugasmodul4.html#client" class="block py-2 hover:text-amber-300">Client</a>
+            <a href="tugasmodul4.html#tentangkami" class="block py-2 hover:text-amber-300">Tentang Kami</a>
+        </div>
+    </header>
+
+    <!-- beranda -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-10 mt-25 ml-5" id="beranda">
+        <div class="md:w-1/2">
+            <div>
+                <img src="ASSET SESI 2/Gambar 1 (1).png" alt="Karina" width="500" height="500">
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <p class="mb-2 font-bold">I'm Karina</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Front-End Developer <br />& UI/UX
+            </h1>
+            <p class="text-gray-600 mb-6">
+                Membantu perusahaan dalam mengembangkan website atau mobile app untuk tumbuh lebih besar
+            </p>
+            <div class="flex items-center gap-4">
+                <button class="bg-amber-300 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition dark:text-black">
+                    <a href="form.html">Hire Me</a>
+                </button>
+                <a href="#" class="text-gray-800 font-medium hover:underline dark:text-white">My Portfolio →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill -->
+    <section class="text-center px-8 py-16 bg-gray-50 dark:bg-gray-900" id="showcase">
+        <p class="text-gray-500 mb-2">
+        Keahlian Saya dalam Menerapkan Teknologi untuk Menyelesaikan Masalah Kompleks
+        </p>
+        <h2 class="text-2xl font-bold mb-8">Skill Saya</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                <div class="bg-purple-700 rounded-full flex items-center justify-center mr-2">
+                    <img src="ASSET SESI 2/icon-Figma.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                </div>
+                <div class="mr-13 dark:text-white text-black">Figma</div>
+            </div>
+
+            <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                <div class="bg-amber-300 rounded-full flex items-center justify-center mr-2">
+                    <img src="ASSET SESI 2/icon-Html 5.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                </div>
+                <div class="mr-13 dark:text-white text-black">HTML 5</div>
+            </div>
+
+            <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                <div class="bg-black rounded-full flex items-center justify-center mr-2">
+                    <img src="ASSET SESI 2/icon-css.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                </div>
+                <div class="mr-16 dark:text-white text-black">CSS</div>
+            </div>
+
+            <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                <div class="bg-pink-400 rounded-full flex items-center justify-center mr-2">
+                    <img src="ASSET SESI 2/icon-SQL.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                </div>
+                <div class="mr-14 dark:text-white text-black">MYSQL</div>
+            </div>
+
+            <div class="gap-4 flex flex-wrap justify-center">
+                <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                    <div class="bg-black rounded-full flex items-center justify-center mr-2">
+                        <img src="ASSET SESI 2/icon-JavaScript.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                    </div>
+                    <div class="mr-6 dark:text-white text-black">Javascript</div>
+                </div>
+
+                <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                    <div class="bg-green-400 rounded-full flex items-center justify-center mr-2">
+                        <img src="ASSET SESI 2/icon-React.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                    </div>
+                    <div class="mr-17 dark:text-white text-black">React</div>
+                </div>
+
+                <div class="bg-white py-3 px-4 rounded-xl shadow font-medium text-[15px] flex items-center duration-300 hover:scale-115 dark:bg-gray-800 dark:shadow-white dark:shadow">
+                    <div class="bg-purple-700 rounded-full flex items-center justify-center mr-2">
+                        <img src="ASSET SESI 2/icon-VS CODE.png" alt="figma" class="w-8 h-8 mx-2 my-2" />
+                    </div>
+                    <div class="mr-12 text-left dark:text-white text-black">Visual Studio <br>Code</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-8 py-16">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold">Proyek Terbaik Saya</h2>
+            <a href="#" class="text-gray-800 font-medium hover:underline dark:text-white">Lihat Semua →</a>
+        </div>
+        <p class="text-gray-500">Beberapa hasil karya kami yang paling kami banggakan. Yuk, intip apa yang sudah kami buat!</p>
+    </section>
+
+    <!-- projek -->
+    <section class="px-6 md:px-26 py-12" id="studycase">
+        <!-- projek 1 -->
+        <div class="flex flex-col lg:flex-row items-center gap-15 px-10" id="projek1">
+            <div class="">
+                <h3 class="text-[36px] font-bold mb-1">E–Commerce Website Design</h3>
+                <p class="text-sm text-gray-400 mb-4">Website Development</p>
+                <p class=" mb-6 text-justify w-125">
+                Website e-commerce ini dibangun menggunakan React.js dengan dukungan React Router untuk navigasi dan Redux untuk manajemen state.
+                Desain responsif dan modern dibuat menggunakan Tailwind CSS, serta terintegrasi dengan API untuk menampilkan produk secara dinamis dan real-time.
+                </p>
+                <button class="bg-amber-300 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition dark:text-black">
+                    <a href="tugasmodul4.html#projek1">Lihat Projek</a>
+                </button>
+            </div>
+            <img src="ASSET SESI 2/Gambar 2 (1).png" alt="E-commerce" class=" rounded-[100px] shadow-lg" width="500">
+        </div>
+
+        <!-- projek 2 -->
+        <div class="flex flex-col lg:flex-row items-center gap-15 pt-10 px-10" id="projek2">
+            <img src="ASSET SESI 2/Gambar 3.png" alt="oclp" class=" rounded-[100px] shadow-lg" width="500">
+            <div class="">
+                <h3 class="text-[36px] font-bold mb-1">Online Cource Landing Page</h3>
+                <p class="text-sm text-gray-400 mb-4">Website Development</p>
+                <p class=" mb-6 text-justify w-125">
+                    Website ini dekembangkan menggunakan Laravel sebagai fondasi utama dalam pengelolaan logika backend.
+                    Dengan integrasi Fillament, sistem dashboard admin dapat dibuat secara cepat, efisien, dan user-frienddly.
+                    Data disimpan dan dikelola menggunakan MySQL, sementara PHP berperan sebagai bahasa pemrograman inti yang menjalankan seluruh proses server-side. 
+                    Website ini juga dilengkapi dengan fitur autentikasi, CRUD dinamis, serta validasi data yang kuat untuk memastikan keandalan dan keamanan sistem. 
+                    Antarmuka dibuat responsif agar nyaman diakses dari berbagai perangkat.
+                </p>
+                <button class="bg-amber-300 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition dark:text-black">
+                    <a href="tugasmodul4.html#projek2">Lihat Projek</a>
+                </button>
+            </div>
+        </div>
+
+        <!-- projek 3 -->
+        <div class="flex flex-col lg:flex-row items-center gap-15 pt-10 px-10" id="projek3">
+            <div class="">
+                <h3 class="text-[36px] font-bold mb-1">Waffle Pay</h3>
+                <p class="text-sm text-gray-400 mb-4">UI/UX Design ~ App Development</p>
+                <p class=" mb-6 text-justify w-125">
+                Waffle App dirancang dengan pendekatan UI/UX yang mengutamakan kesederhanaan dan efisiensi pengguna.
+                Proses desain dimulai dengan riset kebutuhan pengguna dan pembuatan user personal untuk memahami tujuan aplikasi.
+                Wireframe dan user flow dikembangkan menggnakan figma, diikuti dengan desain high-fidelity yang mengedepankan konsistensi visual dengan aksesibilitasi.
+                Prototipe interaktif dibuat untuk pengujian usubility, memastikan setiap fitur dapat diakses dengan mudah dan intuitif. 
+                Desain responsif disiapkan agar optimal di berbagai ukuran layar, terutama perangkat mobile.
+                </p>
+                <button class="bg-amber-300 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition dark:text-black">
+                    <a href="tugasmodul4.html#projek3">Lihat Projek</a>
+                </button>
+            </div>
+            <img src="ASSET SESI 2/Gambar 4.png" alt="waffle pay" class=" rounded-[100px] shadow-lg" width="500">
+        </div>
+
+        <!-- projek 4 -->
+        <div class="flex flex-col lg:flex-row items-center gap-15 pt-10 px-10" id="projek4">
+            <img src="ASSET SESI 2/Gambar 5.png" alt="Chatbot" class=" rounded-[100px] shadow-lg" width="500">
+            <div>
+                <h3 class="text-[36px] font-bold mb-1">Chatbot Mobile App</h3>
+                <p class="text-sm text-gray-400 mb-4">UI/UX Design ~ App Development</p>
+                <p class=" mb-6 text-justify w-125">
+                Chatbot Mobile App ini dirancang  dengan pendekatan Design Thinking, dimulai dari proses empati terhadap kebutuhan pengguna melaui observasi dan wawancara. 
+                Setelah itu, dilakukan perumusan masalah, pembuatan ide solusi, serta sketsa wireframe. 
+                Desain antarmuka dikembangkan menggunakan figma, dengan fokus pada interaktif percakapan yang intuitif dan ramah pengguna. 
+                Prototipe diuji melalui usability testing untuk memastikan alur obrolan mudah dipahami. 
+                Desain akhir dibuat responsif, dengan perhatian pada tipografi, kontras, dan kecepatan akses, sehingga pendukung pengalaman pengguna yang optimal diperangkat mobile.
+                </p>
+                <button class="bg-amber-300 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition dark:text-black">
+                    <a href="tugasmodul4.html#projek4">Lihat Projek</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-white md:px-20 py-12 text-sm bg-gray-900" id="tentangkami">
+        <div class="flex flex-col md:flex-row md:justify-between gap-10 px-10">
+            <div class="md:w-1/4">
+                <div class="flex items-center space-x-2 mb-4">
+                    <img src="ASSET SESI 2/logo 1.png" alt="logo" class="w-6 h-6">
+                    <span class="text-lg font-semibold">Karina Porto</span>
+                </div>
+                <p class="text-white">
+                    Bangun Ide Hebat Anda Bersama Saya — Siap Berkolaborasi dengan Keahlian yang Terbukti dan Fokus pada Hasil
+                </p>
+            </div>
+
+            <div class="md:w-1/4">
+                <h4 class="font-bold text-white mb-3">Tentang Saya</h4>
+                <ul class="space-y-2 text-white">
+                    <li><a href="#" class="hover:text-yellow-400 transition">Profil Singkat</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Layanan</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Proyek Terbaru</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div class="md:w-1/4">
+                <h4 class="font-bold text-white mb-3">Navigasi</h4>
+                <ul class="space-y-2 text-white">
+                    <li><a href="#" class="hover:text-yellow-400 transition">Blog / Artikel</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Testimoni</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Resume / CV</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Tools yang Dipakai</a></li>
+                </ul>
+            </div>
+
+            <div class="md:w-1/4">
+                <h4 class="font-bold text-white mb-3">Info Tambahan</h4>
+                <ul class="space-y-2 text-white">
+                    <li><a href="#" class="hover:text-yellow-400 transition">Privasi & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Hak Cipta</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Sitemap</a></li>
+                    <li><a href="#" class="hover:text-yellow-400 transition">Aksesibilitas</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white h-10 bg-gray-800 w-full">
+        <p class="pt-2">© 2025 Karina Porto. All rights reserved. Designed by Erlangga Satrya Husada.</p>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menuDropdown = document.getElementById('menu-dropdown');
+        menuButton.addEventListener('click', () => {
+        menuDropdown.classList.toggle('hidden');
+        });
+
+        // Dark mode toggle
+        const toggle = document.getElementById('mode-dark');
+        toggle.addEventListener('click',()=>{
+            document.documentElement.classList.toggle('dark');
+        })
+    </script>
+
+
+</body>
+</html>
