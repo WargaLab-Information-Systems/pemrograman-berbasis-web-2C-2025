@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+        form{
+            margin-left: 45%;
+            padding-top: 150px;
+        }
+        button{
+            margin-left: 49%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+     <form action="index.php" method="post">
+        <label>Nama</label> <br> <br>
+        <input type="text" name="Nama" placeholder="Masukkan Nama Anda"> <br> <br>
+        <label>NIM</label> <br> <br>
+        <input type="text" name="NIM" placeholder="Masukkan NIM Anda"> <br> <br>
+        <label>TTL</label><br> <br>
+        <input type="text" name="TTL" placeholder="Masukkan Tempat, Tanggal Lahir Anda"><br> <br>
+        <label>Email</label><br> <br>
+        <input type="email" name="Email" placeholder="Masukkan Email Anda"><br> <br>
+        <label>No Hp</label><br> <br>
+        <input type="text" name="No Hp" placeholder="Masukkan No Hp Anda"> <br>
+    </form> <br>
+     <button type="submit" id="tombol">Kirim</button>
+    </div>
+
+    <script>
+        document.getElementById("tombol").addEventListener("click", function(){
+
+            const nama = document.querySelector("input[name='Nama']").value;
+            const nim = document.querySelector("input[name='NIM']").value;
+            const ttl = document.querySelector("input[name='TTL']").value;
+            const email = document.querySelector("input[name='Email']").value;
+            
+            alert("Data Anda Telah Dikirim");
+        })
+
+    </script>
+
+</body>
+</html>
