@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Makanan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #eceff1;
+      font-family: 'Segoe UI', sans-serif;
+      color: #263238;
+    }
+   
+    .produk-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      color: #37474f;
+      font-weight: bold;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .card-body {
+      background-color: #bb9278;
+      padding: 20px;
+      border-radius: 0 0 15px 15px;
+    }
+    .btn-pesan {
+      background-color: #8d703d;
+      color: white;
+      border: none;
+    }
+    .btn-pesan:hover {
+      background-color: #455a64;
+    }
+    footer {
+      background-color: #8d703d;
+      color: white;
+      padding: 20px 0;
+    }
+    /* Modal Styles */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(92, 87, 46, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    .hero {
+    background: url('nusantara.jpg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    }
+
+    .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* lapisan gelap agar teks terlihat jelas */
+    z-index: 1;
+    }
+
+    .hero-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-overlay">
+          <h1 class="display-4 fw-bold">Selamat Datang di Rasa Nusantara</h1>
+          <p class="lead">Nikmati kelezatan kuliner lokal terbaik, dibuat dari bahan alami dan penuh cinta.</p>
+          <a href="#produk" class="btn btn-light btn-lg mt-3">Lihat Produk</a>
+        </div>
+      </section>
+      
+  <!-- Produk Section -->
+  <section id="produk" class="container text-center">
+    <h2 class="section-title">Produk Unggulan Kami</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="nasi goreng.jpg" class="produk-img" alt="Nasi Goreng Spesial">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Goreng Spesial</h5>
+            <p class="card-text">Nasi goreng dengan topping ayam suwir dan sambal khas nusantara.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="sate.avif" class="produk-img" alt="Sate Ayam Madura">
+          <div class="card-body">
+            <h5 class="card-title">Sate Ayam Madura</h5>
+            <p class="card-text">Sate ayam dengan bumbu kacang khas Madura yang gurih dan nikmat.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="mie.jpeg" class="produk-img" alt="Es Campur Segar">
+          <div class="card-body">
+            <h5 class="card-title">Mie Goreng Nusantara</h5>
+            <p class="card-text">Gurih, pedas, dan penuh cita rasa! bikin kamu ketagihan.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="sate lilit.jpg" class="produk-img" alt="Sate Ayam Madura">
+          <div class="card-body">
+            <h5 class="card-title">Sate Lilit</h5>
+            <p class="card-text">Sate khas Bali yang dibumbui rempah, dibalut pada batang serai. Gurih dan harum menggoda selera.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="nasi padang.jpg" class="produk-img" alt="Sate Ayam Madura">
+          <div class="card-body">
+            <h5 class="card-title">Nasi Padang</h5>
+            <p class="card-text">Hidangan lengkap dari Sumatera Barat, penuh cita rasa pedas dan gurih, dengan pilihan lauk melimpah.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="rawon.jpg" class="produk-img" alt="Sate Ayam Madura">
+          <div class="card-body">
+            <h5 class="card-title">Rawon</h5>
+            <p class="card-text">Sup hitam khas Jawa Timur dengan kuah kluwek yang pekat, daging empuk, dan rasa kaya rempah.</p>
+            <button class="btn btn-pesan" onclick="openForm()">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    &copy; 2025 Rasa Nusantara. Semua hak dilindungi.
+  </footer>
+  </script>
+</body>
+</html>
